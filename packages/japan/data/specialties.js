@@ -83,19 +83,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "米",
         "category": "農産物",
-        "image": "",
+        "image": "miyagi_rice.jpg",
         "description": "平野に広がる田んぼで米が作られています。"
       },
       {
         "name": "笹かまぼこ",
         "category": "加工食品",
-        "image": "",
+        "image": "miyagi_sasa_kamaboko.jpg",
         "description": "魚のすり身を笹の葉の形にして焼きます。"
       },
       {
         "name": "かき",
         "category": "水産物",
-        "image": "",
+        "image": "miyagi_oysters.jpg",
         "description": "波のおだやかな入り江で育てられています。"
       }
     ]
@@ -108,13 +108,13 @@ window.SPECIALTY_DATA = [
       {
         "name": "米",
         "category": "農産物",
-        "image": "",
+        "image": "akita_rice.jpg",
         "description": "あきたこまちなどの米が作られています。"
       },
       {
         "name": "きりたんぽ",
         "category": "郷土料理",
-        "image": "",
+        "image": "akita_kiritanpo.jpg",
         "description": "つぶしたご飯を棒につけて焼いた料理です。"
       },
       {
@@ -133,7 +133,7 @@ window.SPECIALTY_DATA = [
       {
         "name": "さくらんぼ",
         "category": "果物",
-        "image": "",
+        "image": "yamagata_cherries.jpg",
         "description": "初夏に実る赤い果物で、県を代表する特産品です。"
       },
       {
@@ -145,7 +145,7 @@ window.SPECIALTY_DATA = [
       {
         "name": "米沢牛",
         "category": "畜産物",
-        "image": "",
+        "image": "yamagata_yonezawa_beef.jpg",
         "description": "米沢市周辺で育てられる牛の肉です。"
       }
     ]
@@ -164,13 +164,13 @@ window.SPECIALTY_DATA = [
       {
         "name": "喜多方ラーメン",
         "category": "郷土料理",
-        "image": "",
+        "image": "fukushima_kitakata_ramen.jpg",
         "description": "平たく太めのちぢれた麺が特徴です。"
       },
       {
         "name": "赤べこ",
         "category": "民芸品",
-        "image": "",
+        "image": "fukushima_akabeko.jpg",
         "description": "首がゆれる赤い牛の形をした会津の人形です。"
       }
     ]
@@ -183,7 +183,7 @@ window.SPECIALTY_DATA = [
       {
         "name": "納豆",
         "category": "加工食品",
-        "image": "",
+        "image": "ibaraki_natto.jpg",
         "description": "大豆から作る食品で、水戸の名産として知られます。"
       },
       {
@@ -195,7 +195,7 @@ window.SPECIALTY_DATA = [
       {
         "name": "メロン",
         "category": "果物",
-        "image": "",
+        "image": "ibaraki_melons.jpg",
         "description": "海に近い地域などで多く作られています。"
       }
     ]
@@ -208,7 +208,7 @@ window.SPECIALTY_DATA = [
       {
         "name": "いちご",
         "category": "果物",
-        "image": "",
+        "image": "tochigi_strawberries.jpg",
         "description": "冬から春にかけてハウスで多く育てられます。"
       },
       {
@@ -220,7 +220,7 @@ window.SPECIALTY_DATA = [
       {
         "name": "益子焼",
         "category": "伝統工芸",
-        "image": "",
+        "image": "tochigi_mashiko_pottery.jpg",
         "description": "益子町を中心に作られる焼き物です。"
       }
     ]
@@ -233,19 +233,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "こんにゃく",
         "category": "加工食品",
-        "image": "",
+        "image": "gunma_konjac.jpg",
         "description": "こんにゃくいもから作る弾力のある食品です。"
       },
       {
         "name": "高崎だるま",
         "category": "民芸品",
-        "image": "",
+        "image": "gunma_takasaki_daruma.jpg",
         "description": "願いをこめて目を入れる、丸い形の人形です。"
       },
       {
         "name": "下仁田ねぎ",
         "category": "農産物",
-        "image": "",
+        "image": "gunma_shimonita_leeks.jpg",
         "description": "太い白い部分が特徴で、煮ると甘くなります。"
       }
     ]
@@ -264,13 +264,13 @@ window.SPECIALTY_DATA = [
       {
         "name": "草加せんべい",
         "category": "加工食品",
-        "image": "",
+        "image": "saitama_soka_senbei.jpg",
         "description": "米から作る、しょうゆ味で知られるせんべいです。"
       },
       {
         "name": "狭山茶",
         "category": "農産物",
-        "image": "",
+        "image": "saitama_sayama_tea.jpg",
         "description": "県の西部を中心に作られるお茶です。"
       }
     ]
@@ -289,7 +289,7 @@ window.SPECIALTY_DATA = [
       {
         "name": "なし",
         "category": "果物",
-        "image": "",
+        "image": "chiba_pears.jpg",
         "description": "みずみずしく、しゃきっとした食感の果物です。"
       },
       {
@@ -314,13 +314,13 @@ window.SPECIALTY_DATA = [
       {
         "name": "もんじゃ焼き",
         "category": "郷土料理",
-        "image": "",
+        "image": "tokyo_monjayaki.jpg",
         "description": "水でといた小麦粉に具を入れ、鉄板で焼きます。"
       },
       {
         "name": "江戸切子",
         "category": "伝統工芸",
-        "image": "",
+        "image": "tokyo_edo_kiriko.jpg",
         "description": "ガラスの表面をけずって模様をつけます。"
       }
     ]

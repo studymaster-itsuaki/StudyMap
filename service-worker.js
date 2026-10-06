@@ -1,4 +1,4 @@
-const CACHE = "studymap-beta2-specialties-v1";
+const CACHE = "studymap-beta2-specialties-photos-v2";
 const BASE = new URL("./", self.location).pathname;
 const PRECACHE = [
   "./", "index.html", "manifest.webmanifest", "core/studymap.css", "core/studymap.js",
