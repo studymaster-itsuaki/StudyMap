@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#08a6a0"><link rel="manifest" href="../../manifest.webmanifest"><link rel="apple-touch-icon" href="../../assets/icon-192.png">
+<meta name="studymap-root" content="../../">
+<title>日本地理 | StudyMap</title>
+<link rel="stylesheet" href="../../core/studymap.css">
+</head><body>
+<header class="sm-header has-audio">
+  <a class="sm-back" href="index.html" aria-label="戻る">←</a>
+  <div class="sm-header-title" id="title">日本地理</div>
+<div class="sm-audio-controls"><button class="sm-audio-btn" data-studymap-bgm>♪ BGM OFF</button><button class="sm-audio-btn" data-studymap-sfx>🔊 効果音 ON</button></div></header>
+<main class="sm-shell">
+  <section class="sm-card sm-hero">
+    <div class="sm-breadcrumb" id="crumb"></div>
+    <h1 class="sm-title" id="heading"></h1>
+  </section>
+  <section class="sm-mode-grid">
+    <div class="sm-card sm-mode">
+      <div class="emoji">📖</div><h3>学ぶ</h3>
+      <p>自由に見て覚える</p>
+      <a id="learnLink" class="sm-action learn" href="#">開く</a>
+    </div>
+    <div class="sm-card sm-mode">
+      <div class="emoji">📝</div><h3>練習する</h3>
+      <p>通常のクイズ</p>
+      <a id="practiceLink" class="sm-action practice" href="#">開く</a>
+    </div>
+    <div class="sm-card sm-mode">
+      <div class="emoji">🏆</div><h3>挑戦する</h3>
+      <p>10問チャレンジ</p>
+      <a id="challengeLink" class="sm-action challenge" href="#">開く</a>
+    </div>
+  </section>
+</main>
+<script src="../../core/pwa.js"></script><script src="../../core/studymap.js"></script>
+<script>
+const q = new URLSearchParams(location.search);
+const type = q.get("type") || "prefecture";
+const name = q.get("name") || "都道府県";
+document.getElementById("title").textContent = name;
+document.getElementById("heading").textContent = name;
+document.getElementById("crumb").textContent = "StudyMap ＞ 日本地理 ＞ " + name;
+document.getElementById("learnLink").href =
+  type === "specialty" ? "specialty-learn.html"
+  : "play.html?type="+encodeURIComponent(type)+"&mode=learn";
+document.getElementById("practiceLink").href = "play.html?type="+encodeURIComponent(type)+"&mode=quiz";
+document.getElementById("challengeLink").href = "play.html?type="+encodeURIComponent(type)+"&mode=challenge";
+</script>
+<script src="../../core/bgm.js"></script><script src="../../core/sfx.js"></script></body></html>

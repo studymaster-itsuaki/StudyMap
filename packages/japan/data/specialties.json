@@ -1,0 +1,1036 @@
+[
+  {
+    "code": "1",
+    "prefecture": "北海道",
+    "region": "北海道",
+    "items": [
+      {
+        "name": "じゃがいも",
+        "category": "農産物",
+        "image": ""
+      },
+      {
+        "name": "とうもろこし",
+        "category": "農産物",
+        "image": ""
+      },
+      {
+        "name": "ジンギスカン",
+        "category": "食べ物",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "2",
+    "prefecture": "青森県",
+    "region": "東北",
+    "items": [
+      {
+        "name": "りんご",
+        "category": "果物",
+        "image": ""
+      },
+      {
+        "name": "ねぶた祭",
+        "category": "祭り",
+        "image": ""
+      },
+      {
+        "name": "にんにく",
+        "category": "農産物",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "3",
+    "prefecture": "岩手県",
+    "region": "東北",
+    "items": [
+      {
+        "name": "わんこそば",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "南部鉄器",
+        "category": "伝統工芸",
+        "image": ""
+      },
+      {
+        "name": "盛岡冷麺",
+        "category": "食べ物",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "4",
+    "prefecture": "宮城県",
+    "region": "東北",
+    "items": [
+      {
+        "name": "牛タン",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "笹かまぼこ",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "仙台七夕まつり",
+        "category": "祭り",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "5",
+    "prefecture": "秋田県",
+    "region": "東北",
+    "items": [
+      {
+        "name": "きりたんぽ",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "なまはげ",
+        "category": "行事",
+        "image": ""
+      },
+      {
+        "name": "あきたこまち",
+        "category": "米",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "6",
+    "prefecture": "山形県",
+    "region": "東北",
+    "items": [
+      {
+        "name": "さくらんぼ",
+        "category": "果物",
+        "image": ""
+      },
+      {
+        "name": "ラ・フランス",
+        "category": "果物",
+        "image": ""
+      },
+      {
+        "name": "米沢牛",
+        "category": "食べ物",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "7",
+    "prefecture": "福島県",
+    "region": "東北",
+    "items": [
+      {
+        "name": "桃",
+        "category": "果物",
+        "image": ""
+      },
+      {
+        "name": "喜多方ラーメン",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "赤べこ",
+        "category": "民芸品",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "8",
+    "prefecture": "茨城県",
+    "region": "関東",
+    "items": [
+      {
+        "name": "納豆",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "水戸黄門",
+        "category": "人物・文化",
+        "image": ""
+      },
+      {
+        "name": "メロン",
+        "category": "果物",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "9",
+    "prefecture": "栃木県",
+    "region": "関東",
+    "items": [
+      {
+        "name": "いちご",
+        "category": "果物",
+        "image": ""
+      },
+      {
+        "name": "かんぴょう",
+        "category": "農産物",
+        "image": ""
+      },
+      {
+        "name": "日光東照宮",
+        "category": "名所",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "10",
+    "prefecture": "群馬県",
+    "region": "関東",
+    "items": [
+      {
+        "name": "こんにゃく",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "だるま",
+        "category": "民芸品",
+        "image": ""
+      },
+      {
+        "name": "下仁田ねぎ",
+        "category": "農産物",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "11",
+    "prefecture": "埼玉県",
+    "region": "関東",
+    "items": [
+      {
+        "name": "深谷ねぎ",
+        "category": "農産物",
+        "image": ""
+      },
+      {
+        "name": "草加せんべい",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "小松菜",
+        "category": "農産物",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "12",
+    "prefecture": "千葉県",
+    "region": "関東",
+    "items": [
+      {
+        "name": "落花生",
+        "category": "農産物",
+        "image": ""
+      },
+      {
+        "name": "梨",
+        "category": "果物",
+        "image": ""
+      },
+      {
+        "name": "東京ディズニーリゾート",
+        "category": "名所",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "13",
+    "prefecture": "東京都",
+    "region": "関東",
+    "items": [
+      {
+        "name": "東京タワー",
+        "category": "名所",
+        "image": ""
+      },
+      {
+        "name": "もんじゃ焼き",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "江戸切子",
+        "category": "伝統工芸",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "14",
+    "prefecture": "神奈川県",
+    "region": "関東",
+    "items": [
+      {
+        "name": "横浜中華街",
+        "category": "名所",
+        "image": ""
+      },
+      {
+        "name": "しゅうまい",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "鎌倉大仏",
+        "category": "名所",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "15",
+    "prefecture": "新潟県",
+    "region": "中部",
+    "items": [
+      {
+        "name": "米どころ",
+        "category": "農業",
+        "image": ""
+      },
+      {
+        "name": "へぎそば",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "錦鯉",
+        "category": "特産",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "16",
+    "prefecture": "富山県",
+    "region": "中部",
+    "items": [
+      {
+        "name": "ます寿司",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "ホタルイカ",
+        "category": "水産物",
+        "image": ""
+      },
+      {
+        "name": "チューリップ",
+        "category": "花",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "17",
+    "prefecture": "石川県",
+    "region": "中部",
+    "items": [
+      {
+        "name": "輪島塗",
+        "category": "伝統工芸",
+        "image": ""
+      },
+      {
+        "name": "金箔",
+        "category": "伝統工芸",
+        "image": ""
+      },
+      {
+        "name": "加賀友禅",
+        "category": "伝統工芸",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "18",
+    "prefecture": "福井県",
+    "region": "中部",
+    "items": [
+      {
+        "name": "越前がに",
+        "category": "水産物",
+        "image": ""
+      },
+      {
+        "name": "越前和紙",
+        "category": "伝統工芸",
+        "image": ""
+      },
+      {
+        "name": "めがねフレーム",
+        "category": "工業",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "19",
+    "prefecture": "山梨県",
+    "region": "中部",
+    "items": [
+      {
+        "name": "ぶどう",
+        "category": "果物",
+        "image": ""
+      },
+      {
+        "name": "桃",
+        "category": "果物",
+        "image": ""
+      },
+      {
+        "name": "ほうとう",
+        "category": "食べ物",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "20",
+    "prefecture": "長野県",
+    "region": "中部",
+    "items": [
+      {
+        "name": "信州そば",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "りんご",
+        "category": "果物",
+        "image": ""
+      },
+      {
+        "name": "野沢菜",
+        "category": "農産物",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "21",
+    "prefecture": "岐阜県",
+    "region": "中部",
+    "items": [
+      {
+        "name": "飛騨牛",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "鵜飼",
+        "category": "伝統文化",
+        "image": ""
+      },
+      {
+        "name": "さるぼぼ",
+        "category": "民芸品",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "22",
+    "prefecture": "静岡県",
+    "region": "中部",
+    "items": [
+      {
+        "name": "お茶",
+        "category": "農産物",
+        "image": ""
+      },
+      {
+        "name": "うなぎ",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "みかん",
+        "category": "果物",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "23",
+    "prefecture": "愛知県",
+    "region": "中部",
+    "items": [
+      {
+        "name": "味噌カツ",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "ひつまぶし",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "自動車工業",
+        "category": "工業",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "24",
+    "prefecture": "三重県",
+    "region": "近畿",
+    "items": [
+      {
+        "name": "松阪牛",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "伊勢えび",
+        "category": "水産物",
+        "image": ""
+      },
+      {
+        "name": "真珠",
+        "category": "特産",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "25",
+    "prefecture": "滋賀県",
+    "region": "近畿",
+    "items": [
+      {
+        "name": "近江牛",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "信楽焼",
+        "category": "伝統工芸",
+        "image": ""
+      },
+      {
+        "name": "琵琶湖",
+        "category": "名所",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "26",
+    "prefecture": "京都府",
+    "region": "近畿",
+    "items": [
+      {
+        "name": "八ツ橋",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "西陣織",
+        "category": "伝統工芸",
+        "image": ""
+      },
+      {
+        "name": "清水寺",
+        "category": "名所",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "27",
+    "prefecture": "大阪府",
+    "region": "近畿",
+    "items": [
+      {
+        "name": "たこ焼き",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "お好み焼き",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "通天閣",
+        "category": "名所",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "28",
+    "prefecture": "兵庫県",
+    "region": "近畿",
+    "items": [
+      {
+        "name": "神戸牛",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "姫路城",
+        "category": "名所",
+        "image": ""
+      },
+      {
+        "name": "明石焼き",
+        "category": "食べ物",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "29",
+    "prefecture": "奈良県",
+    "region": "近畿",
+    "items": [
+      {
+        "name": "奈良公園の鹿",
+        "category": "名所",
+        "image": ""
+      },
+      {
+        "name": "東大寺の大仏",
+        "category": "名所",
+        "image": ""
+      },
+      {
+        "name": "柿の葉寿司",
+        "category": "食べ物",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "30",
+    "prefecture": "和歌山県",
+    "region": "近畿",
+    "items": [
+      {
+        "name": "みかん",
+        "category": "果物",
+        "image": ""
+      },
+      {
+        "name": "梅干し",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "高野山",
+        "category": "名所",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "31",
+    "prefecture": "鳥取県",
+    "region": "中国",
+    "items": [
+      {
+        "name": "二十世紀梨",
+        "category": "果物",
+        "image": ""
+      },
+      {
+        "name": "鳥取砂丘",
+        "category": "名所",
+        "image": ""
+      },
+      {
+        "name": "らっきょう",
+        "category": "農産物",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "32",
+    "prefecture": "島根県",
+    "region": "中国",
+    "items": [
+      {
+        "name": "出雲大社",
+        "category": "名所",
+        "image": ""
+      },
+      {
+        "name": "しじみ",
+        "category": "水産物",
+        "image": ""
+      },
+      {
+        "name": "石見銀山",
+        "category": "名所",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "33",
+    "prefecture": "岡山県",
+    "region": "中国",
+    "items": [
+      {
+        "name": "桃太郎",
+        "category": "文化",
+        "image": ""
+      },
+      {
+        "name": "きびだんご",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "白桃",
+        "category": "果物",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "34",
+    "prefecture": "広島県",
+    "region": "中国",
+    "items": [
+      {
+        "name": "もみじまんじゅう",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "お好み焼き",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "厳島神社",
+        "category": "名所",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "35",
+    "prefecture": "山口県",
+    "region": "中国",
+    "items": [
+      {
+        "name": "ふぐ",
+        "category": "水産物",
+        "image": ""
+      },
+      {
+        "name": "萩焼",
+        "category": "伝統工芸",
+        "image": ""
+      },
+      {
+        "name": "秋吉台",
+        "category": "名所",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "36",
+    "prefecture": "徳島県",
+    "region": "四国",
+    "items": [
+      {
+        "name": "阿波おどり",
+        "category": "祭り",
+        "image": ""
+      },
+      {
+        "name": "すだち",
+        "category": "果物",
+        "image": ""
+      },
+      {
+        "name": "鳴門のうず潮",
+        "category": "名所",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "37",
+    "prefecture": "香川県",
+    "region": "四国",
+    "items": [
+      {
+        "name": "讃岐うどん",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "オリーブ",
+        "category": "農産物",
+        "image": ""
+      },
+      {
+        "name": "こんぴらさん",
+        "category": "名所",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "38",
+    "prefecture": "愛媛県",
+    "region": "四国",
+    "items": [
+      {
+        "name": "みかん",
+        "category": "果物",
+        "image": ""
+      },
+      {
+        "name": "今治タオル",
+        "category": "特産",
+        "image": ""
+      },
+      {
+        "name": "道後温泉",
+        "category": "名所",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "39",
+    "prefecture": "高知県",
+    "region": "四国",
+    "items": [
+      {
+        "name": "かつお",
+        "category": "水産物",
+        "image": ""
+      },
+      {
+        "name": "ゆず",
+        "category": "果物",
+        "image": ""
+      },
+      {
+        "name": "四万十川",
+        "category": "名所",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "40",
+    "prefecture": "福岡県",
+    "region": "九州・沖縄",
+    "items": [
+      {
+        "name": "明太子",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "博多ラーメン",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "太宰府天満宮",
+        "category": "名所",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "41",
+    "prefecture": "佐賀県",
+    "region": "九州・沖縄",
+    "items": [
+      {
+        "name": "有田焼",
+        "category": "伝統工芸",
+        "image": ""
+      },
+      {
+        "name": "伊万里焼",
+        "category": "伝統工芸",
+        "image": ""
+      },
+      {
+        "name": "呼子のイカ",
+        "category": "食べ物",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "42",
+    "prefecture": "長崎県",
+    "region": "九州・沖縄",
+    "items": [
+      {
+        "name": "カステラ",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "ちゃんぽん",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "ハウステンボス",
+        "category": "名所",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "43",
+    "prefecture": "熊本県",
+    "region": "九州・沖縄",
+    "items": [
+      {
+        "name": "からしれんこん",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "馬刺し",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "阿蘇山",
+        "category": "名所",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "44",
+    "prefecture": "大分県",
+    "region": "九州・沖縄",
+    "items": [
+      {
+        "name": "別府温泉",
+        "category": "名所",
+        "image": ""
+      },
+      {
+        "name": "かぼす",
+        "category": "果物",
+        "image": ""
+      },
+      {
+        "name": "とり天",
+        "category": "食べ物",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "45",
+    "prefecture": "宮崎県",
+    "region": "九州・沖縄",
+    "items": [
+      {
+        "name": "マンゴー",
+        "category": "果物",
+        "image": ""
+      },
+      {
+        "name": "チキン南蛮",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "高千穂峡",
+        "category": "名所",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "46",
+    "prefecture": "鹿児島県",
+    "region": "九州・沖縄",
+    "items": [
+      {
+        "name": "黒豚",
+        "category": "食べ物",
+        "image": ""
+      },
+      {
+        "name": "さつまいも",
+        "category": "農産物",
+        "image": ""
+      },
+      {
+        "name": "桜島",
+        "category": "名所",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "code": "47",
+    "prefecture": "沖縄県",
+    "region": "九州・沖縄",
+    "items": [
+      {
+        "name": "ゴーヤー",
+        "category": "農産物",
+        "image": ""
+      },
+      {
+        "name": "シーサー",
+        "category": "民芸品",
+        "image": ""
+      },
+      {
+        "name": "沖縄そば",
+        "category": "食べ物",
+        "image": ""
+      }
+    ]
+  }
+]
