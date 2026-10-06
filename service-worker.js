@@ -1,4 +1,4 @@
-const CACHE = "studymap-beta1-v1";
+const CACHE = "studymap-beta2-specialties-v1";
 const BASE = new URL("./", self.location).pathname;
 const PRECACHE = [
   "./", "index.html", "manifest.webmanifest", "core/studymap.css", "core/studymap.js",
@@ -6,7 +6,7 @@ const PRECACHE = [
   "assets/icon-192.png", "assets/icon-512.png", "elementary/", "junior/",
   "packages/japan/", "packages/japan/genre.html", "packages/japan/play.html",
   "packages/japan/specialty-learn.html", "packages/japan/image-credits.html",
-  "packages/japan/data/specialties.js", "packages/japan/data/specialties.json"
+  "packages/japan/data/specialties.js"
 ].map(path => new URL(path, self.location).pathname);
 
 self.addEventListener("install", event => {

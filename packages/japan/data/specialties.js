@@ -1,3 +1,4 @@
+// 名産品データの正本。更新方法は README.md を参照。
 window.SPECIALTY_DATA = [
   {
     "code": "1",
@@ -80,19 +81,22 @@ window.SPECIALTY_DATA = [
     "region": "東北",
     "items": [
       {
-        "name": "牛タン",
-        "category": "食べ物",
-        "image": ""
+        "name": "米",
+        "category": "農産物",
+        "image": "",
+        "description": "平野に広がる田んぼで米が作られています。"
       },
       {
         "name": "笹かまぼこ",
-        "category": "食べ物",
-        "image": ""
+        "category": "加工食品",
+        "image": "",
+        "description": "魚のすり身を笹の葉の形にして焼きます。"
       },
       {
-        "name": "仙台七夕まつり",
-        "category": "祭り",
-        "image": ""
+        "name": "かき",
+        "category": "水産物",
+        "image": "",
+        "description": "波のおだやかな入り江で育てられています。"
       }
     ]
   },
@@ -102,19 +106,22 @@ window.SPECIALTY_DATA = [
     "region": "東北",
     "items": [
       {
+        "name": "米",
+        "category": "農産物",
+        "image": "",
+        "description": "あきたこまちなどの米が作られています。"
+      },
+      {
         "name": "きりたんぽ",
-        "category": "食べ物",
-        "image": ""
+        "category": "郷土料理",
+        "image": "",
+        "description": "つぶしたご飯を棒につけて焼いた料理です。"
       },
       {
-        "name": "なまはげ",
-        "category": "行事",
-        "image": ""
-      },
-      {
-        "name": "あきたこまち",
-        "category": "米",
-        "image": ""
+        "name": "大館曲げわっぱ",
+        "category": "伝統工芸",
+        "image": "",
+        "description": "薄い杉の板を曲げて作る入れ物です。"
       }
     ]
   },
@@ -126,17 +133,20 @@ window.SPECIALTY_DATA = [
       {
         "name": "さくらんぼ",
         "category": "果物",
-        "image": ""
+        "image": "",
+        "description": "初夏に実る赤い果物で、県を代表する特産品です。"
       },
       {
         "name": "ラ・フランス",
         "category": "果物",
-        "image": ""
+        "image": "",
+        "description": "やわらかい果肉と香りが特徴の西洋なしです。"
       },
       {
         "name": "米沢牛",
-        "category": "食べ物",
-        "image": ""
+        "category": "畜産物",
+        "image": "",
+        "description": "米沢市周辺で育てられる牛の肉です。"
       }
     ]
   },
@@ -146,19 +156,22 @@ window.SPECIALTY_DATA = [
     "region": "東北",
     "items": [
       {
-        "name": "桃",
+        "name": "もも",
         "category": "果物",
-        "image": ""
+        "image": "",
+        "description": "福島盆地などで育てられる夏の果物です。"
       },
       {
         "name": "喜多方ラーメン",
-        "category": "食べ物",
-        "image": ""
+        "category": "郷土料理",
+        "image": "",
+        "description": "平たく太めのちぢれた麺が特徴です。"
       },
       {
         "name": "赤べこ",
         "category": "民芸品",
-        "image": ""
+        "image": "",
+        "description": "首がゆれる赤い牛の形をした会津の人形です。"
       }
     ]
   },
@@ -169,18 +182,21 @@ window.SPECIALTY_DATA = [
     "items": [
       {
         "name": "納豆",
-        "category": "食べ物",
-        "image": ""
+        "category": "加工食品",
+        "image": "",
+        "description": "大豆から作る食品で、水戸の名産として知られます。"
       },
       {
-        "name": "水戸黄門",
-        "category": "人物・文化",
-        "image": ""
+        "name": "れんこん",
+        "category": "農産物",
+        "image": "",
+        "description": "霞ヶ浦の周りなどで育てられています。"
       },
       {
         "name": "メロン",
         "category": "果物",
-        "image": ""
+        "image": "",
+        "description": "海に近い地域などで多く作られています。"
       }
     ]
   },
@@ -192,17 +208,20 @@ window.SPECIALTY_DATA = [
       {
         "name": "いちご",
         "category": "果物",
-        "image": ""
+        "image": "",
+        "description": "冬から春にかけてハウスで多く育てられます。"
       },
       {
         "name": "かんぴょう",
-        "category": "農産物",
-        "image": ""
+        "category": "加工食品",
+        "image": "",
+        "description": "ユウガオの実を細長くむいて干した食品です。"
       },
       {
-        "name": "日光東照宮",
-        "category": "名所",
-        "image": ""
+        "name": "益子焼",
+        "category": "伝統工芸",
+        "image": "",
+        "description": "益子町を中心に作られる焼き物です。"
       }
     ]
   },
@@ -213,18 +232,21 @@ window.SPECIALTY_DATA = [
     "items": [
       {
         "name": "こんにゃく",
-        "category": "食べ物",
-        "image": ""
+        "category": "加工食品",
+        "image": "",
+        "description": "こんにゃくいもから作る弾力のある食品です。"
       },
       {
-        "name": "だるま",
+        "name": "高崎だるま",
         "category": "民芸品",
-        "image": ""
+        "image": "",
+        "description": "願いをこめて目を入れる、丸い形の人形です。"
       },
       {
         "name": "下仁田ねぎ",
         "category": "農産物",
-        "image": ""
+        "image": "",
+        "description": "太い白い部分が特徴で、煮ると甘くなります。"
       }
     ]
   },
@@ -236,17 +258,20 @@ window.SPECIALTY_DATA = [
       {
         "name": "深谷ねぎ",
         "category": "農産物",
-        "image": ""
+        "image": "",
+        "description": "深谷市周辺で作られるねぎです。"
       },
       {
         "name": "草加せんべい",
-        "category": "食べ物",
-        "image": ""
+        "category": "加工食品",
+        "image": "",
+        "description": "米から作る、しょうゆ味で知られるせんべいです。"
       },
       {
-        "name": "小松菜",
+        "name": "狭山茶",
         "category": "農産物",
-        "image": ""
+        "image": "",
+        "description": "県の西部を中心に作られるお茶です。"
       }
     ]
   },
@@ -258,17 +283,20 @@ window.SPECIALTY_DATA = [
       {
         "name": "落花生",
         "category": "農産物",
-        "image": ""
+        "image": "",
+        "description": "花がさいた後、土の中にさやをつけます。"
       },
       {
-        "name": "梨",
+        "name": "なし",
         "category": "果物",
-        "image": ""
+        "image": "",
+        "description": "みずみずしく、しゃきっとした食感の果物です。"
       },
       {
-        "name": "東京ディズニーリゾート",
-        "category": "名所",
-        "image": ""
+        "name": "しょうゆ",
+        "category": "加工食品",
+        "image": "",
+        "description": "野田市や銚子市で昔から作られています。"
       }
     ]
   },
@@ -278,19 +306,22 @@ window.SPECIALTY_DATA = [
     "region": "関東",
     "items": [
       {
-        "name": "東京タワー",
-        "category": "名所",
-        "image": ""
+        "name": "小松菜",
+        "category": "農産物",
+        "image": "",
+        "description": "江戸川区の小松川周辺に名の由来がある野菜です。"
       },
       {
         "name": "もんじゃ焼き",
-        "category": "食べ物",
-        "image": ""
+        "category": "郷土料理",
+        "image": "",
+        "description": "水でといた小麦粉に具を入れ、鉄板で焼きます。"
       },
       {
         "name": "江戸切子",
         "category": "伝統工芸",
-        "image": ""
+        "image": "",
+        "description": "ガラスの表面をけずって模様をつけます。"
       }
     ]
   },
@@ -300,19 +331,22 @@ window.SPECIALTY_DATA = [
     "region": "関東",
     "items": [
       {
-        "name": "横浜中華街",
-        "category": "名所",
-        "image": ""
+        "name": "かまぼこ",
+        "category": "加工食品",
+        "image": "",
+        "description": "魚のすり身から作る、小田原の名産です。"
       },
       {
         "name": "しゅうまい",
-        "category": "食べ物",
-        "image": ""
+        "category": "郷土料理",
+        "image": "",
+        "description": "肉などを薄い皮で包んで蒸す、横浜の名物です。"
       },
       {
-        "name": "鎌倉大仏",
-        "category": "名所",
-        "image": ""
+        "name": "箱根寄木細工",
+        "category": "伝統工芸",
+        "image": "",
+        "description": "色のちがう木を組み合わせて模様を作ります。"
       }
     ]
   },
@@ -322,19 +356,22 @@ window.SPECIALTY_DATA = [
     "region": "中部",
     "items": [
       {
-        "name": "米どころ",
-        "category": "農業",
-        "image": ""
+        "name": "米",
+        "category": "農産物",
+        "image": "",
+        "description": "越後平野などで、コシヒカリなどを作ります。"
       },
       {
         "name": "へぎそば",
-        "category": "食べ物",
-        "image": ""
+        "category": "郷土料理",
+        "image": "",
+        "description": "海藻をつなぎに使い、木の器に盛るそばです。"
       },
       {
         "name": "錦鯉",
-        "category": "特産",
-        "image": ""
+        "category": "水産物",
+        "image": "",
+        "description": "赤や白などの模様を楽しむ観賞用の魚です。"
       }
     ]
   },
@@ -344,19 +381,22 @@ window.SPECIALTY_DATA = [
     "region": "中部",
     "items": [
       {
-        "name": "ます寿司",
-        "category": "食べ物",
-        "image": ""
+        "name": "ますずし",
+        "category": "郷土料理",
+        "image": "",
+        "description": "ますの身と酢飯を笹の葉で包んだ押しずしです。"
       },
       {
-        "name": "ホタルイカ",
+        "name": "ほたるいか",
         "category": "水産物",
-        "image": ""
+        "image": "",
+        "description": "富山湾でとれる、体が小さく光るいかです。"
       },
       {
         "name": "チューリップ",
-        "category": "花",
-        "image": ""
+        "category": "農産物",
+        "image": "",
+        "description": "砺波平野などで球根を育てています。"
       }
     ]
   },
@@ -368,17 +408,20 @@ window.SPECIALTY_DATA = [
       {
         "name": "輪島塗",
         "category": "伝統工芸",
-        "image": ""
+        "image": "",
+        "description": "木の器に漆を重ねてぬる、輪島の工芸品です。"
       },
       {
         "name": "金箔",
         "category": "伝統工芸",
-        "image": ""
+        "image": "",
+        "description": "金をとても薄くのばしたもので、金沢が産地です。"
       },
       {
         "name": "加賀友禅",
         "category": "伝統工芸",
-        "image": ""
+        "image": "",
+        "description": "草花などの美しい模様を布に染めます。"
       }
     ]
   },
@@ -390,17 +433,20 @@ window.SPECIALTY_DATA = [
       {
         "name": "越前がに",
         "category": "水産物",
-        "image": ""
+        "image": "",
+        "description": "県内の港に水揚げされるオスのズワイガニです。"
       },
       {
         "name": "越前和紙",
         "category": "伝統工芸",
-        "image": ""
+        "image": "",
+        "description": "越前市で昔から作られている和紙です。"
       },
       {
         "name": "めがねフレーム",
-        "category": "工業",
-        "image": ""
+        "category": "工業製品",
+        "image": "",
+        "description": "鯖江市を中心に、めがねの枠を作っています。"
       }
     ]
   },
@@ -412,17 +458,20 @@ window.SPECIALTY_DATA = [
       {
         "name": "ぶどう",
         "category": "果物",
-        "image": ""
+        "image": "",
+        "description": "甲府盆地などで、さまざまな品種を育てます。"
       },
       {
-        "name": "桃",
+        "name": "もも",
         "category": "果物",
-        "image": ""
+        "image": "",
+        "description": "盆地の気候を生かして多く作られています。"
       },
       {
         "name": "ほうとう",
-        "category": "食べ物",
-        "image": ""
+        "category": "郷土料理",
+        "image": "",
+        "description": "太く平たい麺を、野菜とみそで煮こみます。"
       }
     ]
   },
@@ -433,18 +482,21 @@ window.SPECIALTY_DATA = [
     "items": [
       {
         "name": "信州そば",
-        "category": "食べ物",
-        "image": ""
+        "category": "郷土料理",
+        "image": "",
+        "description": "山あいなどで育つそばを使った名物です。"
       },
       {
         "name": "りんご",
         "category": "果物",
-        "image": ""
+        "image": "",
+        "description": "昼と夜の気温差がある土地で育てられます。"
       },
       {
         "name": "野沢菜",
         "category": "農産物",
-        "image": ""
+        "image": "",
+        "description": "葉やくきを漬物にして食べる野菜です。"
       }
     ]
   },
@@ -455,18 +507,21 @@ window.SPECIALTY_DATA = [
     "items": [
       {
         "name": "飛騨牛",
-        "category": "食べ物",
-        "image": ""
+        "category": "畜産物",
+        "image": "",
+        "description": "県内で育てられる黒毛和牛の肉です。"
       },
       {
-        "name": "鵜飼",
-        "category": "伝統文化",
-        "image": ""
+        "name": "美濃焼",
+        "category": "伝統工芸",
+        "image": "",
+        "description": "多治見市や土岐市などで作られる焼き物です。"
       },
       {
-        "name": "さるぼぼ",
-        "category": "民芸品",
-        "image": ""
+        "name": "美濃和紙",
+        "category": "伝統工芸",
+        "image": "",
+        "description": "美濃市で受けつがれてきた和紙です。"
       }
     ]
   },
@@ -476,19 +531,22 @@ window.SPECIALTY_DATA = [
     "region": "中部",
     "items": [
       {
-        "name": "お茶",
+        "name": "茶",
         "category": "農産物",
-        "image": ""
+        "image": "",
+        "description": "丘や山の斜面などに茶畑が広がっています。"
       },
       {
         "name": "うなぎ",
-        "category": "食べ物",
-        "image": ""
+        "category": "水産物",
+        "image": "",
+        "description": "浜名湖の周りなどで養殖されています。"
       },
       {
         "name": "みかん",
         "category": "果物",
-        "image": ""
+        "image": "",
+        "description": "日当たりのよい斜面などで育てられます。"
       }
     ]
   },
@@ -498,19 +556,22 @@ window.SPECIALTY_DATA = [
     "region": "中部",
     "items": [
       {
-        "name": "味噌カツ",
-        "category": "食べ物",
-        "image": ""
+        "name": "八丁みそ",
+        "category": "加工食品",
+        "image": "",
+        "description": "岡崎の名産で、大豆を使った色の濃いみそです。"
       },
       {
-        "name": "ひつまぶし",
-        "category": "食べ物",
-        "image": ""
+        "name": "瀬戸焼",
+        "category": "伝統工芸",
+        "image": "",
+        "description": "瀬戸市で昔から作られている焼き物です。"
       },
       {
-        "name": "自動車工業",
-        "category": "工業",
-        "image": ""
+        "name": "自動車",
+        "category": "工業製品",
+        "image": "",
+        "description": "豊田市などに工場が集まり、多く作られます。"
       }
     ]
   },
@@ -521,18 +582,21 @@ window.SPECIALTY_DATA = [
     "items": [
       {
         "name": "松阪牛",
-        "category": "食べ物",
-        "image": ""
+        "category": "畜産物",
+        "image": "",
+        "description": "松阪市周辺で育てられる牛の肉です。"
       },
       {
         "name": "伊勢えび",
         "category": "水産物",
-        "image": ""
+        "image": "",
+        "description": "長い触角と赤いからをもつ大きなえびです。"
       },
       {
         "name": "真珠",
-        "category": "特産",
-        "image": ""
+        "category": "水産物",
+        "image": "",
+        "description": "英虞湾などで、貝を育てて真珠を作ります。"
       }
     ]
   },
@@ -543,18 +607,21 @@ window.SPECIALTY_DATA = [
     "items": [
       {
         "name": "近江牛",
-        "category": "食べ物",
-        "image": ""
+        "category": "畜産物",
+        "image": "",
+        "description": "滋賀県で育てられる黒毛和牛の肉です。"
       },
       {
         "name": "信楽焼",
         "category": "伝統工芸",
-        "image": ""
+        "image": "",
+        "description": "信楽で作る焼き物で、たぬきの置物も有名です。"
       },
       {
-        "name": "琵琶湖",
-        "category": "名所",
-        "image": ""
+        "name": "ふなずし",
+        "category": "郷土料理",
+        "image": "",
+        "description": "ふなをご飯といっしょに漬けて発酵させます。"
       }
     ]
   },
@@ -564,19 +631,22 @@ window.SPECIALTY_DATA = [
     "region": "近畿",
     "items": [
       {
-        "name": "八ツ橋",
-        "category": "食べ物",
-        "image": ""
+        "name": "宇治茶",
+        "category": "農産物",
+        "image": "",
+        "description": "宇治市周辺などで受けつがれてきたお茶です。"
       },
       {
         "name": "西陣織",
         "category": "伝統工芸",
-        "image": ""
+        "image": "",
+        "description": "色のついた糸で美しい模様を織り出します。"
       },
       {
-        "name": "清水寺",
-        "category": "名所",
-        "image": ""
+        "name": "京野菜",
+        "category": "農産物",
+        "image": "",
+        "description": "九条ねぎなど、京都で受けつがれた野菜です。"
       }
     ]
   },
@@ -587,18 +657,21 @@ window.SPECIALTY_DATA = [
     "items": [
       {
         "name": "たこ焼き",
-        "category": "食べ物",
-        "image": ""
+        "category": "郷土料理",
+        "image": "",
+        "description": "小麦粉の生地にたこを入れて丸く焼きます。"
       },
       {
         "name": "お好み焼き",
-        "category": "食べ物",
-        "image": ""
+        "category": "郷土料理",
+        "image": "",
+        "description": "小麦粉の生地にキャベツなどを混ぜて焼きます。"
       },
       {
-        "name": "通天閣",
-        "category": "名所",
-        "image": ""
+        "name": "堺打刃物",
+        "category": "伝統工芸",
+        "image": "",
+        "description": "堺市で作られる、包丁などの刃物です。"
       }
     ]
   },
@@ -609,18 +682,21 @@ window.SPECIALTY_DATA = [
     "items": [
       {
         "name": "神戸牛",
-        "category": "食べ物",
-        "image": ""
+        "category": "畜産物",
+        "image": "",
+        "description": "県内で育つ但馬牛のうち、基準を満たした肉です。"
       },
       {
-        "name": "姫路城",
-        "category": "名所",
-        "image": ""
+        "name": "丹波黒大豆",
+        "category": "農産物",
+        "image": "",
+        "description": "丹波地域の特産で、粒の大きな黒い大豆です。"
       },
       {
-        "name": "明石焼き",
-        "category": "食べ物",
-        "image": ""
+        "name": "手延べそうめん",
+        "category": "加工食品",
+        "image": "",
+        "description": "播磨地域で作られる、細くのばした麺です。"
       }
     ]
   },
@@ -630,19 +706,22 @@ window.SPECIALTY_DATA = [
     "region": "近畿",
     "items": [
       {
-        "name": "奈良公園の鹿",
-        "category": "名所",
-        "image": ""
+        "name": "柿の葉ずし",
+        "category": "郷土料理",
+        "image": "",
+        "description": "魚をのせた酢飯を、柿の葉で包んだすしです。"
       },
       {
-        "name": "東大寺の大仏",
-        "category": "名所",
-        "image": ""
+        "name": "三輪そうめん",
+        "category": "加工食品",
+        "image": "",
+        "description": "桜井市周辺で作られる、細い手延べ麺です。"
       },
       {
-        "name": "柿の葉寿司",
-        "category": "食べ物",
-        "image": ""
+        "name": "柿",
+        "category": "果物",
+        "image": "",
+        "description": "五條市などで多く育てられる秋の果物です。"
       }
     ]
   },
@@ -654,17 +733,20 @@ window.SPECIALTY_DATA = [
       {
         "name": "みかん",
         "category": "果物",
-        "image": ""
+        "image": "",
+        "description": "温暖な気候を生かし、斜面の畑で育てます。"
       },
       {
-        "name": "梅干し",
-        "category": "食べ物",
-        "image": ""
+        "name": "梅",
+        "category": "果物",
+        "image": "",
+        "description": "みなべ町や田辺市などで多く作られます。"
       },
       {
-        "name": "高野山",
-        "category": "名所",
-        "image": ""
+        "name": "柿",
+        "category": "果物",
+        "image": "",
+        "description": "紀の川沿いなどで多く育てられています。"
       }
     ]
   },
@@ -676,17 +758,20 @@ window.SPECIALTY_DATA = [
       {
         "name": "二十世紀梨",
         "category": "果物",
-        "image": ""
+        "image": "",
+        "description": "黄緑色の皮とみずみずしい果肉が特徴です。"
       },
       {
-        "name": "鳥取砂丘",
-        "category": "名所",
-        "image": ""
+        "name": "松葉がに",
+        "category": "水産物",
+        "image": "",
+        "description": "冬の日本海でとれるオスのズワイガニです。"
       },
       {
         "name": "らっきょう",
         "category": "農産物",
-        "image": ""
+        "image": "",
+        "description": "砂地の畑で育てられ、漬物などにします。"
       }
     ]
   },
@@ -696,19 +781,22 @@ window.SPECIALTY_DATA = [
     "region": "中国",
     "items": [
       {
-        "name": "出雲大社",
-        "category": "名所",
-        "image": ""
+        "name": "出雲そば",
+        "category": "郷土料理",
+        "image": "",
+        "description": "そばの実を皮ごとひく、色の濃いそばです。"
       },
       {
         "name": "しじみ",
         "category": "水産物",
-        "image": ""
+        "image": "",
+        "description": "海水と淡水が混ざる宍道湖などでとれます。"
       },
       {
-        "name": "石見銀山",
-        "category": "名所",
-        "image": ""
+        "name": "石州和紙",
+        "category": "伝統工芸",
+        "image": "",
+        "description": "県の西部で作られる、丈夫な和紙です。"
       }
     ]
   },
@@ -718,19 +806,22 @@ window.SPECIALTY_DATA = [
     "region": "中国",
     "items": [
       {
-        "name": "桃太郎",
-        "category": "文化",
-        "image": ""
+        "name": "ぶどう",
+        "category": "果物",
+        "image": "",
+        "description": "マスカットなど、さまざまな品種を育てます。"
       },
       {
         "name": "きびだんご",
-        "category": "食べ物",
-        "image": ""
+        "category": "加工食品",
+        "image": "",
+        "description": "桃太郎の物語でも知られる岡山の菓子です。"
       },
       {
         "name": "白桃",
         "category": "果物",
-        "image": ""
+        "image": "",
+        "description": "白くやわらかい果肉が特徴のももです。"
       }
     ]
   },
@@ -740,19 +831,22 @@ window.SPECIALTY_DATA = [
     "region": "中国",
     "items": [
       {
-        "name": "もみじまんじゅう",
-        "category": "食べ物",
-        "image": ""
+        "name": "かき",
+        "category": "水産物",
+        "image": "",
+        "description": "瀬戸内海の波がおだやかな海で育てます。"
       },
       {
         "name": "お好み焼き",
-        "category": "食べ物",
-        "image": ""
+        "category": "郷土料理",
+        "image": "",
+        "description": "薄い生地にキャベツや麺などを重ねて焼きます。"
       },
       {
-        "name": "厳島神社",
-        "category": "名所",
-        "image": ""
+        "name": "レモン",
+        "category": "果物",
+        "image": "",
+        "description": "瀬戸内海の島々などで育てられます。"
       }
     ]
   },
@@ -764,17 +858,20 @@ window.SPECIALTY_DATA = [
       {
         "name": "ふぐ",
         "category": "水産物",
-        "image": ""
+        "image": "",
+        "description": "下関が取引の拠点として知られる魚です。"
       },
       {
         "name": "萩焼",
         "category": "伝統工芸",
-        "image": ""
+        "image": "",
+        "description": "萩市周辺で作られる焼き物です。"
       },
       {
-        "name": "秋吉台",
-        "category": "名所",
-        "image": ""
+        "name": "かまぼこ",
+        "category": "加工食品",
+        "image": "",
+        "description": "魚のすり身を使い、焼きぬきなどの製法で作ります。"
       }
     ]
   },
@@ -784,19 +881,22 @@ window.SPECIALTY_DATA = [
     "region": "四国",
     "items": [
       {
-        "name": "阿波おどり",
-        "category": "祭り",
-        "image": ""
+        "name": "なると金時",
+        "category": "農産物",
+        "image": "",
+        "description": "鳴門市周辺の砂地などで育てるさつまいもです。"
       },
       {
         "name": "すだち",
         "category": "果物",
-        "image": ""
+        "image": "",
+        "description": "さわやかな香りの果汁を料理に使います。"
       },
       {
-        "name": "鳴門のうず潮",
-        "category": "名所",
-        "image": ""
+        "name": "藍染め",
+        "category": "伝統工芸",
+        "image": "",
+        "description": "藍という植物から作る染料で布を青く染めます。"
       }
     ]
   },
@@ -807,18 +907,21 @@ window.SPECIALTY_DATA = [
     "items": [
       {
         "name": "讃岐うどん",
-        "category": "食べ物",
-        "image": ""
+        "category": "郷土料理",
+        "image": "",
+        "description": "こしのある麺が特徴のうどんです。"
       },
       {
         "name": "オリーブ",
         "category": "農産物",
-        "image": ""
+        "image": "",
+        "description": "小豆島などで育てられ、実から油もとれます。"
       },
       {
-        "name": "こんぴらさん",
-        "category": "名所",
-        "image": ""
+        "name": "丸亀うちわ",
+        "category": "伝統工芸",
+        "image": "",
+        "description": "竹の骨組みに紙をはって作るうちわです。"
       }
     ]
   },
@@ -830,17 +933,20 @@ window.SPECIALTY_DATA = [
       {
         "name": "みかん",
         "category": "果物",
-        "image": ""
+        "image": "",
+        "description": "海に面した日当たりのよい斜面などで育てます。"
       },
       {
         "name": "今治タオル",
-        "category": "特産",
-        "image": ""
+        "category": "工業製品",
+        "image": "",
+        "description": "今治市周辺で作られるタオルです。"
       },
       {
-        "name": "道後温泉",
-        "category": "名所",
-        "image": ""
+        "name": "まだい",
+        "category": "水産物",
+        "image": "",
+        "description": "宇和海の入り江などで養殖されています。"
       }
     ]
   },
@@ -852,17 +958,20 @@ window.SPECIALTY_DATA = [
       {
         "name": "かつお",
         "category": "水産物",
-        "image": ""
+        "image": "",
+        "description": "一本釣りでも知られ、たたきなどにして食べます。"
       },
       {
         "name": "ゆず",
         "category": "果物",
-        "image": ""
+        "image": "",
+        "description": "山あいなどで育ち、皮や果汁を料理に使います。"
       },
       {
-        "name": "四万十川",
-        "category": "名所",
-        "image": ""
+        "name": "しょうが",
+        "category": "農産物",
+        "image": "",
+        "description": "温暖な気候を生かして多く作られています。"
       }
     ]
   },
@@ -872,19 +981,22 @@ window.SPECIALTY_DATA = [
     "region": "九州・沖縄",
     "items": [
       {
+        "name": "いちご",
+        "category": "果物",
+        "image": "",
+        "description": "あまおうなどの品種が育てられています。"
+      },
+      {
+        "name": "博多織",
+        "category": "伝統工芸",
+        "image": "",
+        "description": "着物の帯などに使う、しっかりした織物です。"
+      },
+      {
         "name": "明太子",
-        "category": "食べ物",
-        "image": ""
-      },
-      {
-        "name": "博多ラーメン",
-        "category": "食べ物",
-        "image": ""
-      },
-      {
-        "name": "太宰府天満宮",
-        "category": "名所",
-        "image": ""
+        "category": "加工食品",
+        "image": "",
+        "description": "スケトウダラの卵を調味液に漬けた食品です。"
       }
     ]
   },
@@ -896,17 +1008,20 @@ window.SPECIALTY_DATA = [
       {
         "name": "有田焼",
         "category": "伝統工芸",
-        "image": ""
+        "image": "",
+        "description": "有田町を中心に作る、絵付けの美しい焼き物です。"
       },
       {
-        "name": "伊万里焼",
-        "category": "伝統工芸",
-        "image": ""
+        "name": "のり",
+        "category": "水産物",
+        "image": "",
+        "description": "潮の満ち引きが大きい有明海で育てます。"
       },
       {
-        "name": "呼子のイカ",
-        "category": "食べ物",
-        "image": ""
+        "name": "佐賀牛",
+        "category": "畜産物",
+        "image": "",
+        "description": "県内で育てられる黒毛和牛の肉です。"
       }
     ]
   },
@@ -917,18 +1032,21 @@ window.SPECIALTY_DATA = [
     "items": [
       {
         "name": "カステラ",
-        "category": "食べ物",
-        "image": ""
+        "category": "加工食品",
+        "image": "",
+        "description": "海外から伝わり、長崎で広まった菓子です。"
       },
       {
         "name": "ちゃんぽん",
-        "category": "食べ物",
-        "image": ""
+        "category": "郷土料理",
+        "image": "",
+        "description": "太い麺に、野菜や魚介などの具を合わせます。"
       },
       {
-        "name": "ハウステンボス",
-        "category": "名所",
-        "image": ""
+        "name": "波佐見焼",
+        "category": "伝統工芸",
+        "image": "",
+        "description": "波佐見町で作られる、食器などの焼き物です。"
       }
     ]
   },
@@ -938,19 +1056,22 @@ window.SPECIALTY_DATA = [
     "region": "九州・沖縄",
     "items": [
       {
-        "name": "からしれんこん",
-        "category": "食べ物",
-        "image": ""
+        "name": "すいか",
+        "category": "果物",
+        "image": "",
+        "description": "熊本市周辺などで多く育てられています。"
       },
       {
-        "name": "馬刺し",
-        "category": "食べ物",
-        "image": ""
+        "name": "トマト",
+        "category": "農産物",
+        "image": "",
+        "description": "八代平野などでハウス栽培がさかんです。"
       },
       {
-        "name": "阿蘇山",
-        "category": "名所",
-        "image": ""
+        "name": "い草",
+        "category": "農産物",
+        "image": "",
+        "description": "八代地域などで育てられ、畳の表に使います。"
       }
     ]
   },
@@ -960,19 +1081,22 @@ window.SPECIALTY_DATA = [
     "region": "九州・沖縄",
     "items": [
       {
-        "name": "別府温泉",
-        "category": "名所",
-        "image": ""
+        "name": "干ししいたけ",
+        "category": "加工食品",
+        "image": "",
+        "description": "木で育てたしいたけを干したものが名産です。"
       },
       {
         "name": "かぼす",
         "category": "果物",
-        "image": ""
+        "image": "",
+        "description": "香りのよい果汁を魚料理などに使います。"
       },
       {
-        "name": "とり天",
-        "category": "食べ物",
-        "image": ""
+        "name": "別府竹細工",
+        "category": "伝統工芸",
+        "image": "",
+        "description": "竹を細く割いて編み、かごなどを作ります。"
       }
     ]
   },
@@ -984,17 +1108,20 @@ window.SPECIALTY_DATA = [
       {
         "name": "マンゴー",
         "category": "果物",
-        "image": ""
+        "image": "",
+        "description": "暖かいハウスの中で育てられる果物です。"
       },
       {
-        "name": "チキン南蛮",
-        "category": "食べ物",
-        "image": ""
+        "name": "ピーマン",
+        "category": "農産物",
+        "image": "",
+        "description": "温暖な気候を生かしてハウスで育てます。"
       },
       {
-        "name": "高千穂峡",
-        "category": "名所",
-        "image": ""
+        "name": "宮崎牛",
+        "category": "畜産物",
+        "image": "",
+        "description": "県内で育てられる黒毛和牛の肉です。"
       }
     ]
   },
@@ -1005,18 +1132,21 @@ window.SPECIALTY_DATA = [
     "items": [
       {
         "name": "黒豚",
-        "category": "食べ物",
-        "image": ""
+        "category": "畜産物",
+        "image": "",
+        "description": "鹿児島の特産として知られる豚です。"
       },
       {
         "name": "さつまいも",
         "category": "農産物",
-        "image": ""
+        "image": "",
+        "description": "水はけのよい火山灰の土地でも育つ作物です。"
       },
       {
-        "name": "桜島",
-        "category": "名所",
-        "image": ""
+        "name": "茶",
+        "category": "農産物",
+        "image": "",
+        "description": "温暖な気候を生かして広い茶畑で育てます。"
       }
     ]
   },
@@ -1026,19 +1156,22 @@ window.SPECIALTY_DATA = [
     "region": "九州・沖縄",
     "items": [
       {
+        "name": "さとうきび",
+        "category": "農産物",
+        "image": "",
+        "description": "暖かい気候で育ち、砂糖の原料になります。"
+      },
+      {
         "name": "ゴーヤー",
         "category": "農産物",
-        "image": ""
+        "image": "",
+        "description": "にがみが特徴で、いため物などに使う野菜です。"
       },
       {
-        "name": "シーサー",
-        "category": "民芸品",
-        "image": ""
-      },
-      {
-        "name": "沖縄そば",
-        "category": "食べ物",
-        "image": ""
+        "name": "パイナップル",
+        "category": "果物",
+        "image": "",
+        "description": "暖かい地域の畑で育つ南国の果物です。"
       }
     ]
   }
