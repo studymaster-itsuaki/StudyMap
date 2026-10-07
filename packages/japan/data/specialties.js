@@ -833,19 +833,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "かき",
         "category": "水産物",
-        "image": "",
+        "image": "hiroshima_oysters.jpg",
         "description": "瀬戸内海の波がおだやかな海で育てます。"
       },
       {
         "name": "お好み焼き",
         "category": "郷土料理",
-        "image": "",
+        "image": "hiroshima_okonomiyaki.jpg",
         "description": "薄い生地にキャベツや麺などを重ねて焼きます。"
       },
       {
         "name": "レモン",
         "category": "果物",
-        "image": "",
+        "image": "hiroshima_lemons.jpg",
         "description": "瀬戸内海の島々などで育てられます。"
       }
     ]
@@ -858,19 +858,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "ふぐ",
         "category": "水産物",
-        "image": "",
+        "image": "yamaguchi_pufferfish.jpg",
         "description": "下関が取引の拠点として知られる魚です。"
       },
       {
         "name": "萩焼",
         "category": "伝統工芸",
-        "image": "",
+        "image": "yamaguchi_hagi_pottery.jpg",
         "description": "萩市周辺で作られる焼き物です。"
       },
       {
         "name": "かまぼこ",
         "category": "加工食品",
-        "image": "",
+        "image": "yamaguchi_kamaboko.jpg",
         "description": "魚のすり身を使い、焼きぬきなどの製法で作ります。"
       }
     ]
@@ -883,19 +883,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "なると金時",
         "category": "農産物",
-        "image": "",
+        "image": "tokushima_naruto_sweet_potatoes.jpg",
         "description": "鳴門市周辺の砂地などで育てるさつまいもです。"
       },
       {
         "name": "すだち",
         "category": "果物",
-        "image": "",
+        "image": "tokushima_sudachi.jpg",
         "description": "さわやかな香りの果汁を料理に使います。"
       },
       {
         "name": "藍染め",
         "category": "伝統工芸",
-        "image": "",
+        "image": "tokushima_indigo_dyeing.jpg",
         "description": "藍という植物から作る染料で布を青く染めます。"
       }
     ]
@@ -908,19 +908,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "讃岐うどん",
         "category": "郷土料理",
-        "image": "",
+        "image": "kagawa_sanuki_udon.jpg",
         "description": "こしのある麺が特徴のうどんです。"
       },
       {
         "name": "オリーブ",
         "category": "農産物",
-        "image": "",
+        "image": "kagawa_olives.jpg",
         "description": "小豆島などで育てられ、実から油もとれます。"
       },
       {
         "name": "丸亀うちわ",
         "category": "伝統工芸",
-        "image": "",
+        "image": "kagawa_marugame_fans.jpg",
         "description": "竹の骨組みに紙をはって作るうちわです。"
       }
     ]
@@ -933,19 +933,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "みかん",
         "category": "果物",
-        "image": "",
+        "image": "ehime_mandarins.jpg",
         "description": "海に面した日当たりのよい斜面などで育てます。"
       },
       {
         "name": "今治タオル",
         "category": "工業製品",
-        "image": "",
+        "image": "ehime_imabari_towels.jpg",
         "description": "今治市周辺で作られるタオルです。"
       },
       {
         "name": "まだい",
         "category": "水産物",
-        "image": "",
+        "image": "ehime_red_seabream.jpg",
         "description": "宇和海の入り江などで養殖されています。"
       }
     ]
@@ -958,19 +958,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "かつお",
         "category": "水産物",
-        "image": "",
+        "image": "kochi_bonito.jpg",
         "description": "一本釣りでも知られ、たたきなどにして食べます。"
       },
       {
         "name": "ゆず",
         "category": "果物",
-        "image": "",
+        "image": "kochi_yuzu.jpg",
         "description": "山あいなどで育ち、皮や果汁を料理に使います。"
       },
       {
         "name": "しょうが",
         "category": "農産物",
-        "image": "",
+        "image": "kochi_ginger.jpg",
         "description": "温暖な気候を生かして多く作られています。"
       }
     ]
@@ -983,19 +983,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "いちご",
         "category": "果物",
-        "image": "",
+        "image": "fukuoka_strawberries.jpg",
         "description": "あまおうなどの品種が育てられています。"
       },
       {
         "name": "博多織",
         "category": "伝統工芸",
-        "image": "",
+        "image": "fukuoka_hakata_textiles.jpg",
         "description": "着物の帯などに使う、しっかりした織物です。"
       },
       {
         "name": "明太子",
         "category": "加工食品",
-        "image": "",
+        "image": "fukuoka_mentaiko.jpg",
         "description": "スケトウダラの卵を調味液に漬けた食品です。"
       }
     ]
@@ -1008,19 +1008,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "有田焼",
         "category": "伝統工芸",
-        "image": "",
+        "image": "saga_arita_porcelain.jpg",
         "description": "有田町を中心に作る、絵付けの美しい焼き物です。"
       },
       {
         "name": "のり",
         "category": "水産物",
-        "image": "",
+        "image": "saga_nori.jpg",
         "description": "潮の満ち引きが大きい有明海で育てます。"
       },
       {
         "name": "佐賀牛",
         "category": "畜産物",
-        "image": "",
+        "image": "saga_saga_beef.jpg",
         "description": "県内で育てられる黒毛和牛の肉です。"
       }
     ]
@@ -1033,19 +1033,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "カステラ",
         "category": "加工食品",
-        "image": "",
+        "image": "nagasaki_castella.jpg",
         "description": "海外から伝わり、長崎で広まった菓子です。"
       },
       {
         "name": "ちゃんぽん",
         "category": "郷土料理",
-        "image": "",
+        "image": "nagasaki_champon.jpg",
         "description": "太い麺に、野菜や魚介などの具を合わせます。"
       },
       {
         "name": "波佐見焼",
         "category": "伝統工芸",
-        "image": "",
+        "image": "nagasaki_hasami_porcelain.jpg",
         "description": "波佐見町で作られる、食器などの焼き物です。"
       }
     ]
@@ -1058,19 +1058,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "すいか",
         "category": "果物",
-        "image": "",
+        "image": "kumamoto_watermelons.jpg",
         "description": "熊本市周辺などで多く育てられています。"
       },
       {
         "name": "トマト",
         "category": "農産物",
-        "image": "",
+        "image": "kumamoto_tomatoes.jpg",
         "description": "八代平野などでハウス栽培がさかんです。"
       },
       {
         "name": "い草",
         "category": "農産物",
-        "image": "",
+        "image": "kumamoto_igusa.jpg",
         "description": "八代地域などで育てられ、畳の表に使います。"
       }
     ]
@@ -1083,19 +1083,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "干ししいたけ",
         "category": "加工食品",
-        "image": "",
+        "image": "oita_dried_shiitake.jpg",
         "description": "木で育てたしいたけを干したものが名産です。"
       },
       {
         "name": "かぼす",
         "category": "果物",
-        "image": "",
+        "image": "oita_kabosu.jpg",
         "description": "香りのよい果汁を魚料理などに使います。"
       },
       {
         "name": "別府竹細工",
         "category": "伝統工芸",
-        "image": "",
+        "image": "oita_beppu_bamboo.jpg",
         "description": "竹を細く割いて編み、かごなどを作ります。"
       }
     ]
@@ -1108,19 +1108,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "マンゴー",
         "category": "果物",
-        "image": "",
+        "image": "miyazaki_mangoes.jpg",
         "description": "暖かいハウスの中で育てられる果物です。"
       },
       {
         "name": "ピーマン",
         "category": "農産物",
-        "image": "",
+        "image": "miyazaki_peppers.jpg",
         "description": "温暖な気候を生かしてハウスで育てます。"
       },
       {
         "name": "宮崎牛",
         "category": "畜産物",
-        "image": "",
+        "image": "miyazaki_miyazaki_beef.jpg",
         "description": "県内で育てられる黒毛和牛の肉です。"
       }
     ]
@@ -1133,19 +1133,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "黒豚",
         "category": "畜産物",
-        "image": "",
+        "image": "kagoshima_kurobuta.jpg",
         "description": "鹿児島の特産として知られる豚です。"
       },
       {
         "name": "さつまいも",
         "category": "農産物",
-        "image": "",
+        "image": "kagoshima_sweet_potatoes.jpg",
         "description": "水はけのよい火山灰の土地でも育つ作物です。"
       },
       {
         "name": "茶",
         "category": "農産物",
-        "image": "",
+        "image": "kagoshima_tea.jpg",
         "description": "温暖な気候を生かして広い茶畑で育てます。"
       }
     ]
@@ -1158,19 +1158,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "さとうきび",
         "category": "農産物",
-        "image": "",
+        "image": "okinawa_sugarcane.jpg",
         "description": "暖かい気候で育ち、砂糖の原料になります。"
       },
       {
         "name": "ゴーヤー",
         "category": "農産物",
-        "image": "",
+        "image": "okinawa_goya.jpg",
         "description": "にがみが特徴で、いため物などに使う野菜です。"
       },
       {
         "name": "パイナップル",
         "category": "果物",
-        "image": "",
+        "image": "okinawa_pineapples.jpg",
         "description": "暖かい地域の畑で育つ南国の果物です。"
       }
     ]

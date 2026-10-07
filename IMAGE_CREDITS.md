@@ -1,6 +1,6 @@
 # 画像クレジット
 
-三重県〜岡山県の10府県に写真30枚を追加し、合計89枚になりました。今回の写真なしは0項目。既存の保留10項目と広島県〜沖縄県の未選定42項目を合わせ、全体の写真なしは52項目です。
+広島県〜沖縄県の14県に写真42枚を追加し、合計131／141項目が写真付きになりました。今回の写真なしは0項目。全体では既存の保留10項目が写真なしです。
 CC BY-SA画像の縮小・再圧縮版にも、記載の同じライセンスが適用されます。既存画像の出典・作者・利用条件は従来のHTML記録を引き継いでいます。
 
 ## 北海道
@@ -605,3 +605,325 @@ CC BY-SA画像の縮小・再圧縮版にも、記載の同じライセンスが
   - ライセンス：[CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en)
   - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
   - 一般例：白桃の果実と断面。白い果肉を示す。皮が赤い品種で、岡山県産の証明ではない。
+
+## 広島県
+
+- **かき** — `hiroshima_oysters.jpg`
+  - 出典：[Japan - Matsushima (28157318550).jpg](https://commons.wikimedia.org/wiki/File:Japan_-_Matsushima_(28157318550).jpg)
+  - 作者：franck injapan from Tokyo, Japan
+  - ライセンス：[CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：殻を開いたかき。広島県産の証明ではない。
+
+- **お好み焼き** — `hiroshima_okonomiyaki.jpg`
+  - 出典：[Prepared okonomiyaki in Hiroshima.jpg](https://commons.wikimedia.org/wiki/File:Prepared_okonomiyaki_in_Hiroshima.jpg)
+  - 作者：EllieBellie25
+  - ライセンス：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 広島で撮影されたお好み焼き。断面から重なった麺や生地が見える。
+
+- **レモン** — `hiroshima_lemons.jpg`
+  - 出典：[Lemon.jpg](https://commons.wikimedia.org/wiki/File:Lemon.jpg)
+  - 作者：André Karwath aka Aka
+  - ライセンス：[CC BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：レモンの果実と断面。広島県産の証明ではない。
+
+## 山口県
+
+- **ふぐ** — `yamaguchi_pufferfish.jpg`
+  - 出典：[Takifugu rubripes Kaikyokan.jpg](https://commons.wikimedia.org/wiki/File:Takifugu_rubripes_Kaikyokan.jpg)
+  - 作者：Totti
+  - ライセンス：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 下関市立しものせき水族館のトラフグ。全身が見える。
+
+- **萩焼** — `yamaguchi_hagi_pottery.jpg`
+  - 出典：[Hagi-yaki Yuu Okada IMG 4627 crop.jpg](https://commons.wikimedia.org/wiki/File:Hagi-yaki_Yuu_Okada_IMG_4627_crop.jpg)
+  - 作者：Kyle McDonald from Brooklyn, New York, USA
+  - ライセンス：[CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 岡田裕の萩焼の器。器全体と釉薬の色が見える。
+
+- **かまぼこ** — `yamaguchi_kamaboko.jpg`
+  - 出典：[Kamaboko.jpg](https://commons.wikimedia.org/wiki/File:Kamaboko.jpg)
+  - 作者：Kinori
+  - ライセンス：[Public domain](https://commons.wikimedia.org/wiki/Template:PD-user)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：紅白の板かまぼこ。山口県産・焼きぬき製法の証明ではない。
+
+## 徳島県
+
+- **なると金時** — `tokushima_naruto_sweet_potatoes.jpg`
+  - 出典：[Naruto Kintoki.JPG](https://commons.wikimedia.org/wiki/File:Naruto_Kintoki.JPG)
+  - 作者：Mti
+  - ライセンス：[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - なると金時の販売例。箱に並んだ赤い皮のいもが見える。
+
+- **すだち** — `tokushima_sudachi.jpg`
+  - 出典：[Citrus sudachi 001.jpg](https://commons.wikimedia.org/wiki/File:Citrus_sudachi_001.jpg)
+  - 作者：Ocdp
+  - ライセンス：[CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - すだちの実と断面。徳島県産の証明ではない。
+
+- **藍染め** — `tokushima_indigo_dyeing.jpg`
+  - 出典：[Kolam Indigo Dyed Cloth.jpg](https://commons.wikimedia.org/wiki/File:Kolam_Indigo_Dyed_Cloth.jpg)
+  - 作者：Nagata Shojiro/InterVision Institute/KASF member
+  - ライセンス：[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：藍染めの布。徳島県産の証明ではない。
+
+## 香川県
+
+- **讃岐うどん** — `kagawa_sanuki_udon.jpg`
+  - 出典：[Kama-age sanuki udon by sekido in Takamatsu, Kagawa.jpg](https://commons.wikimedia.org/wiki/File:Kama-age_sanuki_udon_by_sekido_in_Takamatsu,_Kagawa.jpg)
+  - 作者：sekido
+  - ライセンス：[CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 香川県高松市の釜揚げ讃岐うどん。白く太い麺が分かる。
+
+- **オリーブ** — `kagawa_olives.jpg`
+  - 出典：[Olives vertes, fruit entier et coupé.jpg](https://commons.wikimedia.org/wiki/File:Olives_vertes,_fruit_entier_et_coup%C3%A9.jpg)
+  - 作者：Habib M'henni
+  - ライセンス：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：オリーブの実。香川県産の証明ではない。
+
+- **丸亀うちわ** — `kagawa_marugame_fans.jpg`
+  - 出典：[Fächer04.JPG](https://commons.wikimedia.org/wiki/File:F%C3%A4cher04.JPG)
+  - 作者：Traumrune
+  - ライセンス：[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：竹の骨組みと紙のうちわ。丸亀産の証明ではない。
+
+## 愛媛県
+
+- **みかん** — `ehime_mandarins.jpg`
+  - 出典：[Citrus unshiu-温州蜜柑-3.jpg](https://commons.wikimedia.org/wiki/File:Citrus_unshiu-%E6%B8%A9%E5%B7%9E%E8%9C%9C%E6%9F%91-3.jpg)
+  - 作者：Tomomarusan
+  - ライセンス：[CC BY 2.5](https://creativecommons.org/licenses/by/2.5)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：温州みかんの果実。愛媛県産の証明ではない。
+
+- **今治タオル** — `ehime_imabari_towels.jpg`
+  - 出典：[Green tea and a hot, moist Imabari towel (19323738255).jpg](https://commons.wikimedia.org/wiki/File:Green_tea_and_a_hot,_moist_Imabari_towel_(19323738255).jpg)
+  - 作者：City Foodsters
+  - ライセンス：[CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 今治タオルのおしぼり。東京の飲食店で撮影。タオルと茶が写る。
+
+- **まだい** — `ehime_red_seabream.jpg`
+  - 出典：[Pagrus major Red seabream ja01.jpg](https://commons.wikimedia.org/wiki/File:Pagrus_major_Red_seabream_ja01.jpg)
+  - 作者：Miya
+  - ライセンス：[CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：まだいの全身。兵庫県の魚店で購入した魚で、愛媛県産の証明ではない。
+
+## 高知県
+
+- **かつお** — `kochi_bonito.jpg`
+  - 出典：[Katsuo no tataki in Kochi 01.jpg](https://commons.wikimedia.org/wiki/File:Katsuo_no_tataki_in_Kochi_01.jpg)
+  - 作者：ノボホショコロトソ
+  - ライセンス：[CC BY 4.0](https://creativecommons.org/licenses/by/4.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 高知県で撮影したかつおのたたき。調理後の断面が見える。
+
+- **ゆず** — `kochi_yuzu.jpg`
+  - 出典：[Yuzu tardif.jpg](https://commons.wikimedia.org/wiki/File:Yuzu_tardif.jpg)
+  - 作者：Jpbrigand
+  - ライセンス：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：黄色いゆずの果実。高知県産の証明ではない。
+
+- **しょうが** — `kochi_ginger.jpg`
+  - 出典：[Fresh ginger rhizome 01.jpg](https://commons.wikimedia.org/wiki/File:Fresh_ginger_rhizome_01.jpg)
+  - 作者：Friday musa
+  - ライセンス：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：しょうがの根茎。高知県産の証明ではない。
+
+## 福岡県
+
+- **いちご** — `fukuoka_strawberries.jpg`
+  - 出典：[Nyoho, strawberry originally created in Tochigi prefecture.jpg](https://commons.wikimedia.org/wiki/File:Nyoho,_strawberry_originally_created_in_Tochigi_prefecture.jpg)
+  - 作者：Miyuki Meinaka
+  - ライセンス：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：いちごの実。福岡県産・あまおう品種の証明ではない。
+
+- **博多織** — `fukuoka_hakata_textiles.jpg`
+  - 出典：[Hakata obi.JPG](https://commons.wikimedia.org/wiki/File:Hakata_obi.JPG)
+  - 作者：Ichiro Wada
+  - ライセンス：[CC BY-SA 3.0 cz](https://creativecommons.org/licenses/by-sa/3.0/cz/deed.en)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 絹の博多帯。織り模様が分かる。
+
+- **明太子** — `fukuoka_mentaiko.jpg`
+  - 出典：[Karashimentaiko 001.jpg](https://commons.wikimedia.org/wiki/File:Karashimentaiko_001.jpg)
+  - 作者：Ocdp
+  - ライセンス：[CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 明太子。魚卵の形が分かる。福岡県産の証明ではない。
+
+## 佐賀県
+
+- **有田焼** — `saga_arita_porcelain.jpg`
+  - 出典：[Dish with Landscape Design, c. 1620-1630, Arita, hard-paste porcelain with underglaze cobalt - Gardiner Museum, Toronto - DSC00372.JPG](https://commons.wikimedia.org/wiki/File:Dish_with_Landscape_Design,_c._1620-1630,_Arita,_hard-paste_porcelain_with_underglaze_cobalt_-_Gardiner_Museum,_Toronto_-_DSC00372.JPG)
+  - 作者：Daderot
+  - ライセンス：[CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 有田の染付の皿。器の形と青い絵付けが分かる。
+
+- **のり** — `saga_nori.jpg`
+  - 出典：[Nori.jpg](https://commons.wikimedia.org/wiki/File:Nori.jpg)
+  - 作者：Alice Wiegand, (Lyzzy)
+  - ライセンス：[CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：板状に加工されたのり。佐賀県産の証明ではない。
+
+- **佐賀牛** — `saga_saga_beef.jpg`
+  - 出典：[Saga beef.jpg](https://commons.wikimedia.org/wiki/File:Saga_beef.jpg)
+  - 作者：flickr ID; Masahiko Satoh (URL)
+  - ライセンス：[CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 佐賀牛の肉。霜降りの様子が分かる。
+
+## 長崎県
+
+- **カステラ** — `nagasaki_castella.jpg`
+  - 出典：[Castella,made in nagasaki-city,japan.JPG](https://commons.wikimedia.org/wiki/File:Castella,made_in_nagasaki-city,japan.JPG)
+  - 作者：katorisi
+  - ライセンス：[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 長崎市で作られたカステラ。黄色い断面が分かる。
+
+- **ちゃんぽん** — `nagasaki_champon.jpg`
+  - 出典：[Shikairo Nagasaki Japan05s.jpg](https://commons.wikimedia.org/wiki/File:Shikairo_Nagasaki_Japan05s.jpg)
+  - 作者：663highland
+  - ライセンス：[CC BY 2.5](https://creativecommons.org/licenses/by/2.5)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 長崎の四海樓のちゃんぽん。麺と具材が見える。
+
+- **波佐見焼** — `nagasaki_hasami_porcelain.jpg`
+  - 出典：[Hasami porcelain.jpg](https://commons.wikimedia.org/wiki/File:Hasami_porcelain.jpg)
+  - 作者：Meuse inférieure
+  - ライセンス：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 波佐見焼の器。日常の食器としての形が分かる。
+
+## 熊本県
+
+- **すいか** — `kumamoto_watermelons.jpg`
+  - 出典：[Sliced Watermelon.jpg](https://commons.wikimedia.org/wiki/File:Sliced_Watermelon.jpg)
+  - 作者：Harsha K R
+  - ライセンス：[CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：すいかの切り身。赤い果肉と種が分かる。熊本県産の証明ではない。
+
+- **トマト** — `kumamoto_tomatoes.jpg`
+  - 出典：[Tomato je.jpg](https://commons.wikimedia.org/wiki/File:Tomato_je.jpg)
+  - 作者：Softeis
+  - ライセンス：[CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：赤いトマトの果実。熊本県産の証明ではない。
+
+- **い草** — `kumamoto_igusa.jpg`
+  - 出典：[イ(藺-イグサ(藺草))(Juncus effusus L. var. decipens Buchen.) (5844476495).jpg](https://commons.wikimedia.org/wiki/File:%E3%82%A4(%E8%97%BA-%E3%82%A4%E3%82%B0%E3%82%B5(%E8%97%BA%E8%8D%89))(Juncus_effusus_L._var._decipens_Buchen.)_(5844476495).jpg)
+  - 作者：yamatsu
+  - ライセンス：[CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - い草の細長い茎。熊本県産の証明ではない。
+
+## 大分県
+
+- **干ししいたけ** — `oita_dried_shiitake.jpg`
+  - 出典：[Dried shiitake mushrooms (20240907).jpg](https://commons.wikimedia.org/wiki/File:Dried_shiitake_mushrooms_(20240907).jpg)
+  - 作者：Fumikas Sagisavas
+  - ライセンス：[CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：干ししいたけ。大分県産・原木栽培の証明ではない。
+
+- **かぼす** — `oita_kabosu.jpg`
+  - 出典：[Kabosu.jpg](https://commons.wikimedia.org/wiki/File:Kabosu.jpg)
+  - 作者：B.K. Bullock（出典本文。アップロード：Danny Wilde）
+  - ライセンス：[Public domain](https://commons.wikimedia.org/wiki/Template:PD-self)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - かぼすの果実と断面。大分県産の証明ではない。
+
+- **別府竹細工** — `oita_beppu_bamboo.jpg`
+  - 出典：[Averse de N. Sugiura (Musée du quai Branly-Jacques Chirac, Paris) - Flickr - dalbera.jpg](https://commons.wikimedia.org/wiki/File:Averse_de_N._Sugiura_(Mus%C3%A9e_du_quai_Branly-Jacques_Chirac,_Paris)_-_Flickr_-_dalbera.jpg)
+  - 作者：Annie Dalbéra（写真）／Jean-Pierre Dalbéra（公開）
+  - ライセンス：[CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 別府の竹工芸家・SUGIURA Noriyoshiの竹籠作品「驟雨」。細い竹を編んだ形が見える。
+
+## 宮崎県
+
+- **マンゴー** — `miyazaki_mangoes.jpg`
+  - 出典：[Mangos - single and halved.jpg](https://commons.wikimedia.org/wiki/File:Mangos_-_single_and_halved.jpg)
+  - 作者：Ivar Leidus
+  - ライセンス：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：ブラジル産マンゴーの果実と断面。宮崎県産の証明ではない。
+
+- **ピーマン** — `miyazaki_peppers.jpg`
+  - 出典：[Green pepper 20101113.jpg](https://commons.wikimedia.org/wiki/File:Green_pepper_20101113.jpg)
+  - 作者：Batholith (talk)
+  - ライセンス：[Public domain](https://commons.wikimedia.org/wiki/Template:PD-self)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：緑色のピーマン。宮崎県産の証明ではない。
+
+- **宮崎牛** — `miyazaki_miyazaki_beef.jpg`
+  - 出典：[Miyazaki Beef rib.jpg](https://commons.wikimedia.org/wiki/File:Miyazaki_Beef_rib.jpg)
+  - 作者：Miyuki Meinaka
+  - ライセンス：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 宮崎県西都市生まれ、新富町育ちの宮崎牛。焼き肉用の肉の霜降りが分かる。
+
+## 鹿児島県
+
+- **黒豚** — `kagoshima_kurobuta.jpg`
+  - 出典：[Berkshire pigs at a farm in Los Altos Hills, CA - 2.jpg](https://commons.wikimedia.org/wiki/File:Berkshire_pigs_at_a_farm_in_Los_Altos_Hills,_CA_-_2.jpg)
+  - 作者：Suiren2022
+  - ライセンス：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：米国カリフォルニア州のバークシャー種の豚。鹿児島県産の証明ではない。
+
+- **さつまいも** — `kagoshima_sweet_potatoes.jpg`
+  - 出典：[Naruto Kintoki.JPG](https://commons.wikimedia.org/wiki/File:Naruto_Kintoki.JPG)
+  - 作者：Mti
+  - ライセンス：[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：なると金時の販売例。鹿児島県産の証明ではない。
+
+- **茶** — `kagoshima_tea.jpg`
+  - 出典：[Tea-plantation Shizuoka-Fukuroi.jpg](https://commons.wikimedia.org/wiki/File:Tea-plantation_Shizuoka-Fukuroi.jpg)
+  - 作者：MaedaAkihiko
+  - ライセンス：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：茶畑。鹿児島県産の証明ではない。
+
+## 沖縄県
+
+- **さとうきび** — `okinawa_sugarcane.jpg`
+  - 出典：[Sugarcane jbi gallery.jpg](https://commons.wikimedia.org/wiki/File:Sugarcane_jbi_gallery.jpg)
+  - 作者：Jubair Bin Iqbal
+  - ライセンス：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：収穫したさとうきびの茎。沖縄県産の証明ではない。
+
+- **ゴーヤー** — `okinawa_goya.jpg`
+  - 出典：[Bittergourd.jpg](https://commons.wikimedia.org/wiki/File:Bittergourd.jpg)
+  - 作者：Challiyan at Malayalam Wikipedia
+  - ライセンス：[CC BY 3.0](https://creativecommons.org/licenses/by/3.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：つるに実るゴーヤー。沖縄県産の証明ではない。
+
+- **パイナップル** — `okinawa_pineapples.jpg`
+  - 出典：[കൈതച്ചക്ക.jpg](https://commons.wikimedia.org/wiki/File:%E0%B4%95%E0%B5%88%E0%B4%A4%E0%B4%9A%E0%B5%8D%E0%B4%9A%E0%B4%95%E0%B5%8D%E0%B4%95.jpg)
+  - 作者：Suniltg at Malayalam Wikipedia
+  - ライセンス：[CC BY 3.0](https://creativecommons.org/licenses/by/3.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：畑で育つパイナップル。沖縄県産の証明ではない。

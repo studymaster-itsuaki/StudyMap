@@ -1,7 +1,7 @@
 # 名産品の推奨画像ファイル名
 
 画像名の候補一覧です。未用意の画像名はJSに設定せず、取得後に設定します。
-三重県〜岡山県の10府県に写真30枚を追加し、合計89枚になりました。今回の写真なしは0項目。既存の保留10項目と広島県〜沖縄県の未選定42項目を合わせ、全体の写真なしは52項目です。 選定理由は [写真確認記録](specialty-photo-review.md) を参照。画像の追加と出典の記録方法はREADMEを参照してください。
+広島県〜沖縄県の14県に写真42枚を追加し、合計131／141項目が写真付きになりました。今回の写真なしは0項目。全体では既存の保留10項目が写真なしです。 選定理由は [写真確認記録](specialty-photo-review.md) を参照。画像の追加と出典の記録方法はREADMEを参照してください。
 品目変更時はこの一覧も見直してください。この表はアプリのデータ読み込みには使用しません。
 
 | 都道府県 | 項目 | ファイル名 | 写真 |
@@ -105,45 +105,45 @@
 | 岡山県 | ぶどう | okayama_grapes.jpg | 配置済み（今回追加） |
 | 岡山県 | きびだんご | okayama_kibi_dango.jpg | 配置済み（今回追加） |
 | 岡山県 | 白桃 | okayama_white_peaches.jpg | 配置済み（今回追加） |
-| 広島県 | かき | hiroshima_oysters.jpg | 写真なし（未選定） |
-| 広島県 | お好み焼き | hiroshima_okonomiyaki.jpg | 写真なし（未選定） |
-| 広島県 | レモン | hiroshima_lemons.jpg | 写真なし（未選定） |
-| 山口県 | ふぐ | yamaguchi_pufferfish.jpg | 写真なし（未選定） |
-| 山口県 | 萩焼 | yamaguchi_hagi_pottery.jpg | 写真なし（未選定） |
-| 山口県 | かまぼこ | yamaguchi_kamaboko.jpg | 写真なし（未選定） |
-| 徳島県 | なると金時 | tokushima_naruto_sweet_potatoes.jpg | 写真なし（未選定） |
-| 徳島県 | すだち | tokushima_sudachi.jpg | 写真なし（未選定） |
-| 徳島県 | 藍染め | tokushima_indigo_dyeing.jpg | 写真なし（未選定） |
-| 香川県 | 讃岐うどん | kagawa_sanuki_udon.jpg | 写真なし（未選定） |
-| 香川県 | オリーブ | kagawa_olives.jpg | 写真なし（未選定） |
-| 香川県 | 丸亀うちわ | kagawa_marugame_fans.jpg | 写真なし（未選定） |
-| 愛媛県 | みかん | ehime_mandarins.jpg | 写真なし（未選定） |
-| 愛媛県 | 今治タオル | ehime_imabari_towels.jpg | 写真なし（未選定） |
-| 愛媛県 | まだい | ehime_red_seabream.jpg | 写真なし（未選定） |
-| 高知県 | かつお | kochi_bonito.jpg | 写真なし（未選定） |
-| 高知県 | ゆず | kochi_yuzu.jpg | 写真なし（未選定） |
-| 高知県 | しょうが | kochi_ginger.jpg | 写真なし（未選定） |
-| 福岡県 | いちご | fukuoka_strawberries.jpg | 写真なし（未選定） |
-| 福岡県 | 博多織 | fukuoka_hakata_textiles.jpg | 写真なし（未選定） |
-| 福岡県 | 明太子 | fukuoka_mentaiko.jpg | 写真なし（未選定） |
-| 佐賀県 | 有田焼 | saga_arita_porcelain.jpg | 写真なし（未選定） |
-| 佐賀県 | のり | saga_nori.jpg | 写真なし（未選定） |
-| 佐賀県 | 佐賀牛 | saga_saga_beef.jpg | 写真なし（未選定） |
-| 長崎県 | カステラ | nagasaki_castella.jpg | 写真なし（未選定） |
-| 長崎県 | ちゃんぽん | nagasaki_champon.jpg | 写真なし（未選定） |
-| 長崎県 | 波佐見焼 | nagasaki_hasami_porcelain.jpg | 写真なし（未選定） |
-| 熊本県 | すいか | kumamoto_watermelons.jpg | 写真なし（未選定） |
-| 熊本県 | トマト | kumamoto_tomatoes.jpg | 写真なし（未選定） |
-| 熊本県 | い草 | kumamoto_igusa.jpg | 写真なし（未選定） |
-| 大分県 | 干ししいたけ | oita_dried_shiitake.jpg | 写真なし（未選定） |
-| 大分県 | かぼす | oita_kabosu.jpg | 写真なし（未選定） |
-| 大分県 | 別府竹細工 | oita_beppu_bamboo.jpg | 写真なし（未選定） |
-| 宮崎県 | マンゴー | miyazaki_mangoes.jpg | 写真なし（未選定） |
-| 宮崎県 | ピーマン | miyazaki_peppers.jpg | 写真なし（未選定） |
-| 宮崎県 | 宮崎牛 | miyazaki_miyazaki_beef.jpg | 写真なし（未選定） |
-| 鹿児島県 | 黒豚 | kagoshima_kurobuta.jpg | 写真なし（未選定） |
-| 鹿児島県 | さつまいも | kagoshima_sweet_potatoes.jpg | 写真なし（未選定） |
-| 鹿児島県 | 茶 | kagoshima_tea.jpg | 写真なし（未選定） |
-| 沖縄県 | さとうきび | okinawa_sugarcane.jpg | 写真なし（未選定） |
-| 沖縄県 | ゴーヤー | okinawa_goya.jpg | 写真なし（未選定） |
-| 沖縄県 | パイナップル | okinawa_pineapples.jpg | 写真なし（未選定） |
+| 広島県 | かき | hiroshima_oysters.jpg | 配置済み（今回追加） |
+| 広島県 | お好み焼き | hiroshima_okonomiyaki.jpg | 配置済み（今回追加） |
+| 広島県 | レモン | hiroshima_lemons.jpg | 配置済み（今回追加） |
+| 山口県 | ふぐ | yamaguchi_pufferfish.jpg | 配置済み（今回追加） |
+| 山口県 | 萩焼 | yamaguchi_hagi_pottery.jpg | 配置済み（今回追加） |
+| 山口県 | かまぼこ | yamaguchi_kamaboko.jpg | 配置済み（今回追加） |
+| 徳島県 | なると金時 | tokushima_naruto_sweet_potatoes.jpg | 配置済み（今回追加） |
+| 徳島県 | すだち | tokushima_sudachi.jpg | 配置済み（今回追加） |
+| 徳島県 | 藍染め | tokushima_indigo_dyeing.jpg | 配置済み（今回追加） |
+| 香川県 | 讃岐うどん | kagawa_sanuki_udon.jpg | 配置済み（今回追加） |
+| 香川県 | オリーブ | kagawa_olives.jpg | 配置済み（今回追加） |
+| 香川県 | 丸亀うちわ | kagawa_marugame_fans.jpg | 配置済み（今回追加） |
+| 愛媛県 | みかん | ehime_mandarins.jpg | 配置済み（今回追加） |
+| 愛媛県 | 今治タオル | ehime_imabari_towels.jpg | 配置済み（今回追加） |
+| 愛媛県 | まだい | ehime_red_seabream.jpg | 配置済み（今回追加） |
+| 高知県 | かつお | kochi_bonito.jpg | 配置済み（今回追加） |
+| 高知県 | ゆず | kochi_yuzu.jpg | 配置済み（今回追加） |
+| 高知県 | しょうが | kochi_ginger.jpg | 配置済み（今回追加） |
+| 福岡県 | いちご | fukuoka_strawberries.jpg | 配置済み（今回追加） |
+| 福岡県 | 博多織 | fukuoka_hakata_textiles.jpg | 配置済み（今回追加） |
+| 福岡県 | 明太子 | fukuoka_mentaiko.jpg | 配置済み（今回追加） |
+| 佐賀県 | 有田焼 | saga_arita_porcelain.jpg | 配置済み（今回追加） |
+| 佐賀県 | のり | saga_nori.jpg | 配置済み（今回追加） |
+| 佐賀県 | 佐賀牛 | saga_saga_beef.jpg | 配置済み（今回追加） |
+| 長崎県 | カステラ | nagasaki_castella.jpg | 配置済み（今回追加） |
+| 長崎県 | ちゃんぽん | nagasaki_champon.jpg | 配置済み（今回追加） |
+| 長崎県 | 波佐見焼 | nagasaki_hasami_porcelain.jpg | 配置済み（今回追加） |
+| 熊本県 | すいか | kumamoto_watermelons.jpg | 配置済み（今回追加） |
+| 熊本県 | トマト | kumamoto_tomatoes.jpg | 配置済み（今回追加） |
+| 熊本県 | い草 | kumamoto_igusa.jpg | 配置済み（今回追加） |
+| 大分県 | 干ししいたけ | oita_dried_shiitake.jpg | 配置済み（今回追加） |
+| 大分県 | かぼす | oita_kabosu.jpg | 配置済み（今回追加） |
+| 大分県 | 別府竹細工 | oita_beppu_bamboo.jpg | 配置済み（今回追加） |
+| 宮崎県 | マンゴー | miyazaki_mangoes.jpg | 配置済み（今回追加） |
+| 宮崎県 | ピーマン | miyazaki_peppers.jpg | 配置済み（今回追加） |
+| 宮崎県 | 宮崎牛 | miyazaki_miyazaki_beef.jpg | 配置済み（今回追加） |
+| 鹿児島県 | 黒豚 | kagoshima_kurobuta.jpg | 配置済み（今回追加） |
+| 鹿児島県 | さつまいも | kagoshima_sweet_potatoes.jpg | 配置済み（今回追加） |
+| 鹿児島県 | 茶 | kagoshima_tea.jpg | 配置済み（今回追加） |
+| 沖縄県 | さとうきび | okinawa_sugarcane.jpg | 配置済み（今回追加） |
+| 沖縄県 | ゴーヤー | okinawa_goya.jpg | 配置済み（今回追加） |
+| 沖縄県 | パイナップル | okinawa_pineapples.jpg | 配置済み（今回追加） |
