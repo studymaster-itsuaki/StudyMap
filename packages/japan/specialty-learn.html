@@ -104,8 +104,12 @@ body{overflow:hidden}
 <script src="data/specialties.js"></script>
 <script>
 let data=[],index=0;
+const selectedPrefKey="studymap.specialtyLearn.selectedPref";
 function renderList(){const box=document.getElementById("prefList");box.innerHTML="";data.forEach((p,i)=>{const b=document.createElement("button");b.className="pref-button"+(i===index?" active":"");b.textContent=p.prefecture;b.onclick=()=>{index=i;render()};box.appendChild(b)})}
-function render(){const p=data[index];document.getElementById("prefName").textContent=p.prefecture;document.getElementById("region").textContent=p.region;const grid=document.getElementById("itemGrid");grid.innerHTML="";p.items.forEach(item=>{const card=document.createElement("article");card.className="specialty-card";const image=document.createElement("div");
+function render(){const p=data[index];
+  // 同じタブで更新しても、選択中の県を維持する。保存不可でも表示は続ける。
+  try{sessionStorage.setItem(selectedPrefKey,p.code)}catch{}
+document.getElementById("prefName").textContent=p.prefecture;document.getElementById("region").textContent=p.region;const grid=document.getElementById("itemGrid");grid.innerHTML="";p.items.forEach(item=>{const card=document.createElement("article");card.className="specialty-card";const image=document.createElement("div");
 image.className="specialty-image";
 const showNoPhoto=()=>{
   const empty=document.createElement("div");
@@ -142,6 +146,11 @@ prevBtn.onclick=()=>{if(index>0){index--;render()}};nextBtn.onclick=()=>{if(inde
 try{
   data = Array.isArray(window.SPECIALTY_DATA) ? window.SPECIALTY_DATA : [];
   if(!data.length) throw new Error("名産品データが空です");
+  try{
+    const savedCode=sessionStorage.getItem(selectedPrefKey);
+    const savedIndex=data.findIndex(p=>p.code===savedCode);
+    if(savedIndex>=0) index=savedIndex;
+  }catch{}
   render();
 }catch(e){
   document.getElementById("prefName").textContent = "データを読み込めませんでした";
