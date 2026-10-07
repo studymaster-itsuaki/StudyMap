@@ -1,3 +1,44 @@
+# Beta2.1 残り10項目の確認記録（2026-10-07）
+
+実写9枚・AI生成1枚を追加し、141／141項目に画像を設定。画像未設定0項目。既存131枚と既存の画像登録・クレジットを維持。Commit／Pushなし。
+
+|県|項目|区分|選定理由・注意|
+|---|---|---|---|
+|秋田県|大館曲げわっぱ|実写|一般例：秋田杉の曲げわっぱ弁当箱。薄い木を曲げた側面が分かる。大館産の証明ではない。|
+|山形県|ラ・フランス|実写|ラ・フランスの果実。山形県産の証明ではない。|
+|福島県|もも|実写|一般例：ももの果実と断面。山梨県の項目と同じ出典。福島県産の証明ではない。|
+|茨城県|れんこん|実写|一般例：れんこんの全体と穴のある断面。茨城県産の証明ではない。|
+|栃木県|かんぴょう|実写|一般例：干したユウガオの細長い帯。栃木県産の証明ではない。|
+|埼玉県|深谷ねぎ|実写|JAふかやの箱に入った深谷ねぎ。白い部分と緑の葉が見える。|
+|千葉県|落花生|実写|一般例：殻付き落花生と中の実。千葉県産の証明ではない。|
+|千葉県|しょうゆ|実写|一般例：透明な器に入ったしょうゆ。韓国の資料写真で、千葉県産や日本の製法の証明ではない。|
+|東京都|小松菜|実写|一般例：小松菜の葉と茎。東京都産の証明ではない。|
+|石川県|加賀友禅|AI生成|AI生成（教材用イメージ）。加賀友禅の草花模様を説明するための写真風画像。実在の作品・製品を撮影した写真ではない。|
+
+## 検証
+
+- スマホ幅390×844pxで全47都道府県を切り替え、141画像の読み込み成功。写真なし0件、横はみ出しなし、ページエラーなし。
+- PC幅1280×900pxで秋田・山形・茨城・栃木・埼玉・千葉・東京・石川の画面を保存し確認。
+- 画像読込失敗時の「写真なし」表示を確認。加賀友禅カードの「AI生成（教材用イメージ）」表示を確認。
+- 実写クレジット140項目＋別枠のAI生成表示1項目。HTML・Markdownを更新。
+- 既存131画像はSHA-256照合で変更なし。全141項目の名称・カテゴリ・説明文、旧specialties.jsonを維持。
+- 追加10画像はJPEG、最大800×600px、合計691,085バイト（約691KB）。ももは既存の山梨県の一般例写真から複製。
+- 代表確認：大館曲げわっぱ（器の形）、かんぴょう（干した帯）、深谷ねぎ（箱入りの写真）、しょうゆ（一般例）、加賀友禅（AI生成表示と模様）。
+
+## 加賀友禅のAI生成記録
+
+内蔵image_genを使用。写真風の教材用イメージであり、実在の製品を撮影したものではありません。Commonsの加賀友禅カテゴリは建物・図案集が中心で、草花を染めた布が分かる再利用可能な実写を採用できなかったため生成。
+
+特徴の参考：[加賀友禅の公式解説](https://www.kagayuzen.or.jp/know/)（草花、五彩、ぼかし、虫喰い）。このページの写真は転載していません。
+
+保存先：`packages/japan/images/specialties/ishikawa_kaga_yuzen.jpg`
+
+生成プロンプト：
+
+> Create one photorealistic educational product image for Japanese elementary school geography, depicting Kaga Yuzen dyed silk fabric (加賀友禅), as an illustrative AI reconstruction, not an authentic historical object. Landscape 4:3 composition. Close-up of a real-looking pale cream silk kimono fabric gently draped with just two soft folds, entire image focused on the dyed naturalistic botanical pattern: chrysanthemum and maple leaves, fine white resist outlines, subtle gradient bokashi shading within petals and leaves, restrained traditional crimson, indigo, ochre, grass green and purple palette, a few tiny insect-eaten holes represented in leaf motifs. Surface is flat hand-dyed silk with fine woven texture, NOT embroidery, NOT printed cartoon, no gold foil. Clear recognizable large flowers and leaves, soft daylight, neutral background, crisp museum textile photography. No people, no lettering, no labels, no watermarks. Pattern occupies most of frame, readable at small size.
+
+---
+
 # 広島県〜沖縄県 写真追加の確認記録（2026-10-07）
 
 広島県〜沖縄県の14県に写真42枚を追加し、合計131／141項目が写真付きになりました。今回の写真なしは0項目。全体では既存の保留10項目が写真なしです。 既存89枚を維持。名称・カテゴリ・説明文は変更なし。AI画像なし。Commit／Pushなし。

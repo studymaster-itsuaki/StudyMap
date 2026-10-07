@@ -58,6 +58,7 @@ body{overflow:hidden}
   align-items:center;justify-content:center
 }
 .specialty-card h2{margin:0 0 8px;font-size:26px;line-height:1.2}
+.ai-image-label{margin:0 0 8px;color:#657b80;font-size:12px;line-height:1.4}
 .description{
   margin:0;color:#516970;font-weight:800;font-size:14px;line-height:1.55
 }
@@ -128,6 +129,12 @@ h.textContent=item.name;
 const desc=document.createElement("p");
 desc.className="description";
 desc.textContent=item.description||"";
+if(item.imageType==="ai"){
+  const label=document.createElement("p");
+  label.className="ai-image-label";
+  label.textContent="AI生成（教材用イメージ）";
+  copy.appendChild(label);
+}
 copy.append(h,desc);
 card.append(image,copy);
 grid.appendChild(card)});prevBtn.disabled=index===0;nextBtn.disabled=index===data.length-1;renderList();requestAnimationFrame(()=>document.querySelector(".pref-button.active")?.scrollIntoView({block:"nearest",inline:"nearest"}))}

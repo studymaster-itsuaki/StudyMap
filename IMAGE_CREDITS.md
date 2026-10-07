@@ -1,6 +1,6 @@
 # 画像クレジット
 
-広島県〜沖縄県の14県に写真42枚を追加し、合計131／141項目が写真付きになりました。今回の写真なしは0項目。全体では既存の保留10項目が写真なしです。
+残り10項目に実写9枚・AI生成1枚を追加し、全141／141項目が画像付きになりました（実写140項目・AI生成1項目）。画像未設定は0項目です。
 CC BY-SA画像の縮小・再圧縮版にも、記載の同じライセンスが適用されます。既存画像の出典・作者・利用条件は従来のHTML記録を引き継いでいます。
 
 ## 北海道
@@ -88,6 +88,13 @@ CC BY-SA画像の縮小・再圧縮版にも、記載の同じライセンスが
   - ライセンス：[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
   - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
 
+- **大館曲げわっぱ** — `akita_magewappa.jpg`
+  - 出典：[初、秋田杉曲げわっぱ (2914609193).jpg](https://commons.wikimedia.org/wiki/File:%E5%88%9D%E3%80%81%E7%A7%8B%E7%94%B0%E6%9D%89%E6%9B%B2%E3%81%92%E3%82%8F%E3%81%A3%E3%81%B1_(2914609193).jpg)
+  - 作者：sota
+  - ライセンス：[CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：秋田杉の曲げわっぱ弁当箱。薄い木を曲げた側面が分かる。大館産の証明ではない。
+
 ## 山形県
 
 - **さくらんぼ** — `yamagata_cherries.jpg`
@@ -100,6 +107,13 @@ CC BY-SA画像の縮小・再圧縮版にも、記載の同じライセンスが
   - 作者：Jpatokal
   - ライセンス：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
   - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+
+- **ラ・フランス** — `yamagata_la_france_pears.jpg`
+  - 出典：[Pear lafrance.jpg](https://commons.wikimedia.org/wiki/File:Pear_lafrance.jpg)
+  - 作者：氷鷺 at Japanese Wikipedia / Hisagi
+  - ライセンス：[CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - ラ・フランスの果実。山形県産の証明ではない。
 
 ## 福島県
 
@@ -114,6 +128,13 @@ CC BY-SA画像の縮小・再圧縮版にも、記載の同じライセンスが
   - ライセンス：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
   - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
 
+- **もも** — `fukushima_peaches.jpg`
+  - 出典：[Autumn Red peaches.jpg](https://commons.wikimedia.org/wiki/File:Autumn_Red_peaches.jpg)
+  - 作者：Jack Dykinga, USDA
+  - ライセンス：[Public domain](https://commons.wikimedia.org/wiki/Template:PD-USGov-USDA)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：ももの果実と断面。山梨県の項目と同じ出典。福島県産の証明ではない。
+
 ## 茨城県
 
 - **納豆** — `ibaraki_natto.jpg`
@@ -127,6 +148,13 @@ CC BY-SA画像の縮小・再圧縮版にも、記載の同じライセンスが
   - ライセンス：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
   - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
 
+- **れんこん** — `ibaraki_lotus_roots.jpg`
+  - 出典：[Lotus root.jpg](https://commons.wikimedia.org/wiki/File:Lotus_root.jpg)
+  - 作者：FotoosRobin
+  - ライセンス：[CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：れんこんの全体と穴のある断面。茨城県産の証明ではない。
+
 ## 栃木県
 
 - **いちご** — `tochigi_strawberries.jpg`
@@ -139,6 +167,13 @@ CC BY-SA画像の縮小・再圧縮版にも、記載の同じライセンスが
   - 作者：Photograph believed to be taken by w:Karl Martz ca. 1972.
   - ライセンス：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
   - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+
+- **かんぴょう** — `tochigi_kanpyo.jpg`
+  - 出典：[Kampyo.JPG](https://commons.wikimedia.org/wiki/File:Kampyo.JPG)
+  - 作者：Sakurai Midori
+  - ライセンス：[CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：干したユウガオの細長い帯。栃木県産の証明ではない。
 
 ## 群馬県
 
@@ -171,6 +206,13 @@ CC BY-SA画像の縮小・再圧縮版にも、記載の同じライセンスが
   - ライセンス：[Public domain](https://commons.wikimedia.org/wiki/Template:PD-self)
   - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
 
+- **深谷ねぎ** — `saitama_fukaya_leeks.jpg`
+  - 出典：[JAふかや 深谷ねぎ (4100531049).jpg](https://commons.wikimedia.org/wiki/File:JA%E3%81%B5%E3%81%8B%E3%82%84_%E6%B7%B1%E8%B0%B7%E3%81%AD%E3%81%8E_(4100531049).jpg)
+  - 作者：Martin Abegglen
+  - ライセンス：[CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - JAふかやの箱に入った深谷ねぎ。白い部分と緑の葉が見える。
+
 ## 千葉県
 
 - **なし** — `chiba_pears.jpg`
@@ -178,6 +220,20 @@ CC BY-SA画像の縮小・再圧縮版にも、記載の同じライセンスが
   - 作者：katorisi
   - ライセンス：[CC BY 3.0](https://creativecommons.org/licenses/by/3.0)
   - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+
+- **落花生** — `chiba_peanuts.jpg`
+  - 出典：[Peanuts.jpg](https://commons.wikimedia.org/wiki/File:Peanuts.jpg)
+  - 作者：USDA Photo by: Alice Welch
+  - ライセンス：[Public domain](https://commons.wikimedia.org/wiki/Template:PD-USGov-USDA)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：殻付き落花生と中の実。千葉県産の証明ではない。
+
+- **しょうゆ** — `chiba_soy_sauce.jpg`
+  - 出典：[Soy sauce 2.jpg](https://commons.wikimedia.org/wiki/File:Soy_sauce_2.jpg)
+  - 作者：국립국어원
+  - ライセンス：[CC BY-SA 2.0 kr](https://creativecommons.org/licenses/by-sa/2.0/kr/deed.en)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：透明な器に入ったしょうゆ。韓国の資料写真で、千葉県産や日本の製法の証明ではない。
 
 ## 東京都
 
@@ -191,6 +247,13 @@ CC BY-SA画像の縮小・再圧縮版にも、記載の同じライセンスが
   - 作者：User: (WT-shared) Shoestring at  wts wikivoyage
   - ライセンス：[Public domain](https://commons.wikimedia.org/wiki/Template:PD-self)
   - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+
+- **小松菜** — `tokyo_komatsuna.jpg`
+  - 出典：[Komatsuna.jpg](https://commons.wikimedia.org/wiki/File:Komatsuna.jpg)
+  - 作者：日陰猫Joga at Japanese Wikipedia
+  - ライセンス：[CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
+  - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
+  - 一般例：小松菜の葉と茎。東京都産の証明ではない。
 
 ## 神奈川県
 
@@ -927,3 +990,9 @@ CC BY-SA画像の縮小・再圧縮版にも、記載の同じライセンスが
   - ライセンス：[CC BY 3.0](https://creativecommons.org/licenses/by/3.0)
   - 加工：縦横比を維持して最大800×600pxへ縮小・JPEG再圧縮。切り抜き・AI加工なし。
   - 一般例：畑で育つパイナップル。沖縄県産の証明ではない。
+
+## AI生成画像
+
+- **加賀友禅（石川県）** — `ishikawa_kaga_yuzen.jpg`
+  - AI生成（教材用イメージ）。加賀友禅の草花模様を説明するための写真風画像。実在の作品・製品を撮影した写真ではない。
+  - 生成：OpenAIの画像生成機能（2026-10-07）。縦横比を維持して最大800×600pxへ縮小・JPEG圧縮。

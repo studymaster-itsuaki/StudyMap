@@ -1,7 +1,7 @@
 # 名産品の推奨画像ファイル名
 
 画像名の候補一覧です。未用意の画像名はJSに設定せず、取得後に設定します。
-広島県〜沖縄県の14県に写真42枚を追加し、合計131／141項目が写真付きになりました。今回の写真なしは0項目。全体では既存の保留10項目が写真なしです。 選定理由は [写真確認記録](specialty-photo-review.md) を参照。画像の追加と出典の記録方法はREADMEを参照してください。
+残り10項目に実写9枚・AI生成1枚を追加し、全141／141項目が画像付きになりました（実写140項目・AI生成1項目）。画像未設定は0項目です。 選定理由は [写真確認記録](specialty-photo-review.md) を参照。画像の追加と出典の記録方法はREADMEを参照してください。
 品目変更時はこの一覧も見直してください。この表はアプリのデータ読み込みには使用しません。
 
 | 都道府県 | 項目 | ファイル名 | 写真 |
@@ -20,29 +20,29 @@
 | 宮城県 | かき | miyagi_oysters.jpg | 配置済み（今回追加） |
 | 秋田県 | 米 | akita_rice.jpg | 配置済み（今回追加） |
 | 秋田県 | きりたんぽ | akita_kiritanpo.jpg | 配置済み（今回追加） |
-| 秋田県 | 大館曲げわっぱ | akita_magewappa.jpg | 写真なし（選定保留） |
+| 秋田県 | 大館曲げわっぱ | akita_magewappa.jpg | 配置済み（実写） |
 | 山形県 | さくらんぼ | yamagata_cherries.jpg | 配置済み（今回追加） |
-| 山形県 | ラ・フランス | yamagata_la_france_pears.jpg | 写真なし（選定保留） |
+| 山形県 | ラ・フランス | yamagata_la_france_pears.jpg | 配置済み（実写） |
 | 山形県 | 米沢牛 | yamagata_yonezawa_beef.jpg | 配置済み（今回追加） |
-| 福島県 | もも | fukushima_peaches.jpg | 写真なし（選定保留） |
+| 福島県 | もも | fukushima_peaches.jpg | 配置済み（実写） |
 | 福島県 | 喜多方ラーメン | fukushima_kitakata_ramen.jpg | 配置済み（今回追加） |
 | 福島県 | 赤べこ | fukushima_akabeko.jpg | 配置済み（今回追加） |
 | 茨城県 | 納豆 | ibaraki_natto.jpg | 配置済み（今回追加） |
-| 茨城県 | れんこん | ibaraki_lotus_roots.jpg | 写真なし（選定保留） |
+| 茨城県 | れんこん | ibaraki_lotus_roots.jpg | 配置済み（実写） |
 | 茨城県 | メロン | ibaraki_melons.jpg | 配置済み（今回追加） |
 | 栃木県 | いちご | tochigi_strawberries.jpg | 配置済み（今回追加） |
-| 栃木県 | かんぴょう | tochigi_kanpyo.jpg | 写真なし（選定保留） |
+| 栃木県 | かんぴょう | tochigi_kanpyo.jpg | 配置済み（実写） |
 | 栃木県 | 益子焼 | tochigi_mashiko_pottery.jpg | 配置済み（今回追加） |
 | 群馬県 | こんにゃく | gunma_konjac.jpg | 配置済み（今回追加） |
 | 群馬県 | 高崎だるま | gunma_takasaki_daruma.jpg | 配置済み（今回追加） |
 | 群馬県 | 下仁田ねぎ | gunma_shimonita_leeks.jpg | 配置済み（今回追加） |
-| 埼玉県 | 深谷ねぎ | saitama_fukaya_leeks.jpg | 写真なし（選定保留） |
+| 埼玉県 | 深谷ねぎ | saitama_fukaya_leeks.jpg | 配置済み（実写） |
 | 埼玉県 | 草加せんべい | saitama_soka_senbei.jpg | 配置済み（今回追加） |
 | 埼玉県 | 狭山茶 | saitama_sayama_tea.jpg | 配置済み（今回追加） |
-| 千葉県 | 落花生 | chiba_peanuts.jpg | 写真なし（選定保留） |
+| 千葉県 | 落花生 | chiba_peanuts.jpg | 配置済み（実写） |
 | 千葉県 | なし | chiba_pears.jpg | 配置済み（今回追加） |
-| 千葉県 | しょうゆ | chiba_soy_sauce.jpg | 写真なし（選定保留） |
-| 東京都 | 小松菜 | tokyo_komatsuna.jpg | 写真なし（選定保留） |
+| 千葉県 | しょうゆ | chiba_soy_sauce.jpg | 配置済み（実写） |
+| 東京都 | 小松菜 | tokyo_komatsuna.jpg | 配置済み（実写） |
 | 東京都 | もんじゃ焼き | tokyo_monjayaki.jpg | 配置済み（今回追加） |
 | 東京都 | 江戸切子 | tokyo_edo_kiriko.jpg | 配置済み（今回追加） |
 | 神奈川県 | かまぼこ | kanagawa_kamaboko.jpg | 配置済み（今回追加） |
@@ -56,7 +56,7 @@
 | 富山県 | チューリップ | toyama_tulips.jpg | 配置済み（今回追加） |
 | 石川県 | 輪島塗 | ishikawa_wajima_lacquerware.jpg | 配置済み（今回追加） |
 | 石川県 | 金箔 | ishikawa_gold_leaf.jpg | 配置済み（今回追加） |
-| 石川県 | 加賀友禅 | ishikawa_kaga_yuzen.jpg | 写真なし（選定保留） |
+| 石川県 | 加賀友禅 | ishikawa_kaga_yuzen.jpg | 配置済み（AI生成） |
 | 福井県 | 越前がに | fukui_echizen_crab.jpg | 配置済み（今回追加） |
 | 福井県 | 越前和紙 | fukui_echizen_paper.jpg | 配置済み（今回追加） |
 | 福井県 | めがねフレーム | fukui_eyeglass_frames.jpg | 配置済み（今回追加） |

@@ -120,7 +120,7 @@ window.SPECIALTY_DATA = [
       {
         "name": "大館曲げわっぱ",
         "category": "伝統工芸",
-        "image": "",
+        "image": "akita_magewappa.jpg",
         "description": "薄い杉の板を曲げて作る入れ物です。"
       }
     ]
@@ -139,7 +139,7 @@ window.SPECIALTY_DATA = [
       {
         "name": "ラ・フランス",
         "category": "果物",
-        "image": "",
+        "image": "yamagata_la_france_pears.jpg",
         "description": "やわらかい果肉と香りが特徴の西洋なしです。"
       },
       {
@@ -158,7 +158,7 @@ window.SPECIALTY_DATA = [
       {
         "name": "もも",
         "category": "果物",
-        "image": "",
+        "image": "fukushima_peaches.jpg",
         "description": "福島盆地などで育てられる夏の果物です。"
       },
       {
@@ -189,7 +189,7 @@ window.SPECIALTY_DATA = [
       {
         "name": "れんこん",
         "category": "農産物",
-        "image": "",
+        "image": "ibaraki_lotus_roots.jpg",
         "description": "霞ヶ浦の周りなどで育てられています。"
       },
       {
@@ -214,7 +214,7 @@ window.SPECIALTY_DATA = [
       {
         "name": "かんぴょう",
         "category": "加工食品",
-        "image": "",
+        "image": "tochigi_kanpyo.jpg",
         "description": "ユウガオの実を細長くむいて干した食品です。"
       },
       {
@@ -258,7 +258,7 @@ window.SPECIALTY_DATA = [
       {
         "name": "深谷ねぎ",
         "category": "農産物",
-        "image": "",
+        "image": "saitama_fukaya_leeks.jpg",
         "description": "深谷市周辺で作られるねぎです。"
       },
       {
@@ -283,7 +283,7 @@ window.SPECIALTY_DATA = [
       {
         "name": "落花生",
         "category": "農産物",
-        "image": "",
+        "image": "chiba_peanuts.jpg",
         "description": "花がさいた後、土の中にさやをつけます。"
       },
       {
@@ -295,7 +295,7 @@ window.SPECIALTY_DATA = [
       {
         "name": "しょうゆ",
         "category": "加工食品",
-        "image": "",
+        "image": "chiba_soy_sauce.jpg",
         "description": "野田市や銚子市で昔から作られています。"
       }
     ]
@@ -308,7 +308,7 @@ window.SPECIALTY_DATA = [
       {
         "name": "小松菜",
         "category": "農産物",
-        "image": "",
+        "image": "tokyo_komatsuna.jpg",
         "description": "江戸川区の小松川周辺に名の由来がある野菜です。"
       },
       {
@@ -420,8 +420,9 @@ window.SPECIALTY_DATA = [
       {
         "name": "加賀友禅",
         "category": "伝統工芸",
-        "image": "",
-        "description": "草花などの美しい模様を布に染めます。"
+        "image": "ishikawa_kaga_yuzen.jpg",
+        "description": "草花などの美しい模様を布に染めます。",
+        "imageType": "ai"
       }
     ]
   },
