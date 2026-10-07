@@ -826,6 +826,32 @@ button.pulse {
   }
 }
 
+/* Beta2.2: specialty media stays in the document flow, clear of map taps. */
+.specialtyPhoto {
+  width:100%; height:180px; margin:8px 0; border-radius:12px;
+  background:#f0f7f7; overflow:hidden; display:flex;
+  align-items:center; justify-content:center;
+}
+.specialtyPhoto img { width:100%; height:100%; object-fit:contain; }
+.specialtyPhoto .small { padding:12px; text-align:center; }
+body[data-quiz-type="specialty"] #question, #specialtyQuestionPhoto, body[data-quiz-type="specialty"] .resultPanel { scroll-margin-top:64px; }
+#specialtyAnswer { margin-top:8px; border-top:1px solid #d9eeee; }
+#specialtyDescription { margin:8px 0; text-align:left; line-height:1.6; overflow-wrap:anywhere; }
+#specialtyQuestionPhoto[hidden], #specialtyAnswer[hidden] { display:none; }
+body[data-quiz-type="specialty"] .topGrid > div { min-width:0; }
+@media(max-width:1180px) {
+  body[data-quiz-type="specialty"] .resultPanel {
+    position:static; width:100%; max-width:none; margin:8px 0 0;
+  }
+  body[data-quiz-type="specialty"] #map {
+    height:auto; min-height:0; overflow:hidden;
+  }
+  body[data-quiz-type="specialty"] #map svg {
+    width:100%; min-width:0; height:auto; max-height:none;
+  }
+  body[data-quiz-type="specialty"] .specialtyPhoto { height:140px; }
+  body[data-quiz-type="specialty"] #specialtyAnswerPhoto { height:160px; }
+}
 </style>
 </head>
 <body>
@@ -861,6 +887,7 @@ button.pulse {
         <button class="soft" id="soundBtn">🔊 音ON</button>
       </div>
       <div id="question">「クイズ」を押してね</div>
+      <div id="specialtyQuestionPhoto" class="specialtyPhoto" hidden></div>
       <div id="message">Ver.11.0：名産品モードを追加。</div>
       <div class="progressWrap">
         <div class="progressText" id="progressText">進み具合：未開始</div>
@@ -899,6 +926,10 @@ button.pulse {
       <div id="resultSub">ここは</div>
       <div class="big" id="resultName">愛媛県</div>
       <div id="resultInfo">四国／県庁所在地：松山市</div>
+      <div id="specialtyAnswer" hidden>
+        <div id="specialtyAnswerPhoto" class="specialtyPhoto"></div>
+        <p id="specialtyDescription"></p>
+      </div>
       <div id="graduateText" class="small"></div>
       <button class="primary" id="nextBtn" style="margin-top:14px;">次の問題へ</button>
     </div>
@@ -940,6 +971,8 @@ button.pulse {
 <script src="./data/specialties.js"></script>
 <script>
 const PREFS = {"1": ["北海道", "北海道", "札幌市", "ほっかいどう"], "2": ["青森県", "東北", "青森市", "あおもりけん"], "3": ["岩手県", "東北", "盛岡市", "いわてけん"], "4": ["宮城県", "東北", "仙台市", "みやぎけん"], "5": ["秋田県", "東北", "秋田市", "あきたけん"], "6": ["山形県", "東北", "山形市", "やまがたけん"], "7": ["福島県", "東北", "福島市", "ふくしまけん"], "8": ["茨城県", "関東", "水戸市", "いばらきけん"], "9": ["栃木県", "関東", "宇都宮市", "とちぎけん"], "10": ["群馬県", "関東", "前橋市", "ぐんまけん"], "11": ["埼玉県", "関東", "さいたま市", "さいたまけん"], "12": ["千葉県", "関東", "千葉市", "ちばけん"], "13": ["東京都", "関東", "新宿区", "とうきょうと"], "14": ["神奈川県", "関東", "横浜市", "かながわけん"], "15": ["新潟県", "中部", "新潟市", "にいがたけん"], "16": ["富山県", "中部", "富山市", "とやまけん"], "17": ["石川県", "中部", "金沢市", "いしかわけん"], "18": ["福井県", "中部", "福井市", "ふくいけん"], "19": ["山梨県", "中部", "甲府市", "やまなしけん"], "20": ["長野県", "中部", "長野市", "ながのけん"], "21": ["岐阜県", "中部", "岐阜市", "ぎふけん"], "22": ["静岡県", "中部", "静岡市", "しずおかけん"], "23": ["愛知県", "中部", "名古屋市", "あいちけん"], "24": ["三重県", "近畿", "津市", "みえけん"], "25": ["滋賀県", "近畿", "大津市", "しがけん"], "26": ["京都府", "近畿", "京都市", "きょうとふ"], "27": ["大阪府", "近畿", "大阪市", "おおさかふ"], "28": ["兵庫県", "近畿", "神戸市", "ひょうごけん"], "29": ["奈良県", "近畿", "奈良市", "ならけん"], "30": ["和歌山県", "近畿", "和歌山市", "わかやまけん"], "31": ["鳥取県", "中国", "鳥取市", "とっとりけん"], "32": ["島根県", "中国", "松江市", "しまねけん"], "33": ["岡山県", "中国", "岡山市", "おかやまけん"], "34": ["広島県", "中国", "広島市", "ひろしまけん"], "35": ["山口県", "中国", "山口市", "やまぐちけん"], "36": ["徳島県", "四国", "徳島市", "とくしまけん"], "37": ["香川県", "四国", "高松市", "かがわけん"], "38": ["愛媛県", "四国", "松山市", "えひめけん"], "39": ["高知県", "四国", "高知市", "こうちけん"], "40": ["福岡県", "九州・沖縄", "福岡市", "ふくおかけん"], "41": ["佐賀県", "九州・沖縄", "佐賀市", "さがけん"], "42": ["長崎県", "九州・沖縄", "長崎市", "ながさきけん"], "43": ["熊本県", "九州・沖縄", "熊本市", "くまもとけん"], "44": ["大分県", "九州・沖縄", "大分市", "おおいたけん"], "45": ["宮崎県", "九州・沖縄", "宮崎市", "みやざきけん"], "46": ["鹿児島県", "九州・沖縄", "鹿児島市", "かごしまけん"], "47": ["沖縄県", "九州・沖縄", "那覇市", "おきなわけん"]};
+// Derive the region names from the same data used to judge map answers.
+const REGIONS = [...new Set(Object.values(PREFS).map(data => data[1]))];
 const MAP_URL = "https://cdn.jsdelivr.net/gh/geolonia/japanese-prefectures@master/map-full.svg";
 const SPECIALTIES = (window.SPECIALTY_DATA || []).flatMap(pref =>
   (pref.items || []).map((item, index) => ({
@@ -955,6 +988,8 @@ let mode = "home";
 let quizType = "prefecture";
 let currentRegion = null;
 let regionSelected = new Set();
+let regionHadMistake = false;
+let regionCompleted = false;
 let currentSpecialty = null;
 let currentCode = null;
 let used = new Set();
@@ -1151,6 +1186,10 @@ function getBasePool() {
   else if (selected !== "全国") entries = entries.filter(([code, data]) => data[1] === selected);
   return entries.map(([code]) => code);
 }
+function getRegionPool() {
+  const codes = getBasePool();
+  return REGIONS.filter(region => codes.some(code => PREFS[code][1] === region));
+}
 function shuffle(arr) {
   const a = arr.slice();
   for (let i=a.length-1; i>0; i--) {
@@ -1174,14 +1213,24 @@ function startChallenge(size, timed=false) {
   clearMarks();
   resultPanel.classList.remove("show");
   let base;
-  if (quizType === "specialty") {
+  if (quizType === "region") {
+    base = getRegionPool();
+    // A region is one question; cycle shuffled regions to fill all ten rounds.
+    challengePool = [];
+    while (base.length && challengePool.length < size) {
+      challengePool.push(...shuffle(base));
+    }
+    challengePool = challengePool.slice(0, size);
+  } else if (quizType === "specialty") {
     base = getSpecialtyPool();
   } else {
     base = getBasePool();
     if (size === 47) base = Object.keys(PREFS);
     base = filterHardCapitalPool(base);
   }
-  challengePool = shuffle(base).slice(0, Math.min(size, base.length));
+  if (quizType !== "region") {
+    challengePool = shuffle(base).slice(0, Math.min(size, base.length));
+  }
   challengeSize = challengePool.length;
   updateProgress();
   if (timed) startTimer(); else { stopTimer(); document.getElementById("timerText").textContent = ""; }
@@ -1223,7 +1272,40 @@ function specialtyById(id) {
   return SPECIALTIES.find(item => item.id === id);
 }
 
+// Both views use the selected record derived from SPECIALTY_DATA.
+function renderSpecialtyPhoto(container, item) {
+  container.replaceChildren();
+  const fallback = () => {
+    const text = document.createElement("span");
+    text.className = "small";
+    text.textContent = "写真を表示できません。名産品名をヒントに答えてね。";
+    container.replaceChildren(text);
+  };
+  if (!item.image) { fallback(); return; }
+  const img = document.createElement("img");
+  img.alt = item.q;
+  img.addEventListener("error", () => {
+    // Ignore an old request if the user has already moved to another question.
+    if (img.parentElement === container) fallback();
+  }, { once:true });
+  img.src = "images/specialties/" + item.image;
+  container.appendChild(img);
+}
+function clearSpecialtyMedia() {
+  document.getElementById("specialtyQuestionPhoto").hidden = true;
+  document.getElementById("specialtyQuestionPhoto").replaceChildren();
+  document.getElementById("specialtyAnswer").hidden = true;
+  document.getElementById("specialtyAnswerPhoto").replaceChildren();
+  document.getElementById("specialtyDescription").textContent = "";
+}
+function showSpecialtyQuestionPhoto() {
+  const photo = document.getElementById("specialtyQuestionPhoto");
+  renderSpecialtyPhoto(photo, currentSpecialty);
+  photo.hidden = false;
+}
+
 function pickQuestion() {
+  clearSpecialtyMedia();
   if (!mapReady) {
     message.textContent = "地図を読み込み中です。少し待ってください。";
     return;
@@ -1231,6 +1313,33 @@ function pickQuestion() {
   resultPanel.classList.remove("show");
   clearPendingAnswer();
   clearMarks(true);
+
+  if (quizType === "region") {
+    if (challengeActive && challengeAnswered >= challengeSize) {
+      finishChallenge();
+      return;
+    }
+    const regions = getRegionPool();
+    let remaining = regions.filter(region => !used.has(region));
+    if (!remaining.length) { used = new Set(); remaining = regions; }
+    currentRegion = challengeActive ? challengePool[challengeAnswered]
+      : remaining[Math.floor(Math.random() * remaining.length)];
+    currentCode = null;
+    regionSelected = new Set();
+    regionHadMistake = false;
+    regionCompleted = false;
+    message.className = "";
+    if (!currentRegion) {
+      question.textContent = "問題がありません";
+      message.textContent = "";
+      return;
+    }
+    used.add(currentRegion);
+    question.textContent = "「" + currentRegion + "地方」を全部クリックしよう";
+    document.getElementById("graduateText").textContent = "";
+    updateProgressRegion();
+    return;
+  }
 
   let pool;
   if (challengeActive) {
@@ -1245,6 +1354,7 @@ function pickQuestion() {
       used.add(sid);
       currentSpecialty = specialtyById(sid);
       currentCode = currentSpecialty.code;
+      showSpecialtyQuestionPhoto();
       question.textContent = "「" + currentSpecialty.q + "」といえばどこ？";
       message.textContent = "ジャンル：" + currentSpecialty.cat;
       message.className = "";
@@ -1263,6 +1373,7 @@ function pickQuestion() {
       used.add(sid);
       currentSpecialty = specialtyById(sid);
       currentCode = currentSpecialty.code;
+      showSpecialtyQuestionPhoto();
       question.textContent = "「" + currentSpecialty.q + "」といえばどこ？";
       message.textContent = "ジャンル：" + currentSpecialty.cat;
       message.className = "";
@@ -1292,17 +1403,6 @@ function pickQuestion() {
     return pickQuestion();
   }
   used.add(currentCode);
-  if (quizType === "region") {
-    currentRegion = REGIONS[Math.floor(Math.random() * REGIONS.length)];
-    regionSelected = new Set();
-    currentCode = null;
-    question.textContent = "「" + currentRegion + "地方」を全部クリックしよう";
-    const count = Object.values(PREFS).filter(data => data[1] === currentRegion).length;
-    message.textContent = currentRegion + "地方は " + count + " 都道府県あります。";
-    message.className = "";
-    updateProgressRegion();
-    return;
-  }
 
   const data = PREFS[currentCode];
   if (quizType === "capital") {
@@ -1316,6 +1416,12 @@ function pickQuestion() {
   document.getElementById("graduateText").textContent = "";
 }
 function showResult(isCorrect, clickedCode, graduateMsg="") {
+  const specialtyAnswer = document.getElementById("specialtyAnswer");
+  specialtyAnswer.hidden = quizType !== "specialty" || !currentSpecialty;
+  if (!specialtyAnswer.hidden) {
+    renderSpecialtyPhoto(document.getElementById("specialtyAnswerPhoto"), currentSpecialty);
+    document.getElementById("specialtyDescription").textContent = currentSpecialty.description;
+  }
   const clicked = PREFS[clickedCode];
   const answer = PREFS[currentCode];
   document.getElementById("resultTitle").textContent = isCorrect ? "✨ 正解！" : "❌ まちがい";
@@ -1333,6 +1439,9 @@ function showResult(isCorrect, clickedCode, graduateMsg="") {
   }
   document.getElementById("graduateText").textContent = graduateMsg;
   resultPanel.classList.add("show");
+  if (quizType === "specialty") {
+    resultPanel.scrollIntoView({ block:"start" });
+  }
 }
 
 function updateProgressRegion() {
@@ -1342,6 +1451,7 @@ function updateProgressRegion() {
   message.textContent = currentRegion + "地方：あと " + remaining + " 県";
 }
 function answerRegion(code, el) {
+  if (regionCompleted || regionSelected.has(code)) return;
   if (!currentRegion) {
     question.textContent = "先に地方区分モードを始めてね";
     return;
@@ -1352,6 +1462,7 @@ function answerRegion(code, el) {
     if (!regionSelected.has(code)) {
       correct += 1;
       streak += 1;
+      if (streak > bestStreak) bestStreak = streak;
       regionSelected.add(code);
       el.classList.add("regionSelected");
       animateEl(el, "pop");
@@ -1362,18 +1473,28 @@ function answerRegion(code, el) {
     const need = Object.entries(PREFS).filter(([c, d]) => d[1] === currentRegion).map(([c]) => c);
     const done = need.every(c => regionSelected.has(c));
     if (done) {
+      regionCompleted = true;
+      if (challengeActive) {
+        challengeAnswered += 1;
+        if (!regionHadMistake) challengeCorrect += 1;
+        updateProgress();
+      }
       need.forEach(c => {
         const area = document.querySelector('.geolonia-svg-map .prefecture[data-code="' + Number(c) + '"]');
         if (area) area.classList.add("regionDone");
       });
       message.textContent = "🎉 " + currentRegion + "地方を全部選べた！";
       showRegionResult();
+      if (challengeActive && challengeAnswered >= challengeSize) {
+        setTimeout(finishChallenge, 850);
+      }
       beep("finish");
       confetti();
     } else {
       updateProgressRegion();
     }
   } else {
+    regionHadMistake = true;
     streak = 0;
     weak.add(code);
     el.classList.add("wrong");
@@ -1621,7 +1742,16 @@ function renderList() {
 }
 
 function setQuizType(type) {
+  if (type !== quizType) {
+    challengeActive = false;
+    timeAttack = false;
+    stopTimer();
+    document.getElementById("timerText").textContent = "";
+    updateProgress();
+  }
   quizType = type;
+  document.body.dataset.quizType = type;
+  clearSpecialtyMedia();
   currentRegion = null;
   regionSelected = new Set();
   currentSpecialty = null;
@@ -1685,6 +1815,7 @@ document.getElementById("tenBtn").addEventListener("click", () => startChallenge
 document.getElementById("allBtn").addEventListener("click", () => startChallenge(47, false));
 document.getElementById("timeBtn").addEventListener("click", () => startChallenge(10, true));
 document.getElementById("learnBtn").addEventListener("click", () => {
+  clearSpecialtyMedia();
   mode = "learn"; challengeActive = false; timeAttack = false; currentCode = null; stopTimer(); document.getElementById("timerText").textContent="";
   resultPanel.classList.remove("show"); clearMarks(); updateProgress();
   question.textContent = "地図の県をクリックして確認";
@@ -1695,7 +1826,12 @@ document.getElementById("weakBtn").addEventListener("click", () => {
   mode = "weak"; challengeActive = false; timeAttack = false; used = new Set(); stopTimer(); document.getElementById("timerText").textContent="";
   message.className = ""; clearMarks(); updateProgress(); pickQuestion();
 });
-document.getElementById("nextBtn").addEventListener("click", () => { clearMarks(); resultPanel.classList.remove("show"); pickQuestion(); });
+document.getElementById("nextBtn").addEventListener("click", () => {
+  clearMarks(); resultPanel.classList.remove("show"); pickQuestion();
+  if (quizType === "specialty") {
+    question.scrollIntoView({ block:"start" });
+  }
+});
 document.getElementById("region").addEventListener("change", () => {
   if (mode !== "learn") { mode = "quiz"; challengeActive = false; timeAttack = false; used = new Set(); stopTimer(); document.getElementById("timerText").textContent="";
   message.className = ""; clearMarks(); updateProgress(); pickQuestion(); }
@@ -1716,6 +1852,7 @@ document.getElementById("resetBtn").addEventListener("click", () => {
     best10 = ""; best47 = ""; bestTime = ""; medals = new Set(); challengeActive = false; timeAttack = false;
     ["tdfk5_best10","tdfk5_best47","tdfk5_bestTime","tdfk5_medals"].forEach(k=>localStorage.removeItem(k));
     save(); updateStats(); updateProgress(); renderList(); clearMarks(); resultPanel.classList.remove("show"); stopTimer(); document.getElementById("timerText").textContent="";
+    clearSpecialtyMedia();
     question.textContent = "記録をリセットしました"; message.textContent = ""; message.className = "";
   }
 });
@@ -1820,7 +1957,7 @@ renderList();
 setSoundButton();
 setQuizType("prefecture");
 setHardCapitalButton();
-loadMap();
+const mapLoaded = loadMap();
 
 (function(){
   const params = new URLSearchParams(location.search);
@@ -1838,7 +1975,8 @@ loadMap();
   if (routeTitle) routeTitle.textContent = title;
   if (back) back.href = "genre.html?type="+encodeURIComponent(type)+"&name="+encodeURIComponent(title);
 
-  setTimeout(() => {
+  mapLoaded.then(() => {
+    if (!mapReady) return;
     try {
       setQuizType(type);
       if (requestedMode === "learn") {
@@ -1851,7 +1989,7 @@ loadMap();
     } catch (e) {
       console.error(e);
     }
-  }, 900);
+  });
 })();
 
 
