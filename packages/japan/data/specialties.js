@@ -583,19 +583,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "松阪牛",
         "category": "畜産物",
-        "image": "",
+        "image": "mie_matsusaka_beef.jpg",
         "description": "松阪市周辺で育てられる牛の肉です。"
       },
       {
         "name": "伊勢えび",
         "category": "水産物",
-        "image": "",
+        "image": "mie_spiny_lobsters.jpg",
         "description": "長い触角と赤いからをもつ大きなえびです。"
       },
       {
         "name": "真珠",
         "category": "水産物",
-        "image": "",
+        "image": "mie_pearls.jpg",
         "description": "英虞湾などで、貝を育てて真珠を作ります。"
       }
     ]
@@ -608,19 +608,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "近江牛",
         "category": "畜産物",
-        "image": "",
+        "image": "shiga_omi_beef.jpg",
         "description": "滋賀県で育てられる黒毛和牛の肉です。"
       },
       {
         "name": "信楽焼",
         "category": "伝統工芸",
-        "image": "",
+        "image": "shiga_shigaraki_pottery.jpg",
         "description": "信楽で作る焼き物で、たぬきの置物も有名です。"
       },
       {
         "name": "ふなずし",
         "category": "郷土料理",
-        "image": "",
+        "image": "shiga_funa_sushi.jpg",
         "description": "ふなをご飯といっしょに漬けて発酵させます。"
       }
     ]
@@ -633,19 +633,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "宇治茶",
         "category": "農産物",
-        "image": "",
+        "image": "kyoto_uji_tea.jpg",
         "description": "宇治市周辺などで受けつがれてきたお茶です。"
       },
       {
         "name": "西陣織",
         "category": "伝統工芸",
-        "image": "",
+        "image": "kyoto_nishijin_textiles.jpg",
         "description": "色のついた糸で美しい模様を織り出します。"
       },
       {
         "name": "京野菜",
         "category": "農産物",
-        "image": "",
+        "image": "kyoto_kyoto_vegetables.jpg",
         "description": "九条ねぎなど、京都で受けつがれた野菜です。"
       }
     ]
@@ -658,19 +658,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "たこ焼き",
         "category": "郷土料理",
-        "image": "",
+        "image": "osaka_takoyaki.jpg",
         "description": "小麦粉の生地にたこを入れて丸く焼きます。"
       },
       {
         "name": "お好み焼き",
         "category": "郷土料理",
-        "image": "",
+        "image": "osaka_okonomiyaki.jpg",
         "description": "小麦粉の生地にキャベツなどを混ぜて焼きます。"
       },
       {
         "name": "堺打刃物",
         "category": "伝統工芸",
-        "image": "",
+        "image": "osaka_sakai_knives.jpg",
         "description": "堺市で作られる、包丁などの刃物です。"
       }
     ]
@@ -683,19 +683,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "神戸牛",
         "category": "畜産物",
-        "image": "",
+        "image": "hyogo_kobe_beef.jpg",
         "description": "県内で育つ但馬牛のうち、基準を満たした肉です。"
       },
       {
         "name": "丹波黒大豆",
         "category": "農産物",
-        "image": "",
+        "image": "hyogo_black_soybeans.jpg",
         "description": "丹波地域の特産で、粒の大きな黒い大豆です。"
       },
       {
         "name": "手延べそうめん",
         "category": "加工食品",
-        "image": "",
+        "image": "hyogo_somen.jpg",
         "description": "播磨地域で作られる、細くのばした麺です。"
       }
     ]
@@ -708,19 +708,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "柿の葉ずし",
         "category": "郷土料理",
-        "image": "",
+        "image": "nara_kakinoha_sushi.jpg",
         "description": "魚をのせた酢飯を、柿の葉で包んだすしです。"
       },
       {
         "name": "三輪そうめん",
         "category": "加工食品",
-        "image": "",
+        "image": "nara_miwa_somen.jpg",
         "description": "桜井市周辺で作られる、細い手延べ麺です。"
       },
       {
         "name": "柿",
         "category": "果物",
-        "image": "",
+        "image": "nara_persimmons.jpg",
         "description": "五條市などで多く育てられる秋の果物です。"
       }
     ]
@@ -733,19 +733,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "みかん",
         "category": "果物",
-        "image": "",
+        "image": "wakayama_mandarins.jpg",
         "description": "温暖な気候を生かし、斜面の畑で育てます。"
       },
       {
         "name": "梅",
         "category": "果物",
-        "image": "",
+        "image": "wakayama_ume.jpg",
         "description": "みなべ町や田辺市などで多く作られます。"
       },
       {
         "name": "柿",
         "category": "果物",
-        "image": "",
+        "image": "wakayama_persimmons.jpg",
         "description": "紀の川沿いなどで多く育てられています。"
       }
     ]
@@ -758,19 +758,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "二十世紀梨",
         "category": "果物",
-        "image": "",
+        "image": "tottori_nijisseiki_pears.jpg",
         "description": "黄緑色の皮とみずみずしい果肉が特徴です。"
       },
       {
         "name": "松葉がに",
         "category": "水産物",
-        "image": "",
+        "image": "tottori_matsuba_crab.jpg",
         "description": "冬の日本海でとれるオスのズワイガニです。"
       },
       {
         "name": "らっきょう",
         "category": "農産物",
-        "image": "",
+        "image": "tottori_rakkyo.jpg",
         "description": "砂地の畑で育てられ、漬物などにします。"
       }
     ]
@@ -783,19 +783,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "出雲そば",
         "category": "郷土料理",
-        "image": "",
+        "image": "shimane_izumo_soba.jpg",
         "description": "そばの実を皮ごとひく、色の濃いそばです。"
       },
       {
         "name": "しじみ",
         "category": "水産物",
-        "image": "",
+        "image": "shimane_shijimi.jpg",
         "description": "海水と淡水が混ざる宍道湖などでとれます。"
       },
       {
         "name": "石州和紙",
         "category": "伝統工芸",
-        "image": "",
+        "image": "shimane_sekishu_paper.jpg",
         "description": "県の西部で作られる、丈夫な和紙です。"
       }
     ]
@@ -808,19 +808,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "ぶどう",
         "category": "果物",
-        "image": "",
+        "image": "okayama_grapes.jpg",
         "description": "マスカットなど、さまざまな品種を育てます。"
       },
       {
         "name": "きびだんご",
         "category": "加工食品",
-        "image": "",
+        "image": "okayama_kibi_dango.jpg",
         "description": "桃太郎の物語でも知られる岡山の菓子です。"
       },
       {
         "name": "白桃",
         "category": "果物",
-        "image": "",
+        "image": "okayama_white_peaches.jpg",
         "description": "白くやわらかい果肉が特徴のももです。"
       }
     ]

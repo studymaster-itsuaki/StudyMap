@@ -1,7 +1,7 @@
 # 名産品の推奨画像ファイル名
 
 画像名の候補一覧です。未用意の画像名はJSに設定せず、取得後に設定します。
-既存30枚を維持し、神奈川県〜愛知県に29枚を追加しました。今回の写真なしは加賀友禅1項目。前回保留9項目、三重県〜沖縄県72項目は未選定です。選定理由は [写真確認記録](specialty-photo-review.md) を参照。画像の追加と出典の記録方法はREADMEを参照してください。
+三重県〜岡山県の10府県に写真30枚を追加し、合計89枚になりました。今回の写真なしは0項目。既存の保留10項目と広島県〜沖縄県の未選定42項目を合わせ、全体の写真なしは52項目です。 選定理由は [写真確認記録](specialty-photo-review.md) を参照。画像の追加と出典の記録方法はREADMEを参照してください。
 品目変更時はこの一覧も見直してください。この表はアプリのデータ読み込みには使用しません。
 
 | 都道府県 | 項目 | ファイル名 | 写真 |
@@ -75,36 +75,36 @@
 | 愛知県 | 八丁みそ | aichi_hatcho_miso.jpg | 配置済み（今回追加） |
 | 愛知県 | 瀬戸焼 | aichi_seto_pottery.jpg | 配置済み（今回追加） |
 | 愛知県 | 自動車 | aichi_automobiles.jpg | 配置済み（今回追加） |
-| 三重県 | 松阪牛 | mie_matsusaka_beef.jpg | 写真なし（未選定） |
-| 三重県 | 伊勢えび | mie_spiny_lobsters.jpg | 写真なし（未選定） |
-| 三重県 | 真珠 | mie_pearls.jpg | 写真なし（未選定） |
-| 滋賀県 | 近江牛 | shiga_omi_beef.jpg | 写真なし（未選定） |
-| 滋賀県 | 信楽焼 | shiga_shigaraki_pottery.jpg | 写真なし（未選定） |
-| 滋賀県 | ふなずし | shiga_funa_sushi.jpg | 写真なし（未選定） |
-| 京都府 | 宇治茶 | kyoto_uji_tea.jpg | 写真なし（未選定） |
-| 京都府 | 西陣織 | kyoto_nishijin_textiles.jpg | 写真なし（未選定） |
-| 京都府 | 京野菜 | kyoto_kyoto_vegetables.jpg | 写真なし（未選定） |
-| 大阪府 | たこ焼き | osaka_takoyaki.jpg | 写真なし（未選定） |
-| 大阪府 | お好み焼き | osaka_okonomiyaki.jpg | 写真なし（未選定） |
-| 大阪府 | 堺打刃物 | osaka_sakai_knives.jpg | 写真なし（未選定） |
-| 兵庫県 | 神戸牛 | hyogo_kobe_beef.jpg | 写真なし（未選定） |
-| 兵庫県 | 丹波黒大豆 | hyogo_black_soybeans.jpg | 写真なし（未選定） |
-| 兵庫県 | 手延べそうめん | hyogo_somen.jpg | 写真なし（未選定） |
-| 奈良県 | 柿の葉ずし | nara_kakinoha_sushi.jpg | 写真なし（未選定） |
-| 奈良県 | 三輪そうめん | nara_miwa_somen.jpg | 写真なし（未選定） |
-| 奈良県 | 柿 | nara_persimmons.jpg | 写真なし（未選定） |
-| 和歌山県 | みかん | wakayama_mandarins.jpg | 写真なし（未選定） |
-| 和歌山県 | 梅 | wakayama_ume.jpg | 写真なし（未選定） |
-| 和歌山県 | 柿 | wakayama_persimmons.jpg | 写真なし（未選定） |
-| 鳥取県 | 二十世紀梨 | tottori_nijisseiki_pears.jpg | 写真なし（未選定） |
-| 鳥取県 | 松葉がに | tottori_matsuba_crab.jpg | 写真なし（未選定） |
-| 鳥取県 | らっきょう | tottori_rakkyo.jpg | 写真なし（未選定） |
-| 島根県 | 出雲そば | shimane_izumo_soba.jpg | 写真なし（未選定） |
-| 島根県 | しじみ | shimane_shijimi.jpg | 写真なし（未選定） |
-| 島根県 | 石州和紙 | shimane_sekishu_paper.jpg | 写真なし（未選定） |
-| 岡山県 | ぶどう | okayama_grapes.jpg | 写真なし（未選定） |
-| 岡山県 | きびだんご | okayama_kibi_dango.jpg | 写真なし（未選定） |
-| 岡山県 | 白桃 | okayama_white_peaches.jpg | 写真なし（未選定） |
+| 三重県 | 松阪牛 | mie_matsusaka_beef.jpg | 配置済み（今回追加） |
+| 三重県 | 伊勢えび | mie_spiny_lobsters.jpg | 配置済み（今回追加） |
+| 三重県 | 真珠 | mie_pearls.jpg | 配置済み（今回追加） |
+| 滋賀県 | 近江牛 | shiga_omi_beef.jpg | 配置済み（今回追加） |
+| 滋賀県 | 信楽焼 | shiga_shigaraki_pottery.jpg | 配置済み（今回追加） |
+| 滋賀県 | ふなずし | shiga_funa_sushi.jpg | 配置済み（今回追加） |
+| 京都府 | 宇治茶 | kyoto_uji_tea.jpg | 配置済み（今回追加） |
+| 京都府 | 西陣織 | kyoto_nishijin_textiles.jpg | 配置済み（今回追加） |
+| 京都府 | 京野菜 | kyoto_kyoto_vegetables.jpg | 配置済み（今回追加） |
+| 大阪府 | たこ焼き | osaka_takoyaki.jpg | 配置済み（今回追加） |
+| 大阪府 | お好み焼き | osaka_okonomiyaki.jpg | 配置済み（今回追加） |
+| 大阪府 | 堺打刃物 | osaka_sakai_knives.jpg | 配置済み（今回追加） |
+| 兵庫県 | 神戸牛 | hyogo_kobe_beef.jpg | 配置済み（今回追加） |
+| 兵庫県 | 丹波黒大豆 | hyogo_black_soybeans.jpg | 配置済み（今回追加） |
+| 兵庫県 | 手延べそうめん | hyogo_somen.jpg | 配置済み（今回追加） |
+| 奈良県 | 柿の葉ずし | nara_kakinoha_sushi.jpg | 配置済み（今回追加） |
+| 奈良県 | 三輪そうめん | nara_miwa_somen.jpg | 配置済み（今回追加） |
+| 奈良県 | 柿 | nara_persimmons.jpg | 配置済み（今回追加） |
+| 和歌山県 | みかん | wakayama_mandarins.jpg | 配置済み（今回追加） |
+| 和歌山県 | 梅 | wakayama_ume.jpg | 配置済み（今回追加） |
+| 和歌山県 | 柿 | wakayama_persimmons.jpg | 配置済み（今回追加） |
+| 鳥取県 | 二十世紀梨 | tottori_nijisseiki_pears.jpg | 配置済み（今回追加） |
+| 鳥取県 | 松葉がに | tottori_matsuba_crab.jpg | 配置済み（今回追加） |
+| 鳥取県 | らっきょう | tottori_rakkyo.jpg | 配置済み（今回追加） |
+| 島根県 | 出雲そば | shimane_izumo_soba.jpg | 配置済み（今回追加） |
+| 島根県 | しじみ | shimane_shijimi.jpg | 配置済み（今回追加） |
+| 島根県 | 石州和紙 | shimane_sekishu_paper.jpg | 配置済み（今回追加） |
+| 岡山県 | ぶどう | okayama_grapes.jpg | 配置済み（今回追加） |
+| 岡山県 | きびだんご | okayama_kibi_dango.jpg | 配置済み（今回追加） |
+| 岡山県 | 白桃 | okayama_white_peaches.jpg | 配置済み（今回追加） |
 | 広島県 | かき | hiroshima_oysters.jpg | 写真なし（未選定） |
 | 広島県 | お好み焼き | hiroshima_okonomiyaki.jpg | 写真なし（未選定） |
 | 広島県 | レモン | hiroshima_lemons.jpg | 写真なし（未選定） |
