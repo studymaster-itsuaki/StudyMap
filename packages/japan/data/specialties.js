@@ -333,19 +333,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "かまぼこ",
         "category": "加工食品",
-        "image": "",
+        "image": "kanagawa_kamaboko.jpg",
         "description": "魚のすり身から作る、小田原の名産です。"
       },
       {
         "name": "しゅうまい",
         "category": "郷土料理",
-        "image": "",
+        "image": "kanagawa_shumai.jpg",
         "description": "肉などを薄い皮で包んで蒸す、横浜の名物です。"
       },
       {
         "name": "箱根寄木細工",
         "category": "伝統工芸",
-        "image": "",
+        "image": "kanagawa_hakone_woodcraft.jpg",
         "description": "色のちがう木を組み合わせて模様を作ります。"
       }
     ]
@@ -358,19 +358,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "米",
         "category": "農産物",
-        "image": "",
+        "image": "niigata_rice.jpg",
         "description": "越後平野などで、コシヒカリなどを作ります。"
       },
       {
         "name": "へぎそば",
         "category": "郷土料理",
-        "image": "",
+        "image": "niigata_hegi_soba.jpg",
         "description": "海藻をつなぎに使い、木の器に盛るそばです。"
       },
       {
         "name": "錦鯉",
         "category": "水産物",
-        "image": "",
+        "image": "niigata_nishikigoi.jpg",
         "description": "赤や白などの模様を楽しむ観賞用の魚です。"
       }
     ]
@@ -383,19 +383,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "ますずし",
         "category": "郷土料理",
-        "image": "",
+        "image": "toyama_masu_sushi.jpg",
         "description": "ますの身と酢飯を笹の葉で包んだ押しずしです。"
       },
       {
         "name": "ほたるいか",
         "category": "水産物",
-        "image": "",
+        "image": "toyama_firefly_squid.jpg",
         "description": "富山湾でとれる、体が小さく光るいかです。"
       },
       {
         "name": "チューリップ",
         "category": "農産物",
-        "image": "",
+        "image": "toyama_tulips.jpg",
         "description": "砺波平野などで球根を育てています。"
       }
     ]
@@ -408,13 +408,13 @@ window.SPECIALTY_DATA = [
       {
         "name": "輪島塗",
         "category": "伝統工芸",
-        "image": "",
+        "image": "ishikawa_wajima_lacquerware.jpg",
         "description": "木の器に漆を重ねてぬる、輪島の工芸品です。"
       },
       {
         "name": "金箔",
         "category": "伝統工芸",
-        "image": "",
+        "image": "ishikawa_gold_leaf.jpg",
         "description": "金をとても薄くのばしたもので、金沢が産地です。"
       },
       {
@@ -433,19 +433,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "越前がに",
         "category": "水産物",
-        "image": "",
+        "image": "fukui_echizen_crab.jpg",
         "description": "県内の港に水揚げされるオスのズワイガニです。"
       },
       {
         "name": "越前和紙",
         "category": "伝統工芸",
-        "image": "",
+        "image": "fukui_echizen_paper.jpg",
         "description": "越前市で昔から作られている和紙です。"
       },
       {
         "name": "めがねフレーム",
         "category": "工業製品",
-        "image": "",
+        "image": "fukui_eyeglass_frames.jpg",
         "description": "鯖江市を中心に、めがねの枠を作っています。"
       }
     ]
@@ -458,19 +458,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "ぶどう",
         "category": "果物",
-        "image": "",
+        "image": "yamanashi_grapes.jpg",
         "description": "甲府盆地などで、さまざまな品種を育てます。"
       },
       {
         "name": "もも",
         "category": "果物",
-        "image": "",
+        "image": "yamanashi_peaches.jpg",
         "description": "盆地の気候を生かして多く作られています。"
       },
       {
         "name": "ほうとう",
         "category": "郷土料理",
-        "image": "",
+        "image": "yamanashi_hoto.jpg",
         "description": "太く平たい麺を、野菜とみそで煮こみます。"
       }
     ]
@@ -483,19 +483,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "信州そば",
         "category": "郷土料理",
-        "image": "",
+        "image": "nagano_shinshu_soba.jpg",
         "description": "山あいなどで育つそばを使った名物です。"
       },
       {
         "name": "りんご",
         "category": "果物",
-        "image": "",
+        "image": "nagano_apples.jpg",
         "description": "昼と夜の気温差がある土地で育てられます。"
       },
       {
         "name": "野沢菜",
         "category": "農産物",
-        "image": "",
+        "image": "nagano_nozawana.jpg",
         "description": "葉やくきを漬物にして食べる野菜です。"
       }
     ]
@@ -508,19 +508,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "飛騨牛",
         "category": "畜産物",
-        "image": "",
+        "image": "gifu_hida_beef.jpg",
         "description": "県内で育てられる黒毛和牛の肉です。"
       },
       {
         "name": "美濃焼",
         "category": "伝統工芸",
-        "image": "",
+        "image": "gifu_mino_pottery.jpg",
         "description": "多治見市や土岐市などで作られる焼き物です。"
       },
       {
         "name": "美濃和紙",
         "category": "伝統工芸",
-        "image": "",
+        "image": "gifu_mino_paper.jpg",
         "description": "美濃市で受けつがれてきた和紙です。"
       }
     ]
@@ -533,19 +533,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "茶",
         "category": "農産物",
-        "image": "",
+        "image": "shizuoka_tea.jpg",
         "description": "丘や山の斜面などに茶畑が広がっています。"
       },
       {
         "name": "うなぎ",
         "category": "水産物",
-        "image": "",
+        "image": "shizuoka_eels.jpg",
         "description": "浜名湖の周りなどで養殖されています。"
       },
       {
         "name": "みかん",
         "category": "果物",
-        "image": "",
+        "image": "shizuoka_mandarins.jpg",
         "description": "日当たりのよい斜面などで育てられます。"
       }
     ]
@@ -558,19 +558,19 @@ window.SPECIALTY_DATA = [
       {
         "name": "八丁みそ",
         "category": "加工食品",
-        "image": "",
+        "image": "aichi_hatcho_miso.jpg",
         "description": "岡崎の名産で、大豆を使った色の濃いみそです。"
       },
       {
         "name": "瀬戸焼",
         "category": "伝統工芸",
-        "image": "",
+        "image": "aichi_seto_pottery.jpg",
         "description": "瀬戸市で昔から作られている焼き物です。"
       },
       {
         "name": "自動車",
         "category": "工業製品",
-        "image": "",
+        "image": "aichi_automobiles.jpg",
         "description": "豊田市などに工場が集まり、多く作られます。"
       }
     ]

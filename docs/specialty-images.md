@@ -1,7 +1,7 @@
 # 名産品の推奨画像ファイル名
 
 画像名の候補一覧です。未用意の画像名はJSに設定せず、取得後に設定します。
-既存9件は現在のファイル名を維持しています。宮城県〜東京都の21枚を追加し、9項目は保留。神奈川県以降の102項目は未選定です。選定理由は [写真確認記録](specialty-photo-review.md) を参照。画像の追加と出典の記録方法はREADMEを参照してください。
+既存30枚を維持し、神奈川県〜愛知県に29枚を追加しました。今回の写真なしは加賀友禅1項目。前回保留9項目、三重県〜沖縄県72項目は未選定です。選定理由は [写真確認記録](specialty-photo-review.md) を参照。画像の追加と出典の記録方法はREADMEを参照してください。
 品目変更時はこの一覧も見直してください。この表はアプリのデータ読み込みには使用しません。
 
 | 都道府県 | 項目 | ファイル名 | 写真 |
@@ -45,36 +45,36 @@
 | 東京都 | 小松菜 | tokyo_komatsuna.jpg | 写真なし（選定保留） |
 | 東京都 | もんじゃ焼き | tokyo_monjayaki.jpg | 配置済み（今回追加） |
 | 東京都 | 江戸切子 | tokyo_edo_kiriko.jpg | 配置済み（今回追加） |
-| 神奈川県 | かまぼこ | kanagawa_kamaboko.jpg | 写真なし（未選定） |
-| 神奈川県 | しゅうまい | kanagawa_shumai.jpg | 写真なし（未選定） |
-| 神奈川県 | 箱根寄木細工 | kanagawa_hakone_woodcraft.jpg | 写真なし（未選定） |
-| 新潟県 | 米 | niigata_rice.jpg | 写真なし（未選定） |
-| 新潟県 | へぎそば | niigata_hegi_soba.jpg | 写真なし（未選定） |
-| 新潟県 | 錦鯉 | niigata_nishikigoi.jpg | 写真なし（未選定） |
-| 富山県 | ますずし | toyama_masu_sushi.jpg | 写真なし（未選定） |
-| 富山県 | ほたるいか | toyama_firefly_squid.jpg | 写真なし（未選定） |
-| 富山県 | チューリップ | toyama_tulips.jpg | 写真なし（未選定） |
-| 石川県 | 輪島塗 | ishikawa_wajima_lacquerware.jpg | 写真なし（未選定） |
-| 石川県 | 金箔 | ishikawa_gold_leaf.jpg | 写真なし（未選定） |
-| 石川県 | 加賀友禅 | ishikawa_kaga_yuzen.jpg | 写真なし（未選定） |
-| 福井県 | 越前がに | fukui_echizen_crab.jpg | 写真なし（未選定） |
-| 福井県 | 越前和紙 | fukui_echizen_paper.jpg | 写真なし（未選定） |
-| 福井県 | めがねフレーム | fukui_eyeglass_frames.jpg | 写真なし（未選定） |
-| 山梨県 | ぶどう | yamanashi_grapes.jpg | 写真なし（未選定） |
-| 山梨県 | もも | yamanashi_peaches.jpg | 写真なし（未選定） |
-| 山梨県 | ほうとう | yamanashi_hoto.jpg | 写真なし（未選定） |
-| 長野県 | 信州そば | nagano_shinshu_soba.jpg | 写真なし（未選定） |
-| 長野県 | りんご | nagano_apples.jpg | 写真なし（未選定） |
-| 長野県 | 野沢菜 | nagano_nozawana.jpg | 写真なし（未選定） |
-| 岐阜県 | 飛騨牛 | gifu_hida_beef.jpg | 写真なし（未選定） |
-| 岐阜県 | 美濃焼 | gifu_mino_pottery.jpg | 写真なし（未選定） |
-| 岐阜県 | 美濃和紙 | gifu_mino_paper.jpg | 写真なし（未選定） |
-| 静岡県 | 茶 | shizuoka_tea.jpg | 写真なし（未選定） |
-| 静岡県 | うなぎ | shizuoka_eels.jpg | 写真なし（未選定） |
-| 静岡県 | みかん | shizuoka_mandarins.jpg | 写真なし（未選定） |
-| 愛知県 | 八丁みそ | aichi_hatcho_miso.jpg | 写真なし（未選定） |
-| 愛知県 | 瀬戸焼 | aichi_seto_pottery.jpg | 写真なし（未選定） |
-| 愛知県 | 自動車 | aichi_automobiles.jpg | 写真なし（未選定） |
+| 神奈川県 | かまぼこ | kanagawa_kamaboko.jpg | 配置済み（今回追加） |
+| 神奈川県 | しゅうまい | kanagawa_shumai.jpg | 配置済み（今回追加） |
+| 神奈川県 | 箱根寄木細工 | kanagawa_hakone_woodcraft.jpg | 配置済み（今回追加） |
+| 新潟県 | 米 | niigata_rice.jpg | 配置済み（今回追加） |
+| 新潟県 | へぎそば | niigata_hegi_soba.jpg | 配置済み（今回追加） |
+| 新潟県 | 錦鯉 | niigata_nishikigoi.jpg | 配置済み（今回追加） |
+| 富山県 | ますずし | toyama_masu_sushi.jpg | 配置済み（今回追加） |
+| 富山県 | ほたるいか | toyama_firefly_squid.jpg | 配置済み（今回追加） |
+| 富山県 | チューリップ | toyama_tulips.jpg | 配置済み（今回追加） |
+| 石川県 | 輪島塗 | ishikawa_wajima_lacquerware.jpg | 配置済み（今回追加） |
+| 石川県 | 金箔 | ishikawa_gold_leaf.jpg | 配置済み（今回追加） |
+| 石川県 | 加賀友禅 | ishikawa_kaga_yuzen.jpg | 写真なし（選定保留） |
+| 福井県 | 越前がに | fukui_echizen_crab.jpg | 配置済み（今回追加） |
+| 福井県 | 越前和紙 | fukui_echizen_paper.jpg | 配置済み（今回追加） |
+| 福井県 | めがねフレーム | fukui_eyeglass_frames.jpg | 配置済み（今回追加） |
+| 山梨県 | ぶどう | yamanashi_grapes.jpg | 配置済み（今回追加） |
+| 山梨県 | もも | yamanashi_peaches.jpg | 配置済み（今回追加） |
+| 山梨県 | ほうとう | yamanashi_hoto.jpg | 配置済み（今回追加） |
+| 長野県 | 信州そば | nagano_shinshu_soba.jpg | 配置済み（今回追加） |
+| 長野県 | りんご | nagano_apples.jpg | 配置済み（今回追加） |
+| 長野県 | 野沢菜 | nagano_nozawana.jpg | 配置済み（今回追加） |
+| 岐阜県 | 飛騨牛 | gifu_hida_beef.jpg | 配置済み（今回追加） |
+| 岐阜県 | 美濃焼 | gifu_mino_pottery.jpg | 配置済み（今回追加） |
+| 岐阜県 | 美濃和紙 | gifu_mino_paper.jpg | 配置済み（今回追加） |
+| 静岡県 | 茶 | shizuoka_tea.jpg | 配置済み（今回追加） |
+| 静岡県 | うなぎ | shizuoka_eels.jpg | 配置済み（今回追加） |
+| 静岡県 | みかん | shizuoka_mandarins.jpg | 配置済み（今回追加） |
+| 愛知県 | 八丁みそ | aichi_hatcho_miso.jpg | 配置済み（今回追加） |
+| 愛知県 | 瀬戸焼 | aichi_seto_pottery.jpg | 配置済み（今回追加） |
+| 愛知県 | 自動車 | aichi_automobiles.jpg | 配置済み（今回追加） |
 | 三重県 | 松阪牛 | mie_matsusaka_beef.jpg | 写真なし（未選定） |
 | 三重県 | 伊勢えび | mie_spiny_lobsters.jpg | 写真なし（未選定） |
 | 三重県 | 真珠 | mie_pearls.jpg | 写真なし（未選定） |
