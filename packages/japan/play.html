@@ -1272,6 +1272,21 @@ function specialtyById(id) {
   return SPECIALTIES.find(item => item.id === id);
 }
 
+// Question selection stays region-filtered; accepted answers use all registered
+// prefectures with the exact item.name (stored as q), without name normalization.
+function getCorrectAnswerCodes() {
+  if (quizType === "specialty" && currentSpecialty) {
+    return [...new Set(SPECIALTIES.filter(item => item.q === currentSpecialty.q).map(item => item.code))];
+  }
+  return [currentCode];
+}
+function markCorrectAnswers(codes) {
+  codes.forEach(code => {
+    const el = document.querySelector('.geolonia-svg-map .prefecture[data-code="' + Number(code) + '"]');
+    if (el) { el.classList.add("correct"); animateEl(el, "pop"); }
+  });
+}
+
 // Both views use the selected record derived from SPECIALTY_DATA.
 function renderSpecialtyPhoto(container, item) {
   container.replaceChildren();
@@ -1431,7 +1446,8 @@ function showResult(isCorrect, clickedCode, graduateMsg="") {
     document.getElementById("resultName").textContent = answer[0];
     document.getElementById("resultInfo").textContent = "県庁所在地：" + answer[2] + "（" + answer[3] + "）／" + answer[1];
   } else if (quizType === "specialty") {
-    document.getElementById("resultName").textContent = answer[0];
+    document.getElementById("resultSub").textContent = isCorrect ? "正解となる都道府県は" : "ここは「" + clicked[0] + "」。正解となる都道府県は";
+    document.getElementById("resultName").textContent = getCorrectAnswerCodes().map(code => PREFS[code][0]).join("・");
     document.getElementById("resultInfo").textContent = "問題：" + (currentSpecialty ? currentSpecialty.q : "") + "／ジャンル：" + (currentSpecialty ? currentSpecialty.cat : "");
   } else {
     document.getElementById("resultName").textContent = answer[0] + "（" + answer[3] + "）";
@@ -1564,7 +1580,8 @@ function answer(code, el) {
   total += 1;
   if (challengeActive) challengeAnswered += 1;
 
-  const isCorrect = code === currentCode;
+  const correctCodes = getCorrectAnswerCodes();
+  const isCorrect = correctCodes.includes(code);
   let graduateMsg = "";
   if (isCorrect) {
     correct += 1;
@@ -1581,8 +1598,7 @@ function answer(code, el) {
         graduateMsg = "苦手卒業まであと " + (3 - weakWins[code]) + " 回正解";
       }
     }
-    el.classList.add("correct");
-    animateEl(el, "pop");
+    markCorrectAnswers(correctCodes);
     beep("ok");
     message.textContent = "○ 正解！ 連続正解 " + streak + "！";
     message.className = "okText";
@@ -1593,9 +1609,8 @@ function answer(code, el) {
     el.classList.add("wrong");
     animateEl(el, "shake");
     beep("ng");
-    const answerEl = document.querySelector('.geolonia-svg-map .prefecture[data-code="' + Number(currentCode) + '"]');
-    if (answerEl) { answerEl.classList.add("correct"); animateEl(answerEl, "pop"); }
-    message.textContent = "× ここは「" + PREFS[code][0] + "」。正解は「" + PREFS[currentCode][0] + "」";
+    markCorrectAnswers(correctCodes);
+    message.textContent = "× ここは「" + PREFS[code][0] + "」。正解は「" + correctCodes.map(answerCode => PREFS[answerCode][0]).join("・") + "」";
     message.className = "ngText";
   }
   save();
@@ -1899,7 +1914,8 @@ function realAnswerFromConfirm(code, el) {
   total += 1;
   if (challengeActive) challengeAnswered += 1;
 
-  const isCorrect = code === currentCode;
+  const correctCodes = getCorrectAnswerCodes();
+  const isCorrect = correctCodes.includes(code);
   let graduateMsg = "";
   if (isCorrect) {
     correct += 1;
@@ -1916,8 +1932,7 @@ function realAnswerFromConfirm(code, el) {
         graduateMsg = "苦手卒業まであと " + (3 - weakWins[code]) + " 回正解";
       }
     }
-    el.classList.add("correct");
-    animateEl(el, "pop");
+    markCorrectAnswers(correctCodes);
     beep("ok");
     message.textContent = "○ 正解！ 連続正解 " + streak + "！";
     message.className = "okText";
@@ -1928,9 +1943,8 @@ function realAnswerFromConfirm(code, el) {
     el.classList.add("wrong");
     animateEl(el, "shake");
     beep("ng");
-    const answerEl = document.querySelector('.geolonia-svg-map .prefecture[data-code="' + Number(currentCode) + '"]');
-    if (answerEl) { answerEl.classList.add("correct"); animateEl(answerEl, "pop"); }
-    message.textContent = "× ここは「" + PREFS[code][0] + "」。正解は「" + PREFS[currentCode][0] + "」";
+    markCorrectAnswers(correctCodes);
+    message.textContent = "× ここは「" + PREFS[code][0] + "」。正解は「" + correctCodes.map(answerCode => PREFS[answerCode][0]).join("・") + "」";
     message.className = "ngText";
   }
   save();
