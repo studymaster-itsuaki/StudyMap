@@ -884,7 +884,7 @@ body[data-quiz-type="specialty"] .topGrid > div { min-width:0; }
         <button class="soft" id="learnBtn">📍 学習</button>
         <button class="soft" id="weakBtn">🧠 苦手</button>
         <button class="danger" id="resetBtn">記録リセット</button>
-        <button class="soft" id="soundBtn">🔊 音ON</button>
+        <button class="soft" id="soundBtn" data-studymap-sfx>🔊 音ON</button>
       </div>
       <div id="question">「クイズ」を押してね</div>
       <div id="specialtyQuestionPhoto" class="specialtyPhoto" hidden></div>
@@ -1005,7 +1005,6 @@ let bestTime = localStorage.getItem("tdfk5_bestTime") || "";
 let medals = new Set(JSON.parse(localStorage.getItem("tdfk5_medals") || "[]"));
 let mapReady = false;
 let pendingAnswer = null;
-let soundOn = localStorage.getItem("tdfk6_sound") !== "off";
 let hardCapitalOnly = localStorage.getItem("tdfk_hard_capital") === "on";
 
 let challengeActive = false;
@@ -1039,54 +1038,9 @@ function disableSvgTooltips() {
   });
 }
 
-function setSoundButton() {
-  const btn = document.getElementById("soundBtn");
-  if (btn) btn.textContent = soundOn ? "🔊 音ON" : "🔇 音OFF";
-}
-
-
 function beep(type) {
-  if (!soundOn) return;
-  try {
-    const ctx = new (window.AudioContext || window.webkitAudioContext)();
-    const now = ctx.currentTime;
-    const gain = ctx.createGain();
-    gain.connect(ctx.destination);
-    gain.gain.setValueAtTime(0.0001, now);
-    gain.gain.exponentialRampToValueAtTime(0.16, now + 0.02);
-    gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.22);
-
-    if (type === "ok") {
-      const o1 = ctx.createOscillator();
-      const o2 = ctx.createOscillator();
-      o1.type = "sine"; o2.type = "sine";
-      o1.frequency.setValueAtTime(660, now);
-      o2.frequency.setValueAtTime(880, now + 0.08);
-      o1.connect(gain); o2.connect(gain);
-      o1.start(now); o1.stop(now + 0.12);
-      o2.start(now + 0.08); o2.stop(now + 0.24);
-    } else if (type === "ng") {
-      const o = ctx.createOscillator();
-      o.type = "sawtooth";
-      o.frequency.setValueAtTime(220, now);
-      o.frequency.exponentialRampToValueAtTime(120, now + 0.22);
-      o.connect(gain);
-      o.start(now); o.stop(now + 0.24);
-    } else if (type === "finish") {
-      [523,659,784,1046].forEach((freq, i) => {
-        const o = ctx.createOscillator();
-        const g = ctx.createGain();
-        o.type = "triangle";
-        o.frequency.setValueAtTime(freq, now + i*0.09);
-        g.gain.setValueAtTime(0.0001, now + i*0.09);
-        g.gain.exponentialRampToValueAtTime(0.13, now + i*0.09 + 0.02);
-        g.gain.exponentialRampToValueAtTime(0.0001, now + i*0.09 + 0.18);
-        o.connect(g); g.connect(ctx.destination);
-        o.start(now + i*0.09); o.stop(now + i*0.09 + 0.2);
-      });
-    }
-    setTimeout(() => ctx.close && ctx.close(), 700);
-  } catch (e) {}
+  const method = {ok: "correct", ng: "wrong", finish: "clear"}[type];
+  if (method && window.StudyMapSFX) window.StudyMapSFX[method]();
 }
 function animateEl(el, className) {
   if (!el) return;
@@ -1851,13 +1805,7 @@ document.getElementById("region").addEventListener("change", () => {
   if (mode !== "learn") { mode = "quiz"; challengeActive = false; timeAttack = false; used = new Set(); stopTimer(); document.getElementById("timerText").textContent="";
   message.className = ""; clearMarks(); updateProgress(); pickQuestion(); }
 });
-document.getElementById("soundBtn").addEventListener("click", (ev) => {
-  soundOn = !soundOn;
-  localStorage.setItem("tdfk6_sound", soundOn ? "on" : "off");
-  setSoundButton();
-  pulseButton(ev.currentTarget);
-  if (soundOn) beep("ok");
-});
+
 
 
 
@@ -1968,7 +1916,6 @@ document.getElementById("toggleListBtn").addEventListener("click", () => {
 updateStats();
 updateProgress();
 renderList();
-setSoundButton();
 setQuizType("prefecture");
 setHardCapitalButton();
 const mapLoaded = loadMap();

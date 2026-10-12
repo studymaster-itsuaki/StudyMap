@@ -1,119 +1,71 @@
-
 (function(){
-  const KEY_ON = "studymap_bgm_on";
-  const KEY_POS = "studymap_bgm_pos";
-
-  const script = document.currentScript;
-  const audioUrl = script
-    ? new URL("../assets/audio/bgm.mp3", script.src).href
-    : "assets/audio/bgm.mp3";
-
-  let enabled = false;
-  try{
-    enabled = localStorage.getItem(KEY_ON) === "on";
-  }catch(e){}
-
+  const KEY_ON = "studymap_bgm_on", KEY_POS = "studymap_bgm_pos";
   const audio = document.createElement("audio");
   audio.id = "studymapSharedBgm";
-  audio.src = audioUrl;
+  audio.src = new URL("../assets/audio/bgm.mp3", document.currentScript.src).href;
   audio.loop = true;
-  audio.preload = "auto";
+  audio.preload = "none";
   audio.volume = 0.24;
+  audio.setAttribute("playsinline", "");
   document.body.appendChild(audio);
-
-  function savedPosition(){
-    try{
-      const value = parseFloat(localStorage.getItem(KEY_POS) || "0");
-      return Number.isFinite(value) ? value : 0;
-    }catch(e){
-      return 0;
-    }
-  }
-
-  function savePosition(){
-    try{
-      localStorage.setItem(KEY_POS, String(audio.currentTime || 0));
-    }catch(e){}
-  }
-
-  function updateButtons(){
+  let enabled = read(KEY_ON) === "on", status = "", attempt = 0;
+  function read(key){ try { return localStorage.getItem(key); } catch(e){ return null; } }
+  function write(key, value){ try { localStorage.setItem(key, value); } catch(e){} }
+  function update(){
     document.querySelectorAll("[data-studymap-bgm]").forEach(button => {
-      button.textContent = enabled ? "♪ BGM ON" : "♪ BGM OFF";
-      button.setAttribute("aria-pressed", enabled ? "true" : "false");
+      button.textContent = enabled ? "♪ BGM ON" + (status ? "（" + status + "）" : "") : "♪ BGM OFF";
+      button.setAttribute("aria-pressed", String(enabled));
+      button.title = status === "音源を確認" ? "assets/audio/bgm.mp3 が見つからないか、再生できません。" : "BGMの再生・停止";
     });
   }
-
-  function restorePosition(){
-    const position = savedPosition();
-    if(audio.duration && Number.isFinite(audio.duration)){
-      audio.currentTime = position % audio.duration;
-    }else{
-      audio.currentTime = position;
+  function savePosition(){
+    if(audio.readyState >= 1) write(KEY_POS, String(audio.currentTime || 0));
+  }
+  audio.addEventListener("loadedmetadata", () => {
+    const position = Number(read(KEY_POS));
+    if(Number.isFinite(position) && position >= 0){
+      try { audio.currentTime = Number.isFinite(audio.duration) && audio.duration > 0 ? position % audio.duration : position; } catch(e){}
     }
-  }
-
-  async function play(){
-    enabled = true;
-    try{
-      localStorage.setItem(KEY_ON, "on");
-    }catch(e){}
-
-    try{
-      if(audio.readyState >= 1){
-        restorePosition();
-      }else{
-        audio.addEventListener("loadedmetadata", restorePosition, {once:true});
-      }
-      await audio.play();
-    }catch(e){
-      // Autoplay may be blocked until the next user interaction.
-    }
-    updateButtons();
-  }
-
-  function pause(){
-    savePosition();
-    enabled = false;
-    audio.pause();
-    try{
-      localStorage.setItem(KEY_ON, "off");
-    }catch(e){}
-    updateButtons();
-  }
-
-  function toggle(){
-    if(enabled && !audio.paused){
-      pause();
-    }else{
-      play();
-    }
-  }
-
-  document.addEventListener("click", event => {
-    const button = event.target.closest("[data-studymap-bgm]");
-    if(!button) return;
-    event.preventDefault();
-    toggle();
   });
-
-  window.addEventListener("pagehide", savePosition);
-  setInterval(() => {
-    if(enabled && !audio.paused) savePosition();
-  }, 1000);
-
-  window.StudyMapBGM = {
-    play,
-    pause,
-    toggle,
-    isEnabled: () => enabled
-  };
-
-  updateButtons();
-
-  if(enabled){
-    play();
-    document.addEventListener("pointerdown", () => {
-      if(enabled && audio.paused) play();
-    }, {once:true});
+  audio.addEventListener("error", () => { if(enabled){ status = "音源を確認"; update(); } });
+  async function resume(){
+    if(!enabled || !audio.paused) return;
+    const token = ++attempt;
+    status = "再生待ち"; update();
+    try {
+      await audio.play();
+      if(token !== attempt) return;
+      status = "";
+    } catch(error){
+      if(token !== attempt) return;
+      status = error.name === "NotAllowedError" ? "タップで再生" : "音源を確認";
+    }
+    update();
   }
+  function play(){ enabled = true; write(KEY_ON, "on"); return resume(); }
+  function pause(){
+    enabled = false; ++attempt; savePosition(); audio.pause();
+    write(KEY_ON, "off"); status = ""; update();
+  }
+  function toggle(){ if(enabled) pause(); else play(); }
+  document.addEventListener("click", event => {
+    if(event.target.closest?.("[data-studymap-bgm]")){ event.preventDefault(); toggle(); }
+    else if(status !== "音源を確認") resume();
+  });
+  document.addEventListener("keydown", event => {
+    if(!event.target.closest?.("[data-studymap-bgm]") && status !== "音源を確認") resume();
+  });
+  window.addEventListener("pagehide", () => { savePosition(); ++attempt; audio.pause(); });
+  window.addEventListener("pageshow", () => {
+    enabled = read(KEY_ON) === "on"; update(); if(enabled) resume(); else audio.pause();
+  });
+  window.addEventListener("storage", event => {
+    if(event.key !== KEY_ON && event.key !== null) return;
+    enabled = read(KEY_ON) === "on";
+    if(enabled) resume(); else { ++attempt; audio.pause(); status = ""; }
+    update();
+  });
+  setInterval(() => { if(enabled && !audio.paused) savePosition(); }, 1000);
+  window.StudyMapBGM = {play, pause, toggle, isEnabled: () => enabled};
+  update(); if(enabled) resume();
 })();
