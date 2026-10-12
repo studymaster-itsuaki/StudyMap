@@ -1,5 +1,5 @@
-const DIAGNOSTIC_VERSION = "sw-diag-20261012-1";
-const CACHE = "studymap-beta2.3-audio-v2";
+const DIAGNOSTIC_VERSION = "sw-diag-20261012-2";
+const CACHE = "studymap-beta2.3-audio-v3";
 const BASE = new URL("./", self.location).pathname;
 const PRECACHE = [
   "./", "index.html", "manifest.webmanifest", "core/studymap.css", "core/studymap.js",
@@ -11,23 +11,38 @@ const PRECACHE = [
 ].map(path => new URL(path, self.location).pathname);
 
 self.addEventListener("install", event => {
-  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(PRECACHE)).then(() => self.skipWaiting()));
+  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(PRECACHE.map(url => new Request(url, {cache: "reload"})))).then(() => self.skipWaiting()));
 });
 self.addEventListener("activate", event => {
-  // Diagnostic build: retain old caches as evidence. No cache deletion.
+  // Keep old caches as evidence, but fetch fallback reads only this version.
   event.waitUntil(self.clients.claim());
 });
 self.addEventListener("fetch", event => {
   if (event.request.method !== "GET" || new URL(event.request.url).origin !== self.location.origin) return;
   // Media range responses (206) cannot be stored with Cache.put().
   if (event.request.headers.has("range") || new URL(event.request.url).pathname.startsWith(BASE + "assets/audio/")) return;
-  event.respondWith(fetch(event.request).then(response => {
-    if (response.ok) {
-      const copy = response.clone();
-      event.waitUntil(caches.open(CACHE).then(cache => cache.put(event.request, copy)).catch(() => {}));
+  const url = new URL(event.request.url);
+  if (!url.pathname.startsWith(BASE)) return;
+  // fetch() with default cache mode can return fresh-but-old HTTP cache entries.
+  const revalidate = event.request.mode === "navigate" ||
+    url.pathname.endsWith(".html") || url.pathname.endsWith("/") ||
+    (url.pathname.startsWith(BASE + "core/") && url.pathname.endsWith(".js"));
+  const result = (async () => {
+    const cache = await caches.open(CACHE);
+    try {
+      const response = await fetch(revalidate ? new Request(event.request, {cache: "no-cache"}) : event.request);
+      if (response.ok) {
+        try { await cache.put(event.request, response.clone()); } catch (_) {}
+      }
+      // HTTP errors stay errors: never substitute unrelated or outdated HTML.
+      return response;
+    } catch (_) {
+      // Exact URL, including query: do not return the top page for another route.
+      return await cache.match(event.request) || Response.error();
     }
-    return response;
-  }).catch(() => caches.match(event.request).then(cached => cached || (event.request.mode === "navigate" ? caches.match(BASE) : undefined))));
+  })();
+  event.respondWith(result);
+  event.waitUntil(result.then(() => {}, () => {}));
 });
 
 // Read-only identity probe; never clears or rewrites caches.
