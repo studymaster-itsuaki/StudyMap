@@ -38,11 +38,12 @@
       status = "";
     } catch(error){
       if(token !== attempt) return;
-      status = error.name === "NotAllowedError" ? "タップで再生" : "音源を確認";
+      status = audio.error ? "音源を確認" : "タップで再生";
     }
     update();
   }
-  function play(){ enabled = true; write(KEY_ON, "on"); return resume(); }
+  // Persist user intent independently of playback success or browser policy.
+  function play(){ enabled = true; write(KEY_ON, "on"); update(); return resume(); }
   function pause(){
     enabled = false; ++attempt; savePosition(); audio.pause();
     write(KEY_ON, "off"); status = ""; update();
@@ -50,11 +51,16 @@
   function toggle(){ if(enabled) pause(); else play(); }
   document.addEventListener("click", event => {
     if(event.target.closest?.("[data-studymap-bgm]")){ event.preventDefault(); toggle(); }
-    else if(status !== "音源を確認") resume();
   });
-  document.addEventListener("keydown", event => {
-    if(!event.target.closest?.("[data-studymap-bgm]") && status !== "音源を確認") resume();
-  });
+  function resumeOnGesture(event){
+    // The BGM button must only toggle once, on click (including touch-generated clicks).
+    if(!event.target.closest?.("[data-studymap-bgm]")) resume();
+  }
+  // Capture gestures before a screen-specific handler can stop propagation.
+  // iOS may require play() directly inside touchend to unlock audio.
+  document.addEventListener("touchend", resumeOnGesture, {capture: true, passive: true});
+  document.addEventListener("click", resumeOnGesture, true);
+  document.addEventListener("keydown", resumeOnGesture, true);
   window.addEventListener("pagehide", () => { savePosition(); ++attempt; audio.pause(); });
   window.addEventListener("pageshow", () => {
     enabled = read(KEY_ON) === "on"; update(); if(enabled) resume(); else audio.pause();
