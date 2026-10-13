@@ -1,5 +1,5 @@
 (function(){
-  const VERSION = "bgm-diag-20261012-3";
+  const VERSION = "bgm-gesture-20261013-1";
   function diag(event, data){ try { window.StudyMapBGMDiagnostic?.record(event, data); } catch(e){} }
   diag("BGM JS起動", {version: VERSION});
   const KEY_ON = "studymap_bgm_on", KEY_POS = "studymap_bgm_pos";
@@ -86,17 +86,22 @@
     }
   });
   function resumeOnGesture(event){
-    // The BGM button must only toggle once, on click (including touch-generated clicks).
-    if(!event.target.closest?.("[data-studymap-bgm]")){
-      if(enabled && audio.paused) diag("通常操作による再試行: " + event.type);
-      resume();
-    }
+    if(!event.isTrusted || !enabled || !audio.paused) return;
+    // Touch/pen activation is established on release, not pointerdown/touchstart.
+    if(event.type === "pointerdown" && event.pointerType !== "mouse") return;
+    // Do not briefly resume on the press/release preceding an explicit OFF click.
+    const path = event.composedPath?.() || [event.target];
+    if(path.some(node => node?.closest?.("[data-studymap-bgm]"))) return;
+    diag("通常操作による再試行: " + event.type);
+    // Keep play() synchronous with the gesture; never defer it or consume the event.
+    resume();
   }
-  // Capture gestures before a screen-specific handler can stop propagation.
-  // iOS may require play() directly inside touchend to unlock audio.
-  document.addEventListener("touchend", resumeOnGesture, {capture: true, passive: true});
-  document.addEventListener("click", resumeOnGesture, true);
-  document.addEventListener("keydown", resumeOnGesture, true);
+  // Window capture runs before document/target handlers, even if they stop propagation.
+  // Keep all listeners: a rejected gesture must not consume the next recovery chance.
+  // touchend/click remain fallbacks for WebKit; pointerup covers touch/pen controls.
+  for(const type of ["pointerdown", "pointerup", "touchend", "click", "keydown"]){
+    window.addEventListener(type, resumeOnGesture, {capture: true, passive: true});
+  }
   window.addEventListener("pagehide", () => { savePosition(); ++attempt; audio.pause(); });
   window.addEventListener("pageshow", () => {
     enabled = read(KEY_ON) === "on"; update(); if(enabled) resume(); else audio.pause();
