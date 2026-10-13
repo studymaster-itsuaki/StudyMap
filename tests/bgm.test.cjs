@@ -16,8 +16,8 @@ function page(store=new Map(), rejection=null, withSfx=false){
     setAttribute(){},addEventListener:add(mediaListeners),
     play(){this.calls++;if(rejection)return Promise.reject(Object.assign(new Error(),{name:rejection}));this.paused=false;return Promise.resolve();},
     pause(){this.paused=true;}};
-  const records=[];
-  const window={addEventListener:add(windowListeners),StudyMapBGMDiagnostic:{record:(event,data)=>records.push({event,...data})}};
+  const writes=[];
+  const window={addEventListener:add(windowListeners)};
   const document={currentScript:{src:'https://test/core/bgm.js'},createElement:()=>audio,body:{appendChild(){}},querySelectorAll:()=>[button],addEventListener:add(listeners)};
   const tones=[];
   window.AudioContext=class {
@@ -25,10 +25,10 @@ function page(store=new Map(), rejection=null, withSfx=false){
     createGain(){return {connect(){},gain:{setValueAtTime(){},exponentialRampToValueAtTime(){}}};}
     createOscillator(){return {connect(){},disconnect(){},frequency:{setValueAtTime(){},exponentialRampToValueAtTime(){}},start(){tones.push('start');},stop(){}};}
   };
-  const context=vm.createContext({document,window,URL,localStorage:{getItem:k=>store.get(k)??null,setItem:(k,v)=>store.set(k,v)},setInterval(){}});
+  const context=vm.createContext({document,window,URL,localStorage:{getItem:k=>store.get(k)??null,setItem:(k,v)=>{writes.push([k,v]);store.set(k,v);}},setInterval(){}});
   vm.runInContext(source,context);
   if(withSfx)vm.runInContext(fs.readFileSync(path.join(root,'core/sfx.js'),'utf8'),context);
-  return {store,audio,button,records,tones,sfx:window.StudyMapSFX,api:window.StudyMapBGM,allow(){rejection=null;},
+  return {store,audio,button,writes,tones,sfx:window.StudyMapSFX,api:window.StudyMapBGM,allow(){rejection=null;},
     event(name,bgm=false,captureOnly=false,trusted=true,extra={}){
       const event={type:name,isTrusted:trusted,target:{closest:selector=>bgm && selector === "[data-studymap-bgm]"?button:null},preventDefault(){},...extra};
       for(const {fn,options} of windowListeners.get(name)||[])if(options===true||options?.capture)fn(event);
@@ -52,7 +52,7 @@ test('PC: ON survives navigation and reload; position resumes; OFF persists',asy
 });
 for(const gesture of ['touchend','click','keydown'])test(`mobile policy: rejection keeps ON; capture ${gesture} resumes at saved position`,async()=>{
  const p=page(new Map([[ON,'on'],[POS,'42']]),'NotAllowedError');p.life('pageshow');await flush();
- assert.equal(p.store.get(ON),'on');assert.equal(p.button['aria-pressed'],'true');assert.match(p.button.textContent,/ON.*タップ/);
+ assert.equal(p.store.get(ON),'on');assert.equal(p.button['aria-pressed'],'true');assert.match(p.button.textContent,/ON/);
  p.allow();p.event(gesture,false,true);p.metadata();await flush();
  assert.equal(p.audio.paused,false);assert.equal(p.audio.currentTime,42);assert.equal(p.button.textContent,'♪ BGM ON');
 });
@@ -63,11 +63,11 @@ test('touch + synthetic click on BGM toggles only once, including while waiting'
  p.allow();p.event('touchend',true);p.event('click',true);await flush();assert.equal(p.store.get(ON),'on');assert.equal(p.audio.paused,false);
 });
 test('AbortError remains waiting and retries on next tap',async()=>{
- const p=page(new Map([[ON,'on']]),'AbortError');await flush();assert.match(p.button.textContent,/タップで再生/);
+ const p=page(new Map([[ON,'on']]),'AbortError');await flush();assert.match(p.button.textContent,/ON/);
  p.allow();p.event('touchend');await flush();assert.equal(p.audio.paused,false);
 });
 test('late rejected play cannot overwrite explicit OFF; back/forward restores ON',async()=>{
- const p=page(new Map([[ON,'on']]),'NotAllowedError');p.event('click',true);await flush();assert.equal(p.button.textContent,'♪ BGM OFF');
+ const p=page(new Map([[ON,'on']]),'NotAllowedError');p.event('click',true);await flush();assert.equal(p.button.textContent,'× BGM OFF');
  p.allow();p.event('click',true);await flush();p.metadata();p.audio.currentTime=53;p.life('pagehide');p.life('pageshow');await flush();assert.equal(p.api.isEnabled(),true);assert.equal(p.audio.paused,false);assert.equal(p.audio.currentTime,53);
 });
 
@@ -76,21 +76,20 @@ test('public pause and toggle suspend playback without saving OFF; ordinary tap 
  p.api.pause();assert.equal(p.api.isEnabled(),true);assert.equal(p.store.get(ON),'on');assert.equal(p.audio.paused,true);
  p.event('click');await flush();assert.equal(p.audio.paused,false);assert.equal(p.audio.currentTime,31);
  p.api.toggle();assert.equal(p.store.get(ON),'on');assert.equal(p.audio.paused,true);
- assert.ok(p.records.some(r=>r.lastControl?.source==='api.pause' && r.lastControl.stack));
+ assert.equal(p.writes.filter(([key])=>key===ON).length,0);
 });
-test('synthetic BGM click cannot save OFF; trusted button click records its source',async()=>{
+test('synthetic BGM click cannot save OFF; trusted button click alone saves OFF',async()=>{
  const p=page(new Map([[ON,'on']]),'NotAllowedError');await flush();
  p.event('click',true,false,false);assert.equal(p.store.get(ON),'on');
  p.event('click',true);assert.equal(p.store.get(ON),'off');
- const writes=p.records.filter(r=>r.write);assert.equal(writes.length,1);
- assert.equal(writes[0].write.source,'bgm-button.click');assert.match(writes[0].write.stack,/disableFromButton/);
+ assert.deepEqual(p.writes,[[ON,'off']]);
 });
 test('top ON, rejected elementary, tap, reload, multiple pages and back preserve intent and position',async()=>{
  const store=new Map();const top=page(store);top.event('click',true);await flush();top.metadata();top.audio.currentTime=46;top.life('pagehide');
  for(const route of ['elementary','reload','japan','genre']){
    const p=page(store,'NotAllowedError');p.life('pageshow');await flush();
    assert.equal(p.api.isEnabled(),true,route);assert.equal(store.get(ON),'on');
-   assert.ok(p.records.some(r=>r.playback==='blocked'));assert.equal(p.records.filter(r=>r.write).length,0);
+   assert.equal(p.audio.paused,true);assert.equal(p.writes.filter(([key])=>key===ON).length,0);
    p.allow();p.event('touchend');p.metadata();await flush();assert.equal(p.audio.currentTime,46);assert.equal(p.audio.paused,false);p.life('pagehide');
  }
  top.life('pageshow');await flush();assert.equal(top.audio.paused,false);assert.equal(store.get(ON),'on');
@@ -139,4 +138,12 @@ test('notification sounds coexist with BGM recovery and independent OFF; learnin
  p.sfx.toggle();p.event('click',true);p.sfx.wrong();await flush();
  assert.equal(p.audio.paused,false);assert.equal(p.tones.length,9);assert.equal(store.get('studymap_sfx_on'),'off');
  for(const [key,value] of learning)assert.equal(store.get(key),value);
+});
+
+test('button exposes saved intent with distinct text and accessible action even while blocked',async()=>{
+ const p=page(new Map([[ON,'on']]),'NotAllowedError');await flush();
+ assert.equal(p.button.textContent,'♪ BGM ON');assert.equal(p.button['aria-pressed'],'true');
+ assert.equal(p.button['aria-label'],'BGM ON：オフにする');
+ p.event('click',true);assert.equal(p.button.textContent,'× BGM OFF');
+ assert.equal(p.button['aria-pressed'],'false');assert.equal(p.button['aria-label'],'BGM OFF：オンにする');
 });

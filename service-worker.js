@@ -1,11 +1,10 @@
-const DIAGNOSTIC_VERSION = "sw-cache-20261013-1";
-const CACHE = "studymap-beta2.3-audio-v4";
+const CACHE = "studymap-beta2.3-audio-v5";
 const BASE = new URL("./", self.location).pathname;
 const PRECACHE = [
   "./", "index.html", "manifest.webmanifest", "core/studymap.css", "core/studymap.js",
-  "core/pwa.js", "core/pwa.js?v=20261013-1",
-  "core/bgm.js", "core/bgm.js?v=bgm-gesture-20261013-1",
-  "core/bgm-diagnostic.js", "core/bgm-diagnostic.js?v=20261013-1", "core/sfx.js", "assets/studymap-logo.svg",
+  "core/pwa.js", "core/pwa.js?v=20261013-2",
+  "core/bgm.js", "core/bgm.js?v=bgm-final-20261013-2",
+  "core/bgm.css", "core/bgm.css?v=20261013-2", "core/sfx.js", "assets/studymap-logo.svg",
   "assets/icon-192.png", "assets/icon-512.png", "elementary/", "junior/",
   "packages/japan/", "packages/japan/genre.html", "packages/japan/play.html",
   "packages/japan/specialty-learn.html", "packages/japan/image-credits.html",
@@ -16,8 +15,10 @@ self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(PRECACHE.map(url => new Request(url, {cache: "reload"})))).then(() => self.skipWaiting()));
 });
 self.addEventListener("activate", event => {
-  // Keep old caches as evidence, but fetch fallback reads only this version.
-  event.waitUntil(self.clients.claim());
+  // Remove only this app’s obsolete caches after the new precache installs.
+  event.waitUntil(caches.keys().then(keys => Promise.all(
+    keys.filter(key => key.startsWith("studymap-") && key !== CACHE).map(key => caches.delete(key))
+  )).then(() => self.clients.claim()));
 });
 self.addEventListener("fetch", event => {
   if (event.request.method !== "GET" || new URL(event.request.url).origin !== self.location.origin) return;
@@ -29,7 +30,7 @@ self.addEventListener("fetch", event => {
   // Preserve query strings in both precache and runtime keys.
   const revalidate = event.request.mode === "navigate" ||
     url.pathname.endsWith(".html") || url.pathname.endsWith("/") ||
-    (url.pathname.startsWith(BASE + "core/") && url.pathname.endsWith(".js"));
+    (url.pathname.startsWith(BASE + "core/") && /\.(js|css)$/.test(url.pathname));
   const result = (async () => {
     const cache = await caches.open(CACHE);
     try {
@@ -46,11 +47,4 @@ self.addEventListener("fetch", event => {
   })();
   event.respondWith(result);
   event.waitUntil(result.then(() => {}, () => {}));
-});
-
-// Read-only identity probe; never clears or rewrites caches.
-self.addEventListener("message", event => {
-  if(event.data?.type === "STUDYMAP_BGM_DIAGNOSTIC" && event.ports[0]){
-    event.ports[0].postMessage({version: DIAGNOSTIC_VERSION, cache: CACHE});
-  }
 });

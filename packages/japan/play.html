@@ -853,13 +853,14 @@ body[data-quiz-type="specialty"] .topGrid > div { min-width:0; }
   body[data-quiz-type="specialty"] #specialtyAnswerPhoto { height:160px; }
 }
 </style>
+<link rel="stylesheet" href="../../core/bgm.css?v=20261013-2">
 </head>
 <body>
 <div id="studyMapRouteBar" style="position:sticky;top:0;z-index:9999;background:#08a6a0;color:white;padding:8px 12px;display:flex;align-items:center;gap:10px;box-shadow:0 2px 10px rgba(0,0,0,.12);">
   <a id="studyMapBack" href="index.html" style="color:white;text-decoration:none;font-size:22px;font-weight:900;">←</a>
   <strong id="studyMapRouteTitle">日本地理</strong>
   <div style="margin-left:auto;display:flex;gap:6px;align-items:center;">
-    <button type="button" data-studymap-bgm style="border:1px solid rgba(255,255,255,.55);border-radius:11px;min-height:34px;padding:5px 9px;background:white;color:#087f7a;font-weight:900;">♪ BGM OFF</button>
+    <button type="button" data-studymap-bgm aria-pressed="false" aria-label="BGM OFF：オンにする" style="border:1px solid rgba(255,255,255,.55);border-radius:11px;min-height:34px;padding:5px 9px;background:white;color:#087f7a;font-weight:900;">× BGM OFF</button>
     <button type="button" data-studymap-sfx style="border:1px solid rgba(255,255,255,.55);border-radius:11px;min-height:34px;padding:5px 9px;background:white;color:#087f7a;font-weight:900;">🔊 効果音 ON</button>
   </div>
 </div>
@@ -1990,6 +1991,5 @@ const mapLoaded = loadMap();
 })();
 
 </script>
-<script src="../../core/pwa.js?v=20261013-1"></script><details id="studymap-bgm-diagnostic" style="position:fixed;bottom:4px;right:4px;z-index:2147483647;max-width:calc(100vw - 16px);width:330px;background:#fff;color:#17212b;border:1px solid #596978;border-radius:6px;font:11px/1.4 monospace;box-shadow:0 2px 8px #0003"><summary style="cursor:pointer;padding:5px">BGM診断 · HTML cache-20261013-1</summary><pre data-bgm-diagnostic-output style="white-space:pre-wrap;overflow-wrap:anywhere;max-height:32vh;overflow:auto;margin:0;padding:6px" aria-live="off">HTML到達済み / 診断JS未起動 / BGM JS未確認
-この表示のままならスクリプト未読込・旧版・起動エラーの可能性があります。</pre></details><script src="../../core/bgm-diagnostic.js?v=20261013-1"></script><script src="../../core/bgm.js?v=bgm-gesture-20261013-1"></script><script src="../../core/sfx.js"></script></body>
+<script src="../../core/pwa.js?v=20261013-2"></script><script src="../../core/bgm.js?v=bgm-final-20261013-2"></script><script src="../../core/sfx.js"></script></body>
 </html>

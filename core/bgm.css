@@ -1,0 +1,9 @@
+/* Keep saved ON/OFF intent visible even on narrow screens and while playback is blocked. */
+[data-studymap-bgm][aria-pressed="true"]{background:#087f7a!important;color:#fff!important;border-color:#fff!important}
+[data-studymap-bgm][aria-pressed="false"]{background:#fff!important;color:#455568!important;border-color:#aebbc5!important}
+[data-studymap-bgm]:focus-visible{outline:3px solid #ffc857;outline-offset:2px}
+@media(max-width:390px){
+  .sm-audio-btn[data-studymap-bgm]{font-size:9px;width:74px;padding:4px 3px}
+  .sm-audio-btn[data-studymap-bgm]::first-letter{font-size:9px}
+  .sm-header.has-audio{padding-right:132px}
+}
