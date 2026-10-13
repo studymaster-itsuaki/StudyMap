@@ -9,7 +9,7 @@
   }
   if (!("serviceWorker" in navigator) || location.protocol === "file:") return;
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register(new URL("service-worker.js", root), {scope: root.pathname})
+    navigator.serviceWorker.register(new URL("service-worker.js", root), {scope: root.pathname, updateViaCache: "none"})
       .catch(error => console.warn("StudyMap PWA registration failed", error));
   });
 })();
