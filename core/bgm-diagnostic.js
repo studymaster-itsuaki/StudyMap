@@ -13,7 +13,7 @@
   }
   function render(){
     output.textContent = [
-      '診断JS起動済み: diag-20261012-2',
+      '診断JS起動済み: diag-20261012-3',
       'URL: ' + location.href,
       '表示: ' + ((navigator.standalone || matchMedia('(display-mode: standalone)').matches) ? 'PWA standalone' : '通常タブ（Safari等）'),
       'BGM JS: ' + state.version,
@@ -21,6 +21,8 @@
       '解釈した設定: ' + (state.enabled === undefined ? '未確認' : state.enabled ? 'ON' : 'OFF'),
       '保存生値: ' + raw(),
       '直近書込み（このページ）: ' + (state.write ? JSON.stringify(state.write) : '未実施'),
+      '直近制御: ' + (state.lastControl ? JSON.stringify(state.lastControl) : '未実施'),
+      '直近BGMボタン: ' + (state.lastButton ? JSON.stringify(state.lastButton) : '未実施'),
       '再生: ' + state.playback,
       '直近play/音源例外: ' + state.error,
       '制御SW: ' + sw,

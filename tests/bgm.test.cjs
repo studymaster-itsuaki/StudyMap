@@ -16,11 +16,12 @@ function page(store=new Map(), rejection=null){
     setAttribute(){},addEventListener:add(mediaListeners),
     play(){this.calls++;if(rejection)return Promise.reject(Object.assign(new Error(),{name:rejection}));this.paused=false;return Promise.resolve();},
     pause(){this.paused=true;}};
-  const window={addEventListener:add(windowListeners)};
+  const records=[];
+  const window={addEventListener:add(windowListeners),StudyMapBGMDiagnostic:{record:(event,data)=>records.push({event,...data})}};
   const document={currentScript:{src:'https://test/core/bgm.js'},createElement:()=>audio,body:{appendChild(){}},querySelectorAll:()=>[button],addEventListener:add(listeners)};
   vm.runInNewContext(source,{document,window,URL,localStorage:{getItem:k=>store.get(k)??null,setItem:(k,v)=>store.set(k,v)},setInterval(){}});
-  return {store,audio,button,api:window.StudyMapBGM,allow(){rejection=null;},
-    event(name,bgm=false,captureOnly=false){for(const {fn,options} of listeners.get(name)||[])if(!captureOnly||options===true||options?.capture)fn({target:{closest:()=>bgm?button:null},preventDefault(){}});},
+  return {store,audio,button,records,api:window.StudyMapBGM,allow(){rejection=null;},
+    event(name,bgm=false,captureOnly=false,trusted=true){for(const {fn,options} of listeners.get(name)||[])if(!captureOnly||options===true||options?.capture)fn({type:name,isTrusted:trusted,target:{closest:()=>bgm?button:null},preventDefault(){}});},
     life(name){for(const {fn} of windowListeners.get(name)||[])fn({});},
     metadata(){audio.readyState=1;for(const {fn} of mediaListeners.get('loadedmetadata')||[])fn();}};
 }
@@ -55,4 +56,31 @@ test('AbortError remains waiting and retries on next tap',async()=>{
 test('late rejected play cannot overwrite explicit OFF; back/forward restores ON',async()=>{
  const p=page(new Map([[ON,'on']]),'NotAllowedError');p.event('click',true);await flush();assert.equal(p.button.textContent,'♪ BGM OFF');
  p.allow();p.event('click',true);await flush();p.metadata();p.audio.currentTime=53;p.life('pagehide');p.life('pageshow');await flush();assert.equal(p.api.isEnabled(),true);assert.equal(p.audio.paused,false);assert.equal(p.audio.currentTime,53);
+});
+
+test('public pause and toggle suspend playback without saving OFF; ordinary tap retries',async()=>{
+ const p=page(new Map([[ON,'on'],[POS,'31']]));p.metadata();await flush();
+ p.api.pause();assert.equal(p.api.isEnabled(),true);assert.equal(p.store.get(ON),'on');assert.equal(p.audio.paused,true);
+ p.event('click');await flush();assert.equal(p.audio.paused,false);assert.equal(p.audio.currentTime,31);
+ p.api.toggle();assert.equal(p.store.get(ON),'on');assert.equal(p.audio.paused,true);
+ assert.ok(p.records.some(r=>r.lastControl?.source==='api.pause' && r.lastControl.stack));
+});
+test('synthetic BGM click cannot save OFF; trusted button click records its source',async()=>{
+ const p=page(new Map([[ON,'on']]),'NotAllowedError');await flush();
+ p.event('click',true,false,false);assert.equal(p.store.get(ON),'on');
+ p.event('click',true);assert.equal(p.store.get(ON),'off');
+ const writes=p.records.filter(r=>r.write);assert.equal(writes.length,1);
+ assert.equal(writes[0].write.source,'bgm-button.click');assert.match(writes[0].write.stack,/disableFromButton/);
+});
+test('top ON, rejected elementary, tap, reload, multiple pages and back preserve intent and position',async()=>{
+ const store=new Map();const top=page(store);top.event('click',true);await flush();top.metadata();top.audio.currentTime=46;top.life('pagehide');
+ for(const route of ['elementary','reload','japan','genre']){
+   const p=page(store,'NotAllowedError');p.life('pageshow');await flush();
+   assert.equal(p.api.isEnabled(),true,route);assert.equal(store.get(ON),'on');
+   assert.ok(p.records.some(r=>r.playback==='blocked'));assert.equal(p.records.filter(r=>r.write).length,0);
+   p.allow();p.event('touchend');p.metadata();await flush();assert.equal(p.audio.currentTime,46);assert.equal(p.audio.paused,false);p.life('pagehide');
+ }
+ top.life('pageshow');await flush();assert.equal(top.audio.paused,false);assert.equal(store.get(ON),'on');
+ top.event('click',true);top.life('pagehide');top.life('pageshow');await flush();assert.equal(top.api.isEnabled(),false);
+ const reload=page(store);reload.event('touchend');await flush();assert.equal(reload.audio.calls,0);
 });

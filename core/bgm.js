@@ -1,5 +1,5 @@
 (function(){
-  const VERSION = "bgm-diag-20261012-1";
+  const VERSION = "bgm-diag-20261012-3";
   function diag(event, data){ try { window.StudyMapBGMDiagnostic?.record(event, data); } catch(e){} }
   diag("BGM JS起動", {version: VERSION});
   const KEY_ON = "studymap_bgm_on", KEY_POS = "studymap_bgm_pos";
@@ -13,13 +13,13 @@
   document.body.appendChild(audio);
   let enabled = read(KEY_ON) === "on", status = "", attempt = 0;
   function read(key){ try { return localStorage.getItem(key); } catch(e){ return null; } }
-  function write(key, value){
+  function write(key, value, source){
     let failure = null;
     try { localStorage.setItem(key, value); } catch(e){ failure = e; }
     if(key === KEY_ON){
       let back;
       try { back = localStorage.getItem(key); } catch(e){ back = "読込ERROR: " + e.name; }
-      diag("設定書込み", {write: {value, result: failure ? "失敗: " + failure.name : "成功", readBack: back}});
+      diag("設定書込み", {write: {value, source, stack: new Error("BGM preference write").stack, result: failure ? "失敗: " + failure.name : "成功", readBack: back}});
     }
   }
   function update(){
@@ -61,16 +61,29 @@
     update();
   }
   // Persist user intent independently of playback success or browser policy.
-  function play(){ diag("ON操作"); enabled = true; write(KEY_ON, "on"); update(); return resume(); }
-  function pause(){
-    diag("OFF操作");
-    enabled = false; ++attempt; savePosition(); audio.pause();
+  function play(){ diag("ON操作"); enabled = true; write(KEY_ON, "on", "play"); update(); return resume(); }
+  // Playback suspension is not a change to the user's saved preference.
+  function pause(source = "api.pause"){
+    diag("再生停止", {lastControl: {source, stack: new Error("BGM pause").stack}});
+    ++attempt; savePosition(); audio.pause();
     diag("停止操作完了", {playback: "paused"});
-    write(KEY_ON, "off"); status = ""; update();
+    status = enabled ? "タップで再生" : ""; update();
   }
-  function toggle(){ if(enabled) pause(); else play(); }
+  function disableFromButton(event){
+    diag("OFF操作", {lastControl: {source: "bgm-button.click", type: event.type, trusted: event.isTrusted}});
+    enabled = false;
+    pause("bgm-button.click");
+    write(KEY_ON, "off", "bgm-button.click");
+  }
+  // Compatibility API controls playback; only a trusted button click saves OFF.
+  function toggle(){ if(enabled && !audio.paused) pause("api.toggle"); else play(); }
   document.addEventListener("click", event => {
-    if(event.target.closest?.("[data-studymap-bgm]")){ event.preventDefault(); toggle(); }
+    if(event.target.closest?.("[data-studymap-bgm]")){
+      event.preventDefault();
+      diag("BGMボタンclick", {lastButton: {type: event.type, trusted: event.isTrusted, enabled, paused: audio.paused}});
+      if(!event.isTrusted) return;
+      if(enabled) disableFromButton(event); else play();
+    }
   });
   function resumeOnGesture(event){
     // The BGM button must only toggle once, on click (including touch-generated clicks).
